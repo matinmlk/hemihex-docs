@@ -1,0 +1,81 @@
+<svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>HemiHex Factory Workflow</title>
+  <defs>
+    <linearGradient id="hhFactoryBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"></stop>
+      <stop offset="100%" stop-color="#0B1020"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="320" height="200" rx="18" fill="url(#hhFactoryBg)"></rect>
+
+  <!-- Top nodes / stations -->
+  <g fill="#111827" stroke="#1F2937" stroke-width="1.5">
+    <rect x="40" y="26" width="70" height="32" rx="8"></rect>
+    <rect x="125" y="26" width="70" height="32" rx="8"></rect>
+    <rect x="210" y="26" width="70" height="32" rx="8"></rect>
+  </g>
+
+  <!-- Node labels (abstract bars) -->
+  <g fill="#0F9CF5" opacity="0.75">
+    <rect x="50" y="34" width="38" height="4" rx="2"></rect>
+    <rect x="50" y="42" width="24" height="4" rx="2"></rect>
+    <rect x="135" y="34" width="38" height="4" rx="2"></rect>
+    <rect x="135" y="42" width="24" height="4" rx="2"></rect>
+    <rect x="220" y="34" width="38" height="4" rx="2"></rect>
+    <rect x="220" y="42" width="24" height="4" rx="2"></rect>
+  </g>
+
+  <!-- Arrows between nodes -->
+  <g stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round" fill="none">
+    <path d="M110 42 h10"></path>
+    <path d="M195 42 h10"></path>
+    <polygon points="122,42 118,39 118,45" fill="#38BDF8"></polygon>
+    <polygon points="207,42 203,39 203,45" fill="#38BDF8"></polygon>
+  </g>
+
+  <!-- Conveyor base -->
+  <rect x="40" y="120" width="240" height="16" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1.5"></rect>
+
+  <!-- Conveyor rollers -->
+  <g fill="#0F172A">
+    <circle cx="60" cy="128" r="5"></circle>
+    <circle cx="95" cy="128" r="5"></circle>
+    <circle cx="130" cy="128" r="5"></circle>
+    <circle cx="165" cy="128" r="5"></circle>
+    <circle cx="200" cy="128" r="5"></circle>
+    <circle cx="235" cy="128" r="5"></circle>
+    <circle cx="270" cy="128" r="5"></circle>
+  </g>
+
+  <!-- Boxes on conveyor -->
+  <g>
+    <rect x="70" y="90" width="40" height="28" rx="4" fill="#0F9CF5" stroke="#38BDF8" stroke-width="1.5"></rect>
+    <rect x="150" y="84" width="40" height="28" rx="4" fill="#F5A623" stroke="#FBBF24" stroke-width="1.5"></rect>
+    <rect x="230" y="90" width="40" height="28" rx="4" fill="#22C55E" stroke="#4ADE80" stroke-width="1.5"></rect>
+
+    <!-- Box details -->
+    <g opacity="0.85" fill="#E5F4FF">
+      <rect x="76" y="98" width="20" height="4" rx="2"></rect>
+      <rect x="156" y="92" width="20" height="4" rx="2"></rect>
+      <rect x="236" y="98" width="20" height="4" rx="2"></rect>
+    </g>
+  </g>
+
+  <!-- Hex workflow overlay -->
+  <g fill="none" stroke="#0F9CF5" stroke-width="1.6" opacity="0.7">
+    <polygon points="48,160 62,152 76,160 76,176 62,184 48,176"></polygon>
+    <polygon points="128,160 142,152 156,160 156,176 142,184 128,176"></polygon>
+    <polygon points="208,160 222,152 236,160 236,176 222,184 208,176"></polygon>
+
+    <path d="M76 168 H128"></path>
+    <path d="M156 168 H208"></path>
+  </g>
+
+  <!-- Text-ish caption bars -->
+  <g fill="#9CA3AF" opacity="0.85">
+    <rect x="96" y="156" width="36" height="4" rx="2"></rect>
+    <rect x="176" y="156" width="36" height="4" rx="2"></rect>
+  </g>
+</svg>

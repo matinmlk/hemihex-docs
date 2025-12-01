@@ -1,0 +1,54 @@
+<svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>HemiHex Vision AI</title>
+  <defs>
+    <linearGradient id="hhVisionBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1020"></stop>
+      <stop offset="100%" stop-color="#111827"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="320" height="200" rx="18" fill="url(#hhVisionBg)"></rect>
+
+  <!-- Hex grid ghosts -->
+  <g opacity="0.18" stroke="#0F9CF5" stroke-width="1" fill="none">
+    <polygon points="40,40 53,32 66,40 66,56 53,64 40,56"></polygon>
+    <polygon points="86,40 99,32 112,40 112,56 99,64 86,56"></polygon>
+    <polygon points="64,70 77,62 90,70 90,86 77,94 64,86"></polygon>
+    <polygon points="132,32 145,24 158,32 158,48 145,56 132,48"></polygon>
+  </g>
+
+  <!-- Camera body -->
+  <rect x="70" y="70" width="180" height="80" rx="14" fill="#111827" stroke="#1F2937" stroke-width="2"></rect>
+  <rect x="80" y="82" width="80" height="20" rx="6" fill="#0F9CF5" opacity="0.18"></rect>
+  <circle cx="210" cy="110" r="26" fill="#020617" stroke="#0F9CF5" stroke-width="3"></circle>
+
+  <!-- Camera lens -->
+  <circle cx="210" cy="110" r="16" fill="#020617" stroke="#38BDF8" stroke-width="2"></circle>
+  <circle cx="210" cy="110" r="6" fill="#0F9CF5"></circle>
+  <circle cx="205" cy="105" r="3" fill="#E5F4FF" opacity="0.85"></circle>
+
+  <!-- AI target brackets -->
+  <g stroke="#F5A623" stroke-width="2" stroke-linecap="round">
+    <path d="M188 90 h-10 v10"></path>
+    <path d="M232 90 h10 v10"></path>
+    <path d="M188 130 h-10 v-10"></path>
+    <path d="M232 130 h10 v-10"></path>
+  </g>
+
+  <!-- Status indicators -->
+  <circle cx="92" cy="112" r="3" fill="#22C55E"></circle>
+  <circle cx="104" cy="112" r="3" fill="#FACC15"></circle>
+  <circle cx="116" cy="112" r="3" fill="#EF4444"></circle>
+
+  <!-- HemiHex hex badge -->
+  <polygon points="60,150 69,145 78,150 78,160 69,165 60,160" fill="#0F9CF5" stroke="#38BDF8" stroke-width="1.5"></polygon>
+  <path d="M63 155 h12" stroke="#F5F7FB" stroke-width="1.6" stroke-linecap="round"></path>
+
+  <!-- Decorative rays -->
+  <g stroke="#38BDF8" stroke-width="1.4" stroke-linecap="round" opacity="0.6">
+    <path d="M210 72 v-10"></path>
+    <path d="M239 80 l7 -7"></path>
+    <path d="M181 80 l-7 -7"></path>
+  </g>
+</svg>
