@@ -8,21 +8,14 @@ const config: Config = {
   title: 'HemiHex Docs',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
+  future: { v4: true },
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
-
-  // Set the production url of your site here
   url: 'https://docs.hemihex.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'matinmlk', // Usually your GitHub org/user name.
-  projectName: 'hemihex-docs', // Usually your repo name.
+  trailingSlash: false,          // ✅ add this
+
+  organizationName: 'matinmlk',
+  projectName: 'hemihex-docs',
   deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
 
