@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)https://www.yahboom.net/public/upload/upload-html/1737686208/01.ROS%20Introduction.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<link href="./01.ROS Introduction_files/css" rel="stylesheet" type="text/css"><style type="text/css">html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+
+</style><title>01.ROS Introduction</title>
+</head>
+<body class="typora-export os-windows" data-new-gr-c-s-check-loaded="14.1129.0" data-gr-ext-installed=""><div class="typora-export-content">
+<div id="write" class=""><h1 id="1ros-introduction"><span>1.ROS Introduction</span></h1><p><span>ROS wiki : </span><a href="http://wiki.ros.org/" target="_blank" class="url">http://wiki.ros.org/</a></p><p><span>ROS teaching：</span><a href="http://wiki.ros.org/ROS/Tutorials" target="_blank" class="url">http://wiki.ros.org/ROS/Tutorials</a></p><p><span>ROS install：</span><a href="http://wiki.ros.org/melodic/Installation/Ubuntu" target="_blank" class="url">http://wiki.ros.org/melodic/Installation/Ubuntu</a></p><p><span>ROS (Robot Operating System) is an open source operating system suitable for robots. It provides the necessary services for the operating system, including hardware abstraction, underlying device control, implementation of commonly used functions, inter process messaging, and package management. It also provides the tools and library functions needed to obtain, compile, write, and run code across computers.</span></p><p><span>The main goal of ROS is to provide code reuse support for robot research and development. ROS is a distributed process (also known as "node") framework, which is encapsulated in program and feature packages that are easy to share and publish. ROS also supports a joint system similar to a code repository, which can also achieve engineering collaboration and publishing. This design can enable the development and implementation of a project to make completely independent decisions from the file system to the user interface (not limited by ROS). At the same time, all projects can be integrated with the basic tools of ROS.</span></p><h2 id="11-main-characteristics-of-ros"><span>1.1 Main characteristics of ROS</span></h2><p><span>(1) Distributed architecture (where each work process is treated as a node and managed uniformly using a node manager),</span></p><p><span>(2) Multi language support (such as C++, Python, etc.),</span></p><p><span>(3) Good scalability (you can write a node or organize many nodes into a larger project through Rosslaunch)</span></p><p><span>(4) Open source (ROS follows the BSD protocol and is completely free for individual and commercial applications and modifications).</span></p><h2 id="12-overall-architecture-of-ros"><span>1.2 Overall Architecture of ROS</span></h2><p><span>Open source community level: mainly including developer knowledge, code, and algorithm sharing.</span></p><p><span>File system level: used to describe the code and executable programs that can be found on the hard drive,</span></p><p><span>Computational graph level: Reflects the communication between processes, as well as between processes and systems.</span></p><h3 id="121-calculation-diagram-level"><span>1.2.1 Calculation diagram level</span></h3><ul><li><span>node</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.52344px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">roscore</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">rosrun turtlesim turtlesim_node</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre><p><span>The following command is the entire one. After entering a part, use the [Tab] key to complete it, and then modify the content</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.52344px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">rosservice call /spawn "x: 3.0</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">y: 3.0</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">theta: 90.0</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">name: 'my_turtle'" </span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 92px;"></div><div class="CodeMirror-gutters" style="display: none; height: 92px;"></div></div></div></pre><p><span>Nodes are the main computational execution processes. ROS is composed of many nodes.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.52344px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">rqt_graph</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><img src="./01.ROS Introduction_files/001.png" referrerpolicy="no-referrer"></p><p><span>When we enter [rosnode] on the command line and double-click the Tab key, we will find that these words appear below the command line</span></p><p><img src="./01.ROS Introduction_files/002.png" referrerpolicy="no-referrer"></p><p><span>ROS command-line tool rosnode:</span></p><figure><table><thead><tr><th style="text-align:center;"><span>rosnode command</span></th><th style="text-align:center;"><span>role</span></th></tr></thead><tbody><tr><td style="text-align:center;"><span>rosnode list</span></td><td style="text-align:center;"><span>Query all currently running nodes</span></td></tr><tr><td style="text-align:center;"><span>rosnode info node_name</span></td><td style="text-align:center;"><span>Display detailed information of this node</span></td></tr><tr><td style="text-align:center;"><span>rosnode kill node_name</span></td><td style="text-align:center;"><span>End a node</span></td></tr><tr><td style="text-align:center;"><span>rosnode ping</span></td><td style="text-align:center;"><span>Test whether the node is alive</span></td></tr><tr><td style="text-align:center;"><span>rosnode machine</span></td><td style="text-align:center;"><span>List nodes running on specific machines or listed machines</span></td></tr><tr><td style="text-align:center;"><span>rosnode cleanup</span></td><td style="text-align:center;"><span>Clear the registration information of non runnable nodes</span></td></tr></tbody></table></figure><p><span>When developing and debugging, it is often necessary to view the current node and node information, so please remember these commonly used commands. If you can't remember, you can also check the usage of the rosnode command through the rosnode help.</span></p><ul><li><span>message</span></li></ul><p><span>Nodes achieve logical connections and data exchange between each other through messages.When we enter [rosmsg] on the command line and double-click the Tab key, we will find that these words appear below the command line</span></p><p><img src="./01.ROS Introduction_files/002.png" referrerpolicy="no-referrer"></p><p><span>ROS command-line tool rosmsg:</span></p><figure><table><thead><tr><th style="text-align:center;"><span>rosmsg command</span></th><th style="text-align:center;"><span>role</span></th></tr></thead><tbody><tr><td style="text-align:center;"><span>rosmsg show</span></td><td style="text-align:center;"><span>Display a message field</span></td></tr><tr><td style="text-align:center;"><span>rosmsg list</span></td><td style="text-align:center;"><span>List all messages</span></td></tr><tr><td style="text-align:center;"><span>rosmsg package</span></td><td style="text-align:center;"><span>List all feature pack messages</span></td></tr><tr><td style="text-align:center;"><span>rosmsg packages</span></td><td style="text-align:center;"><span>List all feature packages with this message</span></td></tr><tr><td style="text-align:center;"><span>rosmsg md5</span></td><td style="text-align:center;"><span>Display MD5 verification value for a message</span></td></tr></tbody></table></figure><ul><li><span>Topic</span></li></ul><p><span>A topic is a way of delivering messages (publish/subscribe). Every message should be posted to the corresponding topic, and each topic is strongly typed.The topic messages of ROS can be transmitted using TCP/IP or UDP, and the default transmission method used by ROS is TCP/IP. TCP based transmission becomes TCPROS, which is a long connection method; UDP based transmission, known as UDPROS, is a low latency and efficient transmission method, but it is prone to data loss and is suitable for remote operations.When we enter 'rostopic' on the command line and double-click the Tab key, we will find that these words appear below the command line</span></p><p><img src="./01.ROS Introduction_files/004.png" referrerpolicy="no-referrer"></p><p><span>ROS command-line tool rostopic</span></p><figure><table><thead><tr><th style="text-align:center;"><span>rostopic command</span></th><th style="text-align:center;"><span>role</span></th></tr></thead><tbody><tr><td style="text-align:center;"><span>rostopic bw /topic</span></td><td style="text-align:center;"><span>Display the bandwidth used by the theme</span></td></tr><tr><td style="text-align:center;"><span>rostopic echo /topic</span></td><td style="text-align:center;"><span>Output the message corresponding to the topic to the screen</span></td></tr><tr><td style="text-align:center;"><span>rostopic find message_type</span></td><td style="text-align:center;"><span>Find topics by type</span></td></tr><tr><td style="text-align:center;"><span>rostopic hz /topic</span></td><td style="text-align:center;"><span>Display the frequency of topic publishing</span></td></tr><tr><td style="text-align:center;"><span>rostopic info /topic</span></td><td style="text-align:center;"><span>Output information about the topic</span></td></tr><tr><td style="text-align:center;"><span>rostopic list</span></td><td style="text-align:center;"><span>Output activity topic list</span></td></tr><tr><td style="text-align:center;"><span>rostopic pub /topic type args</span></td><td style="text-align:center;"><span>Publish data to a topic</span></td></tr><tr><td style="text-align:center;"><span>rostopic type /topic</span></td><td style="text-align:center;"><span>Output Theme Type</span></td></tr></tbody></table></figure><ul><li><span>give service to</span></li></ul><p><span>The service used for the request response model must also have a unique name. When a node provides a service, all nodes can communicate with it by using code written by ROS clients.When we enter 'rossservice' on the command line and double-click the Tab key, we will find that these words appear below the command line</span></p><p><img src="./01.ROS Introduction_files/005.png" referrerpolicy="no-referrer"></p><p><span>ROS command-line tool roseservice:</span></p><figure><table><thead><tr><th style="text-align:center;"><span>rosservice command</span></th><th style="text-align:center;"><span>role</span></th></tr></thead><tbody><tr><td style="text-align:center;"><span>rosservice args /service</span></td><td style="text-align:center;"><span>effectRosservice args/service displays service parameters</span></td></tr><tr><td style="text-align:center;"><span>rosservice call /service</span></td><td style="text-align:center;"><span>Requesting service with input parameters</span></td></tr><tr><td style="text-align:center;"><span>rosservice find /service</span></td><td style="text-align:center;"><span>Find topics by type</span></td></tr><tr><td style="text-align:center;"><span>rosservice info /service</span></td><td style="text-align:center;"><span>Display information for the specified service</span></td></tr><tr><td style="text-align:center;"><span>rosservice list</span></td><td style="text-align:center;"><span>Display active service information</span></td></tr><tr><td style="text-align:center;"><span>rosservice uri /service</span></td><td style="text-align:center;"><span>Display ROSRPC URI Service</span></td></tr><tr><td style="text-align:center;"><span>rosservice type /service</span></td><td style="text-align:center;"><span>Display service type</span></td></tr></tbody></table></figure><ul><li><span>Message logging package</span></li></ul><p><span>Message recording package is a file format used to save and replay ROS message data, stored in a. bag file. It is an important mechanism for storing data.When we enter [rostag] on the command line and double-click the Tab key, we will find that these words appear below the command line</span></p><p><img src="./01.ROS Introduction_files/006.png" referrerpolicy="no-referrer"></p><p><span>ROS command-line tool rosbag:</span></p><figure><table><thead><tr><th style="text-align:center;"><span>rosbag command</span></th><th style="text-align:center;"><span>role</span></th></tr></thead><tbody><tr><td style="text-align:center;"><span>check</span></td><td style="text-align:center;"><span>Determine whether a package can be processed in the current system or migrated.</span></td></tr><tr><td style="text-align:center;"><span>decompress</span></td><td style="text-align:center;"><span>Compress one or more package files.</span></td></tr><tr><td style="text-align:center;"><span>filter</span></td><td style="text-align:center;"><span>Unzip one or more package files.</span></td></tr><tr><td style="text-align:center;"><span>fix</span></td><td style="text-align:center;"><span>Fix the message in the package file for playback in the current system.</span></td></tr><tr><td style="text-align:center;"><span>help</span></td><td style="text-align:center;"><span>Obtain relevant command guidance and help information.</span></td></tr><tr><td style="text-align:center;"><span>info</span></td><td style="text-align:center;"><span>Summarize the content of one or more package files.</span></td></tr><tr><td style="text-align:center;"><span>play</span></td><td style="text-align:center;"><span>Playback the content of one or more package files in a time synchronized manner.</span></td></tr><tr><td style="text-align:center;"><span>record</span></td><td style="text-align:center;"><span>Record a package file with the content of the specified topic.</span></td></tr><tr><td style="text-align:center;"><span>reindex</span></td><td style="text-align:center;"><span>Reindex one or more package files.</span></td></tr></tbody></table></figure><ul><li><span>parameter server</span></li></ul><p><span>The parameter server is a shared multivariate dictionary that can be accessed through the network and stored on the node manager through keywords.When we enter 'rosparam' on the command line and double-click the Tab key, we will find that these words appear below the command line</span></p><p><img src="./01.ROS Introduction_files/007.png" referrerpolicy="no-referrer"></p><p><span>ROS command-line tool rosparam:</span></p><figure><table><thead><tr><th style="text-align:center;"><span>rosparam command</span></th><th style="text-align:center;"><span>role</span></th></tr></thead><tbody><tr><td style="text-align:center;"><span>rosparam delete parameter</span></td><td style="text-align:center;"><span>Remove Parameter</span></td></tr><tr><td style="text-align:center;"><span>rosparam dump file</span></td><td style="text-align:center;"><span>Write parameters from the parameter server to a file</span></td></tr><tr><td style="text-align:center;"><span>rosparam get parameter</span></td><td style="text-align:center;"><span>Obtain parameter values</span></td></tr><tr><td style="text-align:center;"><span>rosparam list</span></td><td style="text-align:center;"><span>List parameters in the parameter server</span></td></tr><tr><td style="text-align:center;"><span>rosparam load file</span></td><td style="text-align:center;"><span>Load parameters from file to parameter server</span></td></tr><tr><td style="text-align:center;"><span>rosparam set parameter value</span></td><td style="text-align:center;"><span>Set parameters</span></td></tr></tbody></table></figure><ul><li><span>Node Manager (Master)</span></li></ul><p><span>The node manager is used for registering and searching topics and service names. If there is no node manager in the entire ROS system, there will be no communication between nodes.</span></p><h3 id="122-file-system-level"><span>1.2.2 File System Level</span></h3><p><img src="./01.ROS Introduction_files/2023042700001.png" referrerpolicy="no-referrer"></p><p><span>Dependency relationships can be configured between feature packages. If Function Package A relies on Function Package B, then when building the system in ROS, B must be built earlier than A, and A can use the header and library files in B.The concept of file system level is as follows:</span></p><ul><li><span>List of feature packages:</span></li></ul><p><span>This list indicates the dependencies of the feature pack, source file compilation flag information, and so on. The package.xml file in the feature pack is a list of feature packs.</span></p><ul><li><span>Feature Pack:</span></li></ul><p><span>Function packages are the basic form of software organization in ROS systems, including running nodes and configuration files.</span></p><p><span>ROS package related commands</span></p><figure><table><thead><tr><th style="text-align:center;"><span>rospack command</span></th><th style="text-align:center;"><span>role</span></th></tr></thead><tbody><tr><td style="text-align:center;"><span>rospack help</span></td><td style="text-align:center;"><span>Display the usage of rospack</span></td></tr><tr><td style="text-align:center;"><span>rospack list</span></td><td style="text-align:center;"><span>列出本机所有packageList all packages on this machine</span></td></tr><tr><td style="text-align:center;"><span>rospack depends [package]</span></td><td style="text-align:center;"><span>Display the dependent packages of the package</span></td></tr><tr><td style="text-align:center;"><span>rospack find [package]</span></td><td style="text-align:center;"><span>Locate a package</span></td></tr><tr><td style="text-align:center;"><span>rospack profile</span></td><td style="text-align:center;"><span>Refresh location records for all packages</span></td></tr></tbody></table></figure><ul><li><span>Comprehensive function package</span></li></ul><p><span>Organize several functional packages together to form a comprehensive functional package.</span></p><ul><li><span>message type</span></li></ul><p><span>When sending messages between nodes in ROS, message explanations need to be provided in advance. ROS provides standard type messages, which can also be defined by oneself. The description of the message type is stored in the msg file under the feature pack.</span></p><ul><li><span>Service Type</span></li></ul><p><span>Defined the data structure provided by each process in the ROS system regarding service requests and responses.1.2.3. Open source community level</span></p><h3 id="123-open-source-community-level"><span>1.2.3. Open source community level</span></h3><ul><li><span>Distribution: The ROS distribution is a series of comprehensive feature packs that can be installed independently and have version numbers. The ROS distribution plays a similar role as the Linux distribution. This makes ROS software installation easier and enables consistent versions to be maintained through a collection of software.</span></li><li><span>Software library: ROS relies on websites or host services that share open source code and software library, where different institutions can publish and share their own robot software and programs.</span></li><li><span>ROS Wiki: ROS Wiki is the main forum used to record information about ROS systems. Anyone can register an account, contribute their own files, provide corrections or updates, write tutorials, and engage in other activities.</span></li><li><span>Bug Ticket System: If you discover problems or want to propose a new feature, ROS provides this resource to do so.</span></li><li><span>Mailing list: ROS user mailing list is the main communication channel about ROS, which can communicate various questions or information from ROS software updates to ROS software usage like a forum</span></li><li><span>OS Q&amp;A (ROS Answer): Users can use this resource to ask questions</span></li></ul><h2 id="13-communication-mechanism"><span>1.3 Communication Mechanism</span></h2><h4 id="131topic"><span>1.3.1、Topic</span></h4><p><span>The asynchronous publish subscribe communication mode is widely used in ROS. Topic is generally used for one-way, message flow communication. Topic generally has a strong type definition: a topic of one type can only accept/send messages of a specific data type (message type). Publisher is not required for type consistency, but upon acceptance, the subscriber will check the MD5 of the type and report an error.</span></p><p><img src="./01.ROS Introduction_files/012.png" referrerpolicy="no-referrer"></p><h4 id="132service"><span>1.3.2、Service</span></h4><p><span>Service is used to handle synchronous communication in ROS communication, using server/client semantics. Each service type has two parts: request and response. For servers in the service, ROS does not check for name conflicts. Only the last registered server will take effect and establish a connection with the client.</span></p><p><img src="./01.ROS Introduction_files/013.png" referrerpolicy="no-referrer"></p><h4 id="133action"><span>1.3.3、Action</span></h4><p><span>Action is composed of multiple topics used to define tasks, including goals, feedback on task execution process status, and results. Compiling an action will automatically generate 7 structures: Action, ActionGoal, ActionFeedback, ActionResult, Goal, Feedback, and Result structures.</span></p><p><img src="./01.ROS Introduction_files/010.png" referrerpolicy="no-referrer"></p><p><span>Characteristics of Action:</span></p><ul><li><span>A Question and Answer Communication Mechanism</span></li><li><span>With continuous feedback</span></li><li><span>Can be terminated during the task</span></li><li><span>Implementation of message mechanism based on ROS</span></li></ul><p><span>Interface for Action:</span></p><ul><li><span>goal：Publish Task Objectives</span></li><li><span>cancel：Request to cancel task</span></li><li><span>status：Notify client of current status</span></li><li><span>feedback：Monitoring data for periodic feedback task operation</span></li><li><span>result：Send the execution results of the task to the client and publish them only once.</span></li></ul><p><span>Comparison of communication mode characteristics</span></p><figure><table><thead><tr><th><span>characteristic</span></th><th><span>Topic</span></th><th><span>Service</span></th><th><span>Action</span></th></tr></thead><tbody><tr><td><span>response mechanism</span></td><td><span>no</span></td><td><span>Result response</span></td><td><span>Progress response</span></td></tr><tr><td><span>synchronism</span></td><td><span>synchronous</span></td><td><span>synchronous</span></td><td><span>synchronous</span></td></tr><tr><td><span>communication model</span></td><td><code>Publisher</code><span>，</span><code>Subscriber</code></td><td><code>Client</code><span>，</span><code>Server</code></td><td><code>Client</code><span>，</span><code>Server</code></td></tr><tr><td><span>Node correspondence</span></td><td><span>Many to many</span></td><td><span>Client to Server</span></td><td><span>Client to Server</span></td></tr></tbody></table></figure><h2 id="14-common-components"><span>1.4 Common Components</span></h2><p><span>Launch startup file; TF coordinate transformation; Rviz； Gazebo； QT toolbox; Navigation； MoveIt!Launch: Launch File is a way in ROS to start multiple nodes simultaneously. It can also automatically start the ROS Master node manager and implement various configurations for each node, providing great convenience for the operation of multiple nodes.TF coordinate transformation: There are often a large number of component elements in the robot body and the working environment of the robot, which involve the position and posture of different components in robot design and application. TF is a functional package that allows users to track multiple coordinate systems over time. It uses a tree data structure to buffer and maintain coordinate transformation relationships between multiple coordinate systems based on time, which can help developers at any time Complete the transformation of points, vectors, and other coordinates between coordinate systems.QT Toolbox: In order to facilitate visual debugging and display, ROS provides a Qt architecture backend graphical tool kit - rqt_ common_ Plugins, which includes many practical tools: log output tool (rqt_console), computational graph visualization tool (rqt_graph), data plotting tool (rqt_plot), parameter dynamic configuration tool (rqt-reconfigure)</span></p><p><span>Rviz: rviz is a 3D visualization tool, which is well compatible with various robot platforms based on ROS software framework. In rviz, XML can be used to describe the dimensions, masses, positions, materials, joints, and other attributes of robots, surrounding objects, and any other physical objects, and presented in the interface. At the same time, rviz can also display real-time information about robot sensors, robot motion status, and changes in the surrounding environment through graphical means.Gazebo: Gazebo is a powerful 3D physics simulation platform with powerful physics engines, high-quality graphics rendering, convenient programming and graphics interfaces, and most importantly, it has open source and free features. Although the robot model in Gazebo is the same as the model used in rviz, it is necessary to incorporate the physical properties of the robot and its surrounding environment, such as mass, friction coefficient, elasticity coefficient, etc., into the model. The sensor information of the robot can also be added to the simulation environment through plugins and displayed in a visual manner.</span></p><p><span>Navigation: navigation is the two-dimensional navigation function package of ROS. In brief, it is based on the information flow of odometer and other sensors input and the global position of the robot, and through the navigation algorithm, it can calculate safe and reliable robot speed control commands.Moveit：Moveit！ The feature pack is the most commonly used tool kit, mainly used for trajectory planning. Moveit！ The configuration assistant is crucial for configuring files that need to be used in planning.</span></p><h2 id="15-release-version"><span>1.5 Release version</span></h2><p><span>Reference link：</span><a href="http://wiki.ros.org/Distributions" target="_blank" class="url">http://wiki.ros.org/Distributions</a></p><p><img src="./01.ROS Introduction_files/011.png" referrerpolicy="no-referrer"></p><p><span>The ROS distribution refers to the version of the ROS software package, which is similar in concept to Linux distributions such as Ubuntu. The purpose of launching the ROS distribution version is to enable developers to use a relatively stable code library until they are ready to upgrade all content. Therefore, after the release of each release, ROS developers usually only fix the bugs in that version and provide a small number of improvements for the core software package. As of October 2019, the version names, release times, and version lifecycles of the main release versions of ROS are shown in the table below</span></p><figure><table><thead><tr><th><span>Version Name</span></th><th><span>Release Date</span></th><th><span>Version lifecycle</span></th><th><span>Operating System Platform</span></th></tr></thead><tbody><tr><td><span>ROS Noetic NinjemysROS Noetic Ninjemys</span></td><td><span>2020.05</span></td><td><span>2025.5</span></td><td><span>Ubuntu 20.04Ubuntu 20.04</span></td></tr><tr><td><span>ROS Melodic MoreniaROS Melodic Morenia</span></td><td><span>2018.5.23</span></td><td><span>2023.5</span></td><td><span>Ubuntu 17.10, Ubuntu 18.04, Debian 9, Windows 10Ubuntu 17.10, Ubuntu 18.04, Debian 9, Windows 10</span></td></tr><tr><td><span>ROS Lunar LoggerheadROS Lunar Loggerhead</span></td><td><span>2017.5.23</span></td><td><span>2019.5</span></td><td><span>Ubuntu 16.04, Ubuntu 16.10, Ubuntu 17.04,Debian 9Ubuntu 16.04, Ubuntu 16.10, Ubuntu 17.04,Debian 9</span></td></tr><tr><td><span>ROS Kinetic KameROS Kinetic Kame</span></td><td><span>2016.5.23</span></td><td><span>2021.4</span></td><td><span>Ubuntu 15.10, Ubuntu 16.04, Debian 8Ubuntu 15.10, Ubuntu 16.04, Debian 8</span></td></tr><tr><td><span>ROS Jade TurtleROS Jade Turtle</span></td><td><span>2015.5.23</span></td><td><span>2017.5</span></td><td><span>Ubuntu 14.04, Ubuntu 14.10, Ubuntu 15.04Ubuntu 14.04, Ubuntu 14.10, Ubuntu 15.04</span></td></tr><tr><td><span>ROS Indigo IglooROS Indigo Igloo</span></td><td><span>2014.7.22</span></td><td><span>2019.4</span></td><td><span>Ubuntu 13.04, Ubuntu 14.04Ubuntu 13.04, Ubuntu 14.04</span></td></tr><tr><td><span>ROS Hydro MedusaROS Hydro Medusa</span></td><td><span>2013.9.14</span></td><td><span>2015.5</span></td><td><span>Ubuntu 12.04, Ubuntu 12.10, Ubuntu 13.04Ubuntu 12.04, Ubuntu 12.10, Ubuntu 13.04</span></td></tr><tr><td><span>ROS Groovy GalapagosROS Groovy Galapagos</span></td><td><span>2012.12.31</span></td><td><span>2014.7</span></td><td><span>Ubuntu 11.10, Ubuntu 12.04, Ubuntu 12.10Ubuntu 11.10, Ubuntu 12.04, Ubuntu 12.10</span></td></tr><tr><td><span>ROS Fuerte TurtleROS Fuerte Turtle</span></td><td><span>2012.4.23</span></td><td><span>----</span></td><td><span>Ubuntu 10.04, Ubuntu 11.10, Ubuntu 12.04Ubuntu 10.04, Ubuntu 11.10, Ubuntu 12.04</span></td></tr><tr><td><span>ROS Electric EmysROS Electric Emys</span></td><td><span>2011.8.30</span></td><td><span>----</span></td><td><span>Ubuntu 10.04, Ubuntu 10.10, Ubuntu 11.04, Ubuntu 11.10Ubuntu 10.04, Ubuntu 10.10, Ubuntu 11.04, Ubuntu 11.10</span></td></tr><tr><td><span>ROS DiamondbackROS Diamondback</span></td><td><span>2011.3.2</span></td><td><span>----</span></td><td><span>Ubuntu 10.04, Ubuntu 10.10, Ubuntu 11.04Ubuntu 10.04, Ubuntu 10.10, Ubuntu 11.04</span></td></tr><tr><td><span>ROS C TurtleROS C Turtle</span></td><td><span>2010.8.2</span></td><td><span>----</span></td><td><span>Ubuntu 9.04, Ubuntu 9.10, Ubuntu 10.04, Ubuntu 10.10Ubuntu 9.04, Ubuntu 9.10, Ubuntu 10.04, Ubuntu 10.10</span></td></tr><tr><td><span>ROS Box TurtleROS Box Turtle</span></td><td><span>2010.3.2</span></td><td><span>----</span></td><td><span>Ubuntu 8.04, Ubuntu 9.04, Ubuntu 9.10, Ubuntu 10.04Ubuntu 8.04, Ubuntu 9.04, Ubuntu 9.10, Ubuntu 10.04</span></td></tr></tbody></table></figure><p>&nbsp;</p></div></div>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
