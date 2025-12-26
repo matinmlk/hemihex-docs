@@ -1,41 +1,125 @@
-# Website
+# Docusaurus Prerequisites for Windows (Markdown + GitHub)
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This document lists all required tools and setup steps to install and
+run **Docusaurus on a Windows device** using **Markdown (MD) files** and
+deploy to **GitHub Pages or a custom domain**.
 
-## Installation
+------------------------------------------------------------------------
 
-```bash
-yarn
+## 1. Install Node.js (Required)
+
+Docusaurus is built on Node.js.
+
+### Download (LTS Version Only)
+
+https://nodejs.org
+
+✅ Install **Node.js LTS (18.x or 20.x)**
+
+### Verify Installation
+
+``` bash
+node -v
+npm -v
 ```
 
-## Local Development
+------------------------------------------------------------------------
 
-```bash
-yarn start
+## 2. Install Git (Required for GitHub)
+
+Git is required to push your documentation to GitHub.
+
+### Download
+
+https://git-scm.com
+
+### Verify
+
+``` bash
+git --version
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+------------------------------------------------------------------------
 
-## Build
+## 3. Install a Code Editor (Recommended)
 
-```bash
-yarn build
+Best option: - ✅ **Visual Studio Code (VS Code)**
+https://code.visualstudio.com
+
+### Recommended Extensions
+
+-   Markdown Preview
+-   GitHub Markdown
+-   ESLint (optional)
+
+------------------------------------------------------------------------
+
+## 4. Enable PowerShell Script Execution (If Blocked)
+
+Run **once as Administrator**:
+
+``` powershell
+Set-ExecutionPolicy RemoteSigned
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+------------------------------------------------------------------------
 
-## Deployment
+## 5. GitHub Account Requirement
 
-Using SSH:
+You must have: - ✅ A GitHub account - ✅ A GitHub repository for your
+documentation (public or private)
 
-```bash
-USE_SSH=true yarn deploy
+------------------------------------------------------------------------
+
+## 6. Install Docusaurus (After Prerequisites)
+
+Run these commands:
+
+``` bash
+npx create-docusaurus@latest my-docs classic
+cd my-docs
+npm start
 ```
 
-Not using SSH:
+------------------------------------------------------------------------
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+## 7. Required Markdown Folder Structure
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+    my-docs/
+    ├── docs/
+    │   ├── intro.md
+    │   ├── module1.md
+    │   └── module2.md
+    ├── docusaurus.config.ts
+    ├── sidebars.ts
+    └── package.json
+
+------------------------------------------------------------------------
+
+## 8. Internet & Firewall Requirements
+
+The system must allow access to: - npm registry - GitHub - Node package
+CDN
+
+------------------------------------------------------------------------
+
+## 9. Not Required
+
+-   ❌ Python
+-   ❌ Docker
+-   ❌ Linux
+-   ❌ WSL
+-   ❌ Any database
+-   ❌ Any web server
+
+------------------------------------------------------------------------
+
+## 10. Minimal Required Summary
+
+  Requirement         Required
+  ------------------- ----------
+  Node.js LTS         ✅
+  Git                 ✅
+  VS Code             ✅
+  GitHub Account      ✅
+  PowerShell Access   ✅
