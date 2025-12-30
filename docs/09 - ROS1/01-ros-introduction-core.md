@@ -90,7 +90,21 @@ rqt_graph
 
 ## 1.2.2 File System Level
 
-![ROS File System](/img/docs/jetson/9-ROS1/9-1/2023042700001.png)
+```mermaid
+flowchart TD
+    A[File system level]
+    B[Comprehensive function package]
+    C[Function package]
+
+    A --> B
+    B --> C
+
+    C --> D[Feature package list]
+    C --> E[Message]
+    C --> F[Service]
+    C --> G[Code]
+    C --> H[Other]
+```
 
 ### `rospack` Commands
 
@@ -121,7 +135,18 @@ title: ROS Communication & Tools
 
 ### Topic (Publish / Subscribe)
 
-![Topic Diagram](/img/docs/jetson/9-ROS1/9-1/012.png)
+```mermaid
+flowchart LR
+    P[Publisher]
+    R[ROS Master]
+    S[Subscriber]
+
+    P -- registration --> R
+    S -- registration --> R
+
+    P -- "Message data for /topic" --> S
+
+```
 
 ### `rostopic` Commands
 
@@ -136,7 +161,19 @@ title: ROS Communication & Tools
 
 ### Service (Client / Server)
 
-![Service Diagram](/img/docs/jetson/9-ROS1/9-1/013.png)
+```mermaid
+flowchart LR
+    S[Server]
+    R[ROS Master]
+    C[Client]
+
+    S -- registration --> R
+    C -- registration --> R
+
+    C -- Request --> S
+    S -- Response --> C
+
+```
 
 ### `rosservice` Commands
 
@@ -150,7 +187,20 @@ title: ROS Communication & Tools
 
 ### Action
 
-![Action Diagram](/img/docs/jetson/9-ROS1/9-1/010.png)
+```mermaid
+flowchart LR
+    AC[Action Client]
+    AS[Action Server]
+
+    AC -- goal --> AS
+    AC -- cancel --> AS
+
+    AS -- status --> AC
+    AS -- result --> AC
+    AS -- feedback --> AC
+
+
+```
 
 Supports: - Goal tracking - Continuous feedback - Task cancellation
 

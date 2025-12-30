@@ -1,6 +1,6 @@
 ---
 sidebar_position: 12
-title: ROS 2 Humble Installation
+title: Humble Installation
 ---
 
 # 2. Installing Humble in ROS 2

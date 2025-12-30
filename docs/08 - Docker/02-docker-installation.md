@@ -21,8 +21,8 @@ sudo apt update && sudo apt upgrade
 ```
 
 ![System Update](/img/docs/jetson/8-Docker/8-2/image-20250105125526941.png)
+.
 
-------------------------------------------------------------------------
 
 ## 2. Official Script Installation
 

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 25
-title: ROS 2 Common Command Tools
+title:  Common Command Tools
 ---
 
 # 16. ROS 2 Common Command Tools

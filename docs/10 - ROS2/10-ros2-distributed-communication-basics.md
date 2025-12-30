@@ -1,6 +1,6 @@
 ---
 sidebar_position: 22
-title: ROS 2 Distributed Communication - Basics
+title:  Distributed Communication - Basics
 ---
 
 # ROS 2 Distributed Communication (Part 1: Basics)

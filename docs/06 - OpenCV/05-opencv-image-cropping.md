@@ -1,6 +1,6 @@
 ---
 sidebar_position: 10
-title: 05 - Image Cropping with OpenCV
+title: Image Cropping with OpenCV
 ---
 
 # Image Cropping with OpenCV

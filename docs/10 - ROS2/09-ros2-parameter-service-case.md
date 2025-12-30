@@ -1,6 +1,6 @@
 ---
 sidebar_position: 20
-title: ROS 2 Parameter Service Case
+title:  Parameter Service Case
 ---
 
 # 11. ROS 2 Parameter Service Case

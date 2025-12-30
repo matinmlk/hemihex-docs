@@ -1,6 +1,6 @@
 ---
 sidebar_position: 14
-title: 10 - Image Edge Detection with OpenCV
+title: Image Edge Detection with OpenCV
 ---
 
 # Image Edge Detection with OpenCV

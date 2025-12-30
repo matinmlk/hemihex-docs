@@ -1,6 +1,6 @@
 ---
 sidebar_position: 22
-title: 18 - Preview CSI Camera Image
+title: Preview CSI Camera Image
 ---
 
 # Preview CSI Camera Image

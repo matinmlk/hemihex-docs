@@ -1,6 +1,6 @@
 ---
 sidebar_position: 16
-title: ROS 2 Topic Communication
+title:  Topic Communication
 ---
 
 # 7. ROS 2 Topic Communication

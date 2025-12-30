@@ -1,6 +1,6 @@
 ---
 sidebar_position: 11
-title: 06 - Image Translation with OpenCV
+title: Image Translation with OpenCV
 ---
 
 # Image Translation with OpenCV

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 12
-title: 07 - Image Mirroring with OpenCV
+title: Image Mirroring with OpenCV
 ---
 
 # Image Mirroring with OpenCV

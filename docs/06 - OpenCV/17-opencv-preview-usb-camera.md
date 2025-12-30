@@ -1,6 +1,6 @@
 ---
 sidebar_position: 21
-title: 17 - Preview USB Camera Image
+title: Preview USB Camera Image
 ---
 
 # Preview USB Camera Image

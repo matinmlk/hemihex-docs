@@ -1,6 +1,6 @@
 ---
 sidebar_position: 9
-title: 04 - Image Scaling with OpenCV
+title: Image Scaling with OpenCV
 ---
 
 # Image Scaling with OpenCV

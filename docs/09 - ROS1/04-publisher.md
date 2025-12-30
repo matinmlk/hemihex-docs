@@ -112,7 +112,7 @@ int main(int argc, char **argv)
         ROS_INFO("Publish turtle velocity command [%0.2f m/s, %0.2f rad/s]",
                  turtle_vel_msg.linear.x, turtle_vel_msg.angular.z);
 
-        loop_rate.sleep();
+        loop_rate.sleep();e
     }
 
     return 0;

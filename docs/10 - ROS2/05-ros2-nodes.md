@@ -1,6 +1,6 @@
 ---
 sidebar_position: 15
-title: ROS 2 Nodes
+title: Nodes
 ---
 
 # 6. ROS 2 Nodes

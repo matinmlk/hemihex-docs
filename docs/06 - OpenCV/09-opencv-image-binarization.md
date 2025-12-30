@@ -1,6 +1,6 @@
 ---
 sidebar_position: 14
-title: 09 - Image Binarization with OpenCV
+title: Image Binarization with OpenCV
 ---
 
 # Image Binarization with OpenCV

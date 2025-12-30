@@ -1,6 +1,6 @@
 ---
 sidebar_position: 13
-title: 08 - Image Grayscale Conversion with OpenCV
+title: Image Grayscale Conversion with OpenCV
 ---
 
 # Image Grayscale Conversion with OpenCV

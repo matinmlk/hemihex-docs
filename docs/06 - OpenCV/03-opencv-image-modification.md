@@ -1,6 +1,6 @@
 ---
 sidebar_position: 8
-title: 03 - Image Modification with OpenCV
+title: Image Modification with OpenCV
 ---
 
 # Image Modification with OpenCV

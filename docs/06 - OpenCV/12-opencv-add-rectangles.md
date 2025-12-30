@@ -1,6 +1,6 @@
 ---
 sidebar_position: 15
-title: 12 - Add Rectangles with OpenCV
+title: Add Rectangles with OpenCV
 ---
 
 # Add Rectangles with OpenCV

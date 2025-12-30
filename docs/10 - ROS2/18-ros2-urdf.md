@@ -1,6 +1,6 @@
 ---
 sidebar_position: 31
-title: ROS 2 URDF Model
+title:  URDF Model
 ---
 
 # ROS 2 URDF Model

@@ -9,7 +9,40 @@ sidebar_position: 2
 
 The file structure of ROS is not mandatory for every folder and is designed according to business needs.
 
-![ROS Project File Structure](/img/docs/jetson/9-ROS1/9-2/201.png)
+```mermaid
+flowchart TD
+    A[catkin workspace]
+
+    A --> B[build]
+    A --> C[src]
+    A --> D[devel]
+    A --> E["install<br/>(Hardly)"]
+
+    C --> P1[package1]
+    C --> P2[package2]
+    C --> Pn["..."]
+
+    P2 --> F1[CMakeLists.txt]
+    P2 --> F2[package.xml]
+    P2 --> F3[scripts]
+    P2 --> F4[msg]
+    P2 --> F5[srv]
+    P2 --> F6[src]
+    P2 --> F7[include]
+    P2 --> F8[launch]
+
+    F3 --> S1["*.py"]
+    F3 --> S2["*.sh"]
+
+    F4 --> M1["*.msg"]
+    F5 --> R1["*.srv"]
+
+    F6 --> C1["*.cpp"]
+    F7 --> H1["*.h"]
+    F8 --> L1["*.launch"]
+
+```
+------------------------------------------------------------------------
 
 ## 2.2 Workspace
 

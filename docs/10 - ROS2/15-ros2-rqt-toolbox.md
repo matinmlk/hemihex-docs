@@ -1,6 +1,6 @@
 ---
 sidebar_position: 27
-title: ROS 2 RQt Toolbox
+title:  RQt Toolbox
 ---
 
 # 18. ROS 2 RQt Toolbox

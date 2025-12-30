@@ -1,6 +1,6 @@
 ---
 sidebar_position: 32
-title: ROS 2 Gazebo Simulation Platform
+title:  Gazebo Simulation Platform
 ---
 
 # ROS 2 Gazebo Simulation Platform

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 17
-title: ROS 2 Service Communication
+title:  Service Communication
 ---
 
 # 8. ROS 2 Service Communication

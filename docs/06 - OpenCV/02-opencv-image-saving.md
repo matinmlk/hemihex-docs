@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-title: 02 - Image Saving with OpenCV
+title: Image Saving with OpenCV
 ---
 
 # Image Saving with OpenCV

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 20
-title: 16 - Add Text with OpenCV
+title: Add Text with OpenCV
 ---
 
 # Add Text with OpenCV

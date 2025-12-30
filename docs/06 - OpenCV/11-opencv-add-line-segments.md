@@ -1,6 +1,6 @@
 ---
 sidebar_position: 16
-title: 11 - Add Line Segments with OpenCV
+title: Add Line Segments with OpenCV
 ---
 
 # Add Line Segments with OpenCV

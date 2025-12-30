@@ -1,6 +1,6 @@
 ---
 sidebar_position: 13
-title: ROS 2 Development Environment
+title: Development Environment
 ---
 
 # 3. ROS 2 Development Environment

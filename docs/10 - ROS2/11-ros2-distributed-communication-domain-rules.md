@@ -1,6 +1,6 @@
 ---
 sidebar_position: 23
-title: ROS 2 Distributed Communication - Domain Rules
+title:  Distributed Communication - Domain Rules
 ---
 
 # ROS 2 Distributed Communication (Part 2: Domain & DDS Rules)

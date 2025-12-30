@@ -1,6 +1,6 @@
 ---
 sidebar_position: 17
-title: 13 - Add Circular Shape with OpenCV
+title: Add Circular Shape with OpenCV
 ---
 
 # Add Circular Shape with OpenCV

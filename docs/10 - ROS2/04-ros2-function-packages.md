@@ -1,6 +1,6 @@
 ---
 sidebar_position: 14
-title: ROS 2 Function Packages
+title: Function Packages
 ---
 
 # 5. ROS 2 Function Packages

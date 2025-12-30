@@ -1,6 +1,6 @@
 ---
 sidebar_position: 24
-title: ROS 2 DDS
+title:  DDS
 ---
 
 # 14. ROS 2 DDS

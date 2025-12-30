@@ -1,6 +1,6 @@
 ---
 sidebar_position: 18
-title: 14 - Add Ellipses with OpenCV
+title: Add Ellipses with OpenCV
 ---
 
 # Add Ellipses with OpenCV

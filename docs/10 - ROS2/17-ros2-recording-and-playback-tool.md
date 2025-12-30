@@ -1,6 +1,6 @@
 ---
 sidebar_position: 29
-title: ROS 2 Recording and Playback Tool (Bag2)
+title:  Recording and Playback Tool (Bag2)
 ---
 
 # ROS 2 Recording and Playback Tool (Bag2)

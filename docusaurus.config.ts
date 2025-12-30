@@ -1,8 +1,6 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
   title: 'HemiHex Docs',
@@ -12,20 +10,21 @@ const config: Config = {
 
   url: 'https://docs.hemihex.com',
   baseUrl: '/',
-  trailingSlash: false,          // ✅ add this
+  trailingSlash: false,
 
   organizationName: 'matinmlk',
   projectName: 'hemihex-docs',
   deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  // ✅ MUST be top-level (not inside themeConfig)
+  markdown: { mermaid: true },
+  themes: ['@docusaurus/theme-mermaid'],
 
   presets: [
     [
@@ -33,8 +32,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -44,11 +41,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/matinmlk/hemihex-docs',
-          // Useful options to enforce blogging best practices
+          editUrl: 'https://github.com/matinmlk/hemihex-docs',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -61,24 +54,18 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
-    colorMode: {
-      respectPrefersColorScheme: true,
-    },
+    colorMode: { respectPrefersColorScheme: true },
     navbar: {
       title: '',
-      logo: {
-        alt: 'HemiHex Logo',
-        src: 'img/logo.png',
-      },
+      logo: { alt: 'HemiHex Logo', src: 'img/logo.png' },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Tutorial',
-        }
+        },
       ],
     },
     footer: {
@@ -86,34 +73,18 @@ const config: Config = {
       links: [
         {
           title: 'Docs',
-          items: [
-            {
-              label: 'HH-101 Jetson',
-              to: '/docs/intro',
-            },
-          ],
+          items: [{ label: 'HH-101 Jetson', to: '/docs/intro' }],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Matin Tech Lab',
-              href: 'https://matintechlab.com',
-            },
-            {
-              label: 'Matin Engineer',
-              href: 'https://matin.engineer',
-            }
+            { label: 'Matin Tech Lab', href: 'https://matintechlab.com' },
+            { label: 'Matin Engineer', href: 'https://matin.engineer' },
           ],
         },
         {
           title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/matinmlk/hemihex',
-            },
-          ],
+          items: [{ label: 'GitHub', href: 'https://github.com/matinmlk/hemihex' }],
         },
       ],
       copyright: `Copyright HemiHex© ${new Date().getFullYear()}.`,

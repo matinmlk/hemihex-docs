@@ -1,6 +1,6 @@
 ---
 sidebar_position: 19
-title: 15 - Add Polygons with OpenCV
+title: Add Polygons with OpenCV
 ---
 
 # Add Polygons with OpenCV
