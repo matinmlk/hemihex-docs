@@ -26,60 +26,54 @@ const config: Config = {
   markdown: { mermaid: true },
   themes: ['@docusaurus/theme-mermaid'],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'hh101',
+        path: 'docs/hh101',
+        routeBasePath: 'hh-101',          // URL: /hh-101/...
+        sidebarPath: require.resolve('./sidebars-hh101.ts'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'hhbot',
+        path: 'docs/hhbot',
+        routeBasePath: 'hh-bot',         // URL: /hh-bot/...
+        sidebarPath: require.resolve('./sidebars-hhbot.ts'),
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl: 'https://github.com/matinmlk/hemihex-docs',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        docs: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
-      } satisfies Preset.Options,
+      },
     ],
   ],
 
+
   themeConfig: {
-    image: 'img/logo.png',
-    colorMode: { respectPrefersColorScheme: true },
-    navbar: {
-      title: '',
-      logo: { alt: 'HemiHex Logo', src: 'img/logo.png' },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'HH-101',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'HH-202',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'HH-Bot',
-        }
-      ],
+  image: 'img/logo.png',
+  colorMode: { respectPrefersColorScheme: true },
+  navbar: {
+    logo: {
+      alt: 'HemiHex',
+      src: 'img/logo.png',
+      href: '/docs/intro',
     },
+    items: [
+      { type: 'docSidebar', sidebarId: 'hh101Sidebar', docsPluginId: 'hh101', label: 'HH-101', position: 'left' },
+      { type: 'docSidebar', sidebarId: 'hhbotSidebar', docsPluginId: 'hhbot', label: 'HH-Bot', position: 'left' },
+    ],
+  },
     footer: {
       style: 'dark',
       links: [

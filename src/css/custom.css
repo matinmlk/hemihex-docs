@@ -33,3 +33,85 @@
 {
     font-size: 2rem;
 }
+
+
+/* =====================================================
+   Formal / Compact Sidebar (Enterprise Docs Style)
+   ===================================================== */
+
+/* Sidebar container */
+.theme-doc-sidebar-container {
+  padding: 8px 6px;
+}
+
+/* Category titles (e.g. Board Basics Tasks) */
+.menu__list-item-collapsible > .menu__link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  padding: 6px 10px;
+  margin: 6px 6px 4px;
+  border-radius: 6px;
+  color: var(--ifm-heading-color);
+}
+
+/* Regular doc links */
+.menu__link {
+  font-size: 0.82rem;        /* 🔽 smaller font */
+  font-weight: 400;
+  line-height: 1.35;
+  padding: 6px 10px;
+  margin: 2px 6px;
+  border-radius: 4px;
+
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+/* Hover: very subtle */
+.menu__link:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* Active item (current page) */
+.menu__link--active {
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  background: rgba(69, 181, 176, 0.10);
+}
+
+/* Simple left indicator (formal, not decorative) */
+.menu__link--active::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 16px;
+  margin-right: 8px;
+  background: var(--ifm-color-primary);
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+/* Nested sections: clean hierarchy */
+.menu__list .menu__list {
+  margin-left: 10px;
+  padding-left: 8px;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Chevron / caret alignment */
+.menu__caret {
+  padding: 4px;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .menu__link:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+html[data-theme="dark"] .menu__link--active {
+  background: rgba(69, 181, 176, 0.16);
+}
+
+html[data-theme="dark"] .menu__list .menu__list {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
