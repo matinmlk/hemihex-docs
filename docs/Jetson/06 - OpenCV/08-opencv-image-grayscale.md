@@ -43,7 +43,7 @@ Run the grayscale conversion script:
 python3 08.image_grayscale.py
 ```
 
-::: note
+:::note
 Select the image window and press **`q`** to exit the program.
 :::
 

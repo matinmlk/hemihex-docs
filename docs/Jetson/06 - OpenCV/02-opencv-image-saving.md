@@ -33,7 +33,7 @@ Run the image saving script:
 python3 02.image_save.py
 ```
 
-::: note
+:::note
 Select the image display window and press **`q`** to exit the program.
 :::
 

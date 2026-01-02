@@ -24,7 +24,7 @@ Simulation platforms like Gazebo can help us verify robotic algorithms,
 optimize robot designs, and test robot applications, providing more
 possibilities for robotics development.
 
-::: note
+:::note
 This section is for learning purposes only. The tutorial does not
 configure the environment because real-device debugging is used.
 :::

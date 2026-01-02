@@ -36,7 +36,7 @@ a **4×4 matrix**. TF2 encapsulates all these calculations.
 
 This section demonstrates turtle-following using TF2.
 
-::: note
+:::note
 This demo is recommended to run inside a virtual machine.
 :::
 

@@ -87,7 +87,7 @@ yolo predict model=yolov8n.pt source=video.mp4 device=0
 yolo predict model=yolov8n.pt source=0 device=0
 ```
 
-::: note
+:::note
 `source=0` corresponds to `/dev/video0`.
 :::
 

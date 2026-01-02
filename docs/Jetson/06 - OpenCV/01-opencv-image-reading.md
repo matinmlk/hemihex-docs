@@ -48,7 +48,7 @@ Run the image reading script:
 python3 01.image_read.py
 ```
 
-::: note
+:::note
 Select the image display window and press **`q`** to exit the program.
 :::
 

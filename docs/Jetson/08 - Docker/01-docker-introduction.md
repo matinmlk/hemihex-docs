@@ -10,7 +10,7 @@ applications. Through container technology, developers can create
 **consistent**, **portable**, and **scalable** application environments,
 improving development efficiency and application reliability.
 
-::: note
+:::note
 In some regions, pulling Docker images from public registries may be
 restricted due to network limitations. In such cases, the examples in
 this tutorial are intended for demonstration and learning purposes.
@@ -43,7 +43,7 @@ including:
   Portability    Containers can run on any platform that supports Docker
   -------------------------------------------------------------------------
 
-::: warning
+:::warning
 Docker containers are built on top of the host operating system and CPU
 architecture. Containers built for one architecture may not run on
 another.
@@ -67,7 +67,7 @@ containers.
   Structure       build steps
   -----------------------------------------------------------------------
 
-::: note
+:::note
 If you modify data inside a running container, those changes are **not**
 saved back to the image unless you explicitly create a new image from
 the container.

@@ -14,7 +14,7 @@ detection and counting of:
 -   Traffic signs
 -   Bicycles
 
-::: note
+:::note
 These examples are **basic demonstrations**. For production or custom
 use cases, further development and configuration are required.
 :::
@@ -39,7 +39,7 @@ Refer to the `README` file in the same directory.
 sudo make CUDA_VER=12.6
 ```
 
-::: tip
+:::tip
 On factory images, the application is often already compiled and may not
 require recompilation.
 :::

@@ -8,7 +8,7 @@ title: Model Training and Conversion on Jetson
 After completing dataset annotation, you can train a custom model
 directly on the Jetson and convert it for optimized deployment.
 
-::: note
+:::note
 This tutorial focuses on **CLI-based training and conversion**. For
 Python-based workflows, refer to the official Ultralytics documentation.
 :::

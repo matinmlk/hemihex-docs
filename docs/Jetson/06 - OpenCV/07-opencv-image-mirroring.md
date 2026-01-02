@@ -44,7 +44,7 @@ Run the image mirroring script:
 python3 07.image_flip.py
 ```
 
-::: note
+:::note
 Select the image window and press **`q`** to exit the program.
 :::
 

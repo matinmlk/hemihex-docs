@@ -42,7 +42,7 @@ Run the image cropping script:
 python3 05.image_crop.py
 ```
 
-::: note
+:::note
 Select the image window and press **`q`** to exit the program.
 :::
 

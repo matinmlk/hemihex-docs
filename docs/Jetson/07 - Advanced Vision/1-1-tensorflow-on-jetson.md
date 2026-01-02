@@ -55,7 +55,7 @@ cd ~/Downloads
 sudo pip3 install tensorflow-2.16.1+nv24.08-cp310-cp310-linux_aarch64.whl
 ```
 
-::: note
+:::note
 Ensure the TensorFlow version matches your JetPack and Python version.
 :::
 
@@ -75,7 +75,7 @@ sudo pip3 install --extra-index-url https://developer.download.nvidia.com/comput
 sudo pip install numpy==1.23.5
 ```
 
-::: warning
+:::warning
 Using incompatible NumPy versions may cause runtime errors.
 :::
 

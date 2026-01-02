@@ -45,7 +45,7 @@ Run the rectangle drawing script:
 python3 12.image_draw_rectangle.py
 ```
 
-::: note
+:::note
 Select the image window and press **`q`** to exit the program.
 :::
 

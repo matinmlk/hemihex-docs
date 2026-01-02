@@ -44,7 +44,7 @@ Run the circle drawing script:
 python3 13.image_draw_circle.py
 ```
 
-::: note
+:::note
 Select the image window and press **`q`** to exit the program.
 :::
 

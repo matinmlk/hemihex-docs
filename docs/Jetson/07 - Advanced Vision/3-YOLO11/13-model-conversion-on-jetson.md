@@ -102,7 +102,7 @@ yolo predict model=yolo11n.engine source=0 show save=False
 yolo predict model=yolo11n.onnx source=0 show save=False
 ```
 
-::: note
+:::note
 CLI inference supports USB cameras. For CSI cameras, use Python-based
 inference.
 :::

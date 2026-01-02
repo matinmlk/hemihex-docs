@@ -21,7 +21,7 @@ cd ~/opencv
 python3 15.image_draw_polygon.py
 ```
 
-::: note
+:::note
 Select the image and press `q` to exit the program.
 :::
 

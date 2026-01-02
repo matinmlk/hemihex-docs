@@ -33,7 +33,7 @@ cd ~/mediapipe
 python3 01.hand_usb.py
 ```
 
-::: note
+:::note
 Click the preview window and press **q** to exit the program.
 :::
 
@@ -53,7 +53,7 @@ cd ~/mediapipe
 python3 01.hand_csi.py
 ```
 
-::: note
+:::note
 Click the preview window and press **q** to exit the program.
 :::
 

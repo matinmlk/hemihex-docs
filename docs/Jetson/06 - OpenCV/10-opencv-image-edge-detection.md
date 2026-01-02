@@ -46,7 +46,7 @@ Run the edge detection script:
 python3 10.image_edge.py
 ```
 
-::: note
+:::note
 Select the image window and press **`q`** to exit the program.
 :::
 

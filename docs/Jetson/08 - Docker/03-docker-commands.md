@@ -139,7 +139,7 @@ docker images
 
 ## 7. Delete Images
 
-::: warning
+:::warning
 The image must not be used by any running container before deletion.
 :::
 
@@ -174,7 +174,7 @@ Commit the container as a new image:
 docker commit <CONTAINER_ID> <image_name>:<tag>
 ```
 
-::: note
+:::note
 Replace `<CONTAINER_ID>` with the actual container ID from
 `docker ps -a`.
 :::

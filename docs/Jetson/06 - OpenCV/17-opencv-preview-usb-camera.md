@@ -42,7 +42,7 @@ Run the USB camera preview script:
 python3 17.camera_preview_usb.py
 ```
 
-::: note
+:::note
 The program opens **video0** by default.\
 To open other cameras, modify the device index in the code.
 

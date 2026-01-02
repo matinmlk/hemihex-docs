@@ -8,7 +8,7 @@ title: Docker Usage (ROS 1 Environment)
 This tutorial demonstrates how to build a **ROS 1 Melodic** environment
 inside a Docker container based on `ubuntu:18.04`.
 
-::: note
+:::note
 All commands are executed **inside the Docker container**. Administrator
 privileges (`sudo`) are not required inside Docker.
 :::
@@ -133,7 +133,7 @@ rosdep init
 rosdep update
 ```
 
-::: warning
+:::warning
 If `rosdep init` fails due to GitHub access issues, resolve DNS manually
 by mapping `raw.githubusercontent.com` in `/etc/hosts`.
 :::

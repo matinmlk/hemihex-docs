@@ -46,7 +46,7 @@ Run the image modification script:
 python3 03.image_modify.py
 ```
 
-::: note
+:::note
 Select the image display window and press **`q`** to exit the program.
 :::
 

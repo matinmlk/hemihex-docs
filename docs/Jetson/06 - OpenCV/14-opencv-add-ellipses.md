@@ -45,7 +45,7 @@ Run the ellipse drawing script:
 python3 14.image_draw_ellipse.py
 ```
 
-::: note
+:::note
 Select the image window and press **`q`** to exit the program.
 :::
 

@@ -17,7 +17,7 @@ version. The corresponding versions are shown below.
 
 ![ROS 2 Version Compatibility](/img/docs/jetson/10-ROS2/10-1/image-1.png)
 
-::: note
+:::note
 Download the appropriate ROS 2 version for your Linux distribution. This
 course uses the **Humble** version as the reference. The **programs**
 and **examples** provided in this course are applicable across all ROS 2

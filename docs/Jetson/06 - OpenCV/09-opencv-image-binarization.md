@@ -44,7 +44,7 @@ Run the image binarization script:
 python3 09.image_binarize.py
 ```
 
-::: note
+:::note
 Select the image window and press **`q`** to exit the program.
 :::
 

@@ -42,7 +42,7 @@ Run the image scaling script:
 python3 04.image_resize.py
 ```
 
-::: note
+:::note
 Select the image window and press **`q`** to exit the program.
 :::
 

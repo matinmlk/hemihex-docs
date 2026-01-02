@@ -44,7 +44,7 @@ Run the line drawing script:
 python3 11.image_draw_line.py
 ```
 
-::: note
+:::note
 Select the image window and press **`q`** to exit the program.
 :::
 

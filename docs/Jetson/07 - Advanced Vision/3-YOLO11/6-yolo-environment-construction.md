@@ -50,7 +50,7 @@ sudo reboot
 
 ## 4. Configure GPU Acceleration
 
-::: note
+:::note
 Torch and Torchvision were installed in previous sections. The following
 steps install additional GPU-related dependencies.
 :::
@@ -82,7 +82,7 @@ sudo apt-get -y install libcusparselt0 libcusparselt-dev
 sudo pip3 install https://github.com/ultralytics/assets/releases/download/v0.0.0/onnxruntime_gpu-1.20.0-cp310-cp310-linux_aarch64.whl
 ```
 
-::: warning
+:::warning
 `onnxruntime-gpu` requires a specific NumPy version.
 :::
 

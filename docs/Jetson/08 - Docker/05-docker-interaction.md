@@ -17,7 +17,7 @@ networking, and hardware access.
 tasks. It allows multiple Docker commands to be combined and executed
 sequentially, improving readability and reusability.
 
-::: note
+:::note
 Using scripts helps reduce long command lines with many parameters and
 makes container startup easier to understand.
 :::
@@ -122,7 +122,7 @@ xhost +
 docker run -it --net=host -e DISPLAY=$DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/hemihex/share:/share ros_melodic:1.0 /bin/bash
 ```
 
-::: warning
+:::warning
 Using `xhost +` disables access control for X11. Use it only in trusted
 environments.
 :::

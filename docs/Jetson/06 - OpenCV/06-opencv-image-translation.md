@@ -48,7 +48,7 @@ Run the image translation script:
 python3 06.image_translate.py
 ```
 
-::: note
+:::note
 Select the image window and press **`q`** to exit the program.
 :::
 

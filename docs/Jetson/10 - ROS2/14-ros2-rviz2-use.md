@@ -39,7 +39,7 @@ ROS 2 robot development. It supports visualization of:
 -   If you do not have a physical robot, you can use Gazebo to simulate
     a TurtleBot3 robot, including LiDAR, camera, and other sensors.
 
-::: note
+:::note
 The following installation steps are optional. If you already have a
 physical robot configured with multi-machine communication, you can
 directly use the real robot's sensor data. This section is intended for

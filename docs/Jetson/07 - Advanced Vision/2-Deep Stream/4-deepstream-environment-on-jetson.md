@@ -27,7 +27,7 @@ Information](/img/docs/jetson/07-AdvancedVision/7-4/image-20250121150858152.png)
 During Jetson component installation, ensure **DeepStream 7.1** is
 selected.
 
-::: tip
+:::tip
 If you are using an automated installer or SDK Manager, enable the
 **DeepStream** option explicitly.
 :::
@@ -72,12 +72,12 @@ Run the sample pipeline:
 deepstream-app -c source30_1080p_dec_infer-resnet_tiled_display_int8.txt
 ```
 
-::: note
+:::note
 This demo may take a long time to start. If the program does not exit
 immediately, allow it to continue running.
 :::
 
-::: warning
+:::warning
 When running high‑load applications, the system may display:
 
 `System throttled due to Over-current.`
@@ -85,7 +85,7 @@ When running high‑load applications, the system may display:
 This is expected behavior under heavy load.
 :::
 
-::: tip
+:::tip
 Use a **power adapter rated at least 45W** to avoid throttling issues.
 :::
 

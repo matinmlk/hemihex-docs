@@ -39,7 +39,7 @@ Run the CSI camera preview script:
 python3 18.camera_preview_csi.py
 ```
 
-::: note
+:::note
 The program opens **CSI camera 0** by default.\
 If multiple CSI cameras are available, modify the `capture_device` index
 in the code.

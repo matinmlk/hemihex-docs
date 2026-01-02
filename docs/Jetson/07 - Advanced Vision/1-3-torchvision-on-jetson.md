@@ -100,7 +100,7 @@ cd vision-0.20.0
 sudo python3 setup.py install
 ```
 
-::: note
+:::note
 Source compilation is recommended only if prebuilt wheels are
 unavailable or customization is required.
 :::

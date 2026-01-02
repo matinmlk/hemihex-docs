@@ -33,7 +33,7 @@ sudo jetson_clocks
 
 ### 2.1 CLI Usage
 
-::: note
+:::note
 The YOLO CLI currently supports **USB cameras only**. For CSI cameras,
 use Python-based inference.
 :::

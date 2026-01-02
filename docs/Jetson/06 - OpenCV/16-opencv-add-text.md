@@ -45,7 +45,7 @@ Run the text drawing script:
 python3 16.image_draw_text.py
 ```
 
-::: note
+:::note
 Select the image window and press **`q`** to exit the program.
 :::
 

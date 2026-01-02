@@ -37,7 +37,7 @@ cd ~/mediapipe
 python3 02.face_detection_usb.py
 ```
 
-::: note
+:::note
 Click the preview window and press **q** to exit the program.
 :::
 
@@ -57,7 +57,7 @@ cd ~/mediapipe
 python3 02.face_detection_csi.py
 ```
 
-::: note
+:::note
 Click the preview window and press **q** to exit the program.
 :::
 

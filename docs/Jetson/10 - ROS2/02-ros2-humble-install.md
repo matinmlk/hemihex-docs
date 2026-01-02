@@ -26,7 +26,7 @@ export LANG=en_US.UTF-8
 locale  # Verify the configuration
 ```
 
-::: note
+:::note
 The locale can differ, but it **must support UTF-8**.
 :::
 
