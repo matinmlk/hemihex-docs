@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhemihex_docs=globalThis.webpackChunkhemihex_docs||[]).push([[3218],{43610:(h,e,s)=>{s.r(e),s.d(e,{default:()=>r});s(96540);var i=s(56347),o=s(74848);function r(){return(0,o.jsx)(i.rd,{to:"/hh-101/intro"})}}}]);
