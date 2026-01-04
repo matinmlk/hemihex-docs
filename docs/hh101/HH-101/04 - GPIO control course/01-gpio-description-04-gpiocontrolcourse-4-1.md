@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # GPIO Description
 
-GPIO Description 1. GPIO numbering 2. GPIO pins 2.1. GPIO.BOARD mode 2.2. GPIO.BCM mode 3. Other pins
-
 The Jetson.GPIO library of the Jetson series motherboards allows developers to interact with external hardware devices through the 40-pin GPIO pins.
 
 ## 1. GPIO numbering

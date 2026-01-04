@@ -30,7 +30,7 @@ FastSDCPU is an open-source Stable Diffusion image processing project optimized 
 Open a terminal and execute the following code:
 
 ```bash
-xxxxxxxxxx
+
 # If Git is not installed on your system, run:
 ​
 sudo apt update
@@ -70,9 +70,6 @@ chmod +x install.sh start-webui.sh
 ./install.sh --disable-gui
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 # If Git is not installed on your system, run:
@@ -231,13 +228,10 @@ Installation successful. Press any key to exit:
 Before starting, you need to modify a file to support LAN access. Otherwise, the webui can only be accessed locally:
 
 ```bash
-xxxxxxxxxx
+
 vim ~/fastsdcpu/src/frontend/webui/ui.py
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim ~/fastsdcpu/src/frontend/webui/ui.py
@@ -250,13 +244,10 @@ Save the file.
 Start:
 
 ```bash
-xxxxxxxxxx
+
 ./start-webui.sh
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 ./start-webui.sh

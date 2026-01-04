@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # Write SUPER original system
 
-Write SUPER original system 1. File download 2. Flashing mode 2.1. Hardware connection 2.2, Software connection 3. Burning system 3.1. Unzip files 3.2. Run the script 3.3. Burn the system to the solid state drive 4. Start the system 5. Component environment
-
 This tutorial supports upgrading SUPER from Jetson Orin official kit and Jetson Orin SUB kit. After upgrading SUPER, only the pure system will be retained, and the tutorial motherboard case cannot run.
 
 :::note
@@ -63,10 +61,6 @@ sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_R36.4.3_aarch64.tbz2 -C Linux_fo
 cd Linux_for_Tegra/
 ```
 
-```
-xxxxxxxxxx
-```
-
 ```bash
 tar xf Jetson_Linux_R36.4.3_aarch64.tbz2
 ```
@@ -87,39 +81,16 @@ cd Linux_for_Tegra/
 sudo ./tools/l4t_flash_prerequisites.sh
 ```
 
-```
-xxxxxxxxxx
-```
-
-```bash
-sudo ./tools/l4t_flash_prerequisites.sh
-```
-
 ![Screenshot](/img/docs/jetson/02-Basics/2-7/image-20250120151922577.png)
 
 ```bash
 sudo ./apply_binaries.sh
 ```
 
-```
-xxxxxxxxxx
-```
-
-```bash
-sudo ./apply_binaries.sh
-```
 
 ![Screenshot](/img/docs/jetson/02-Basics/2-7/image-20250120152138271.png)
 
 ### 3.3. Burn the system to the solid state drive
-
-```bash
-sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p "-c bootloader/generic/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit-super internal
-```
-
-```
-xxxxxxxxxx
-```
 
 ```bash
 sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p "-c bootloader/generic/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit-super internal

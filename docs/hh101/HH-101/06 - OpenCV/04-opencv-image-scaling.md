@@ -9,9 +9,9 @@ This section explains how to **resize images using OpenCV** in Python.
 
 Image scaling is commonly used for:
 
--   Data preprocessing\
--   Input normalization for models\
--   Display optimization\
+-   Data preprocessing
+-   Input normalization for models
+-   Display optimization
 -   Reducing computational cost
 
 ------------------------------------------------------------------------
@@ -22,8 +22,8 @@ OpenCV provides the `cv2.resize()` function to adjust image dimensions.
 
 Key points:
 
--   Target size can be specified directly\
--   The function returns a resized image\
+-   Target size can be specified directly
+-   The function returns a resized image
 -   Aspect ratio must be handled explicitly if required
 
 ------------------------------------------------------------------------

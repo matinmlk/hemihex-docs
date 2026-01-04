@@ -23,9 +23,9 @@ binarization.
 retval, dst = cv2.threshold(src, thresh, maxval, type)
 ```
 
-Parameters: - `src`: input grayscale image\
-- `thresh`: threshold value\
-- `maxval`: value assigned to pixels above the threshold\
+Parameters: - `src`: input grayscale image
+- `thresh`: threshold value
+- `maxval`: value assigned to pixels above the threshold
 - `type`: thresholding method
 
 ------------------------------------------------------------------------
@@ -93,8 +93,8 @@ binarize_image(
 
 -   `cv2.imread(..., cv2.IMREAD_GRAYSCALE)` loads the image in
     grayscale\
--   `cv2.threshold()` applies binary thresholding\
--   `cv2.imwrite()` saves the output image\
+-   `cv2.threshold()` applies binary thresholding
+-   `cv2.imwrite()` saves the output image
 -   Display functions preview the result
 
 ------------------------------------------------------------------------

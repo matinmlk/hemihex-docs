@@ -5,17 +5,11 @@ sidebar_position: 0
 
 # Installing Jetson environment
 
-Installing Jetson environment 1. Hardware connection 2. Software connection 3. Use of SDK Manager 3.1, Motherboard selection 3.2, STEP1 3.3, STEP2 3.4, STEP3 3.5、STEP4 4、Environment verification
-
 Some users may need to use NVIDIA's own system component environment. After installing the system and successfully entering the system desktop, you can follow the tutorial below to install the component environment!
 
 :::note
 The solid-state drive that comes with the product has a factory image, which includes NVIDIA's official system and motherboard environment; if you do not have a requirement for a pure system, do not operate!
 :::
-
-```
-The entire process requires a network. If the user cannot complete the component installation, use our factory image
-```
 
 ```
 The entire process requires a network. If the user cannot complete the component installation, use our factory image
@@ -91,29 +85,11 @@ The whole installation process takes a long time, please wait patiently. If the 
 Jtop tool
 :::
 
-Jtop tool
-
 Use the following command to install Jtop:
 
 ```bash
 sudo apt update && sudo apt upgrade
 sudo apt install python3-pip -y
-sudo pip3 install -U jetson-stats
-```
-
-```
-xxxxxxxxxx
-```
-
-```bash
-sudo apt update && sudo apt upgrade
-```
-
-```bash
-sudo apt install python3-pip -y
-```
-
-```bash
 sudo pip3 install -U jetson-stats
 ```
 
@@ -125,23 +101,15 @@ After the installation is complete, you need to restart the system!
 Best Performance Mode
 :::
 
-Best Performance Mode
-
 Enable MAX Power Mode
 
 ```bash
 sudo nvpmodel -m 2 # Jetson Orin Nano
 sudo nvpmodel -m 0 # Jetson Orin NX
 ```
-
-```
-xxxxxxxxxx
-```
-
 ```bash
 sudo nvpmodel -m 2 # Jetson Orin Nano
 ```
-
 ```bash
 sudo nvpmodel -m 0 # Jetson Orin NX
 ```
@@ -154,23 +122,7 @@ Enable Jetson clocks: CPU and GPU cores run at maximum frequency
 sudo jetson_clocks
 ```
 
-```
-xxxxxxxxxx
-```
-
-```bash
-sudo jetson_clocks
-```
-
 Use the Jtop tool to view system information:
-
-```bash
-jtop
-```
-
-```
-xxxxxxxxxx
-```
 
 ```bash
 jtop

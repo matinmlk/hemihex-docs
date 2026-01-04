@@ -5,10 +5,6 @@ sidebar_position: 0
 
 # Gemma3
 
-:::note
-Demo Environment
-:::
-
 Demo Environment
 
 Development Board : Jetson Orin series motherboard
@@ -40,13 +36,6 @@ Use the run command to run the model. If the model is not already downloaded, it
 ollama run gemma3:4b
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-ollama run gemma3:4b
-```
 
 ![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-8/1.png)
 
@@ -56,13 +45,6 @@ ollama run gemma3:4b
 How to learn a programming language?
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-How to learn a programming language?
-```
 
 Response time depends on hardware configuration, so please be patient!
 
@@ -74,18 +56,6 @@ Response time depends on hardware configuration, so please be patient!
 
 ```bash
 What do you see in this picture? :./test_pic.png
-#Using ": + the image path" in the conversation allows the model to use its visual function and interpret the information in the image.
-```
-
-```bash
-xxxxxxxxxx
-```
-
-```bash
-What do you see in this picture? :./test_pic.png
-```
-
-```bash
 #Using ": + the image path" in the conversation allows the model to use its visual function and interpret the information in the image.
 ```
 

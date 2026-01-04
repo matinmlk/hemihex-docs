@@ -27,562 +27,13 @@ Simply put, this involves highlighting the corresponding parts of the image with
 
 The seewhat function in this file defines the tool's execution flow.
 
-```bash
-​
-x
-# From largemodel/utils/tools_manager.py
-​
-class
-ToolsManager
-:
-# ...
-​
-def
-seewhat
-(
-self
-):
-"""
-Capture camera frame and analyze environment with AI model.
-捕获摄像头画面并使用AI模型分析环境。
-:return: Dictionary with scene description and image path, or None if failed.
-"""
-self
-.
-node
-.
-get_logger
-().
-info
-(
-"Executing seewhat() tool"
-)
-image_path
-=
-self
-.
-capture_frame
-()
-if
-image_path
-:
-# Use isolated context for image analysis. / 使用隔离的上下文进行图像分析。
-analysis_text
-=
-self
-.
-_get_actual_scene_description
-(
-image_path
-)
-​
-# Return structured data for the tool chain. / 为工具链返回结构化数据。
-return
-{
-"description"
-:
-analysis_text
-,
-"image_path"
-:
-image_path
-}
-else
-:
-# ... (Error handling)
-return
-None
-​
-def
-_get_actual_scene_description
-(
-self
-,
-image_path
-,
-message_context
-=
-None
-):
-"""
-Get AI-generated scene description for captured image.
-获取捕获图像的AI生成场景描述。
-:param image_path: Path to captured image file.
-:return: Plain text description of scene.
-"""
-try
-:
-# ... (构建Prompt)
-result
-=
-self
-.
-node
-.
-model_client
-.
-infer_with_image
-(
-image_path
-,
-scene_prompt
-,
-message
-=
-simple_context
-)
-# ... (处理结果)
-return
-description
-except
-Exception
-as
-e
-:
-# ...
-```
-
-```bash
-# From largemodel/utils/tools_manager.py
-```
-
-```bash
-​
-```
-
-```bash
-class
-ToolsManager
-:
-```
-
-```bash
-# ...
-```
-
-```bash
-​
-```
-
-```bash
-def
-seewhat
-(
-self
-):
-```
-
-```bash
-"""
-```
-
-```bash
-Capture camera frame and analyze environment with AI model.
-```
-
-```bash
-捕获摄像头画面并使用AI模型分析环境。
-```
-
-```bash
-:return: Dictionary with scene description and image path, or None if failed.
-```
-
-```bash
-"""
-```
-
-```bash
-self
-.
-node
-.
-get_logger
-().
-info
-(
-"Executing seewhat() tool"
-)
-```
-
-```bash
-image_path
-=
-self
-.
-capture_frame
-()
-```
-
-```bash
-if
-image_path
-:
-```
-
-```bash
-# Use isolated context for image analysis. / 使用隔离的上下文进行图像分析。
-```
-
-```bash
-analysis_text
-=
-self
-.
-_get_actual_scene_description
-(
-image_path
-)
-```
-
-```bash
-​
-```
-
-```bash
-# Return structured data for the tool chain. / 为工具链返回结构化数据。
-```
-
-```bash
-return
-{
-```
-
-```bash
-"description"
-:
-analysis_text
-,
-```
-
-```bash
-"image_path"
-:
-image_path
-```
-
-```bash
-}
-```
-
-```bash
-else
-:
-```
-
-```bash
-# ... (Error handling)
-```
-
-```bash
-return
-None
-```
-
-```bash
-​
-```
-
-```bash
-def
-_get_actual_scene_description
-(
-self
-,
-image_path
-,
-message_context
-=
-None
-):
-```
-
-```bash
-"""
-```
-
-```bash
-Get AI-generated scene description for captured image.
-```
-
-```bash
-获取捕获图像的AI生成场景描述。
-```
-
-```bash
-:param image_path: Path to captured image file.
-```
-
-```bash
-:return: Plain text description of scene.
-```
-
-```bash
-"""
-```
-
-```bash
-try
-:
-```
-
-```bash
-# ... (构建Prompt)
-```
-
-```bash
-result
-=
-self
-.
-node
-.
-model_client
-.
-infer_with_image
-(
-image_path
-,
-scene_prompt
-,
-message
-=
-simple_context
-)
-```
-
-```bash
-# ... (处理结果)
-```
-
-```bash
-return
-description
-```
-
-```bash
-except
-Exception
-as
-e
-:
-```
-
-```bash
-# ...
-```
+[TODO1]
 
 #### 2. Model Interface Layer ( largemodel/utils/large_model_interface.py )
 
 The infer_with_image function in this file is the unified entry point for all image understanding tasks. It is responsible for calling the specific model implementation based on the configuration.
 
-```bash
-xxxxxxxxxx
-# From largemodel/utils/large_model_interface.py
-​
-class
-model_interface
-:
-# ...
-def
-infer_with_image
-(
-self
-,
-image_path
-,
-text
-=
-None
-,
-message
-=
-None
-):
-"""Unified image inference interface. / 统一的图像推理接口。"""
-# ... (准备消息)
-try
-:
-# 根据 self.llm_platform 的值，决定调用哪个具体实现  Determine which specific implementation to call based on the value of self.llm_platform
-if
-self
-.
-llm_platform
-==
-'ollama'
-:
-response_content
-=
-self
-.
-ollama_infer
-(
-self
-.
-messages
-,
-image_path
-=
-image_path
-)
-elif
-self
-.
-llm_platform
-==
-'tongyi'
-:
-# ... Logic for calling the Tongyi model
-pass
-# ... (其他平台的逻辑)
-# ...
-return
-{
-'response'
-:
-response_content
-,
-'messages'
-:
-self
-.
-messages
-.
-copy
-()}
-​
-```
-
-```bash
-xxxxxxxxxx
-```
-
-```bash
-# From largemodel/utils/large_model_interface.py
-```
-
-```bash
-​
-```
-
-```bash
-class
-model_interface
-:
-```
-
-```bash
-# ...
-```
-
-```bash
-def
-infer_with_image
-(
-self
-,
-image_path
-,
-text
-=
-None
-,
-message
-=
-None
-):
-```
-
-```bash
-"""Unified image inference interface. / 统一的图像推理接口。"""
-```
-
-```bash
-# ... (准备消息)
-```
-
-```bash
-try
-:
-```
-
-```bash
-# 根据 self.llm_platform 的值，决定调用哪个具体实现  Determine which specific implementation to call based on the value of self.llm_platform
-```
-
-```bash
-if
-self
-.
-llm_platform
-==
-'ollama'
-:
-```
-
-```bash
-response_content
-=
-self
-.
-ollama_infer
-(
-self
-.
-messages
-,
-image_path
-=
-image_path
-)
-```
-
-```bash
-elif
-self
-.
-llm_platform
-==
-'tongyi'
-:
-```
-
-```bash
-# ... Logic for calling the Tongyi model
-```
-
-```bash
-pass
-```
-
-```bash
-# ... (其他平台的逻辑)
-```
-
-```bash
-# ...
-```
-
-```bash
-return
-{
-'response'
-:
-response_content
-,
-'messages'
-:
-self
-.
-messages
-.
-copy
-()}
-```
-
-```bash
-​
-```
+[TODO2]
 
 ### Code Analysis
 
@@ -603,14 +54,11 @@ This file determines which large model platform the model_service node loads as 
 Open the file in Terminal :
 
 ```bash
-xxxxxxxxxx
+
 vim
 ~/yahboom_ws/src/largemodel/config/HemiHex.yaml
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim
@@ -620,7 +68,7 @@ vim
 Modify/confirm llm_platform :
 
 ```bash
-xxxxxxxxxx
+
 model_service
 :
 #模型服务器节点参数 Model server node parameters
@@ -645,9 +93,6 @@ regional_setting
 "international"
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 model_service
@@ -702,13 +147,10 @@ This file defines which vision model to use when the ollama platform is selected
 1.Open the file in Terminal
 
 ```bash
-xxxxxxxxxx
+
 vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
@@ -717,7 +159,7 @@ vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
 2.Find the ollama related configuration
 
 ```bash
-xxxxxxxxxx
+
 #.....
 ## 离线大模型 (Offline Large Language Models)
 # Ollama配置 Ollama Configuration
@@ -730,9 +172,6 @@ ollama_model:
 #.....
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 #.....
@@ -773,15 +212,12 @@ Due to performance limitations, the performance of the Jetson Orin Nano 4GB is p
 Start the largemodel main program (text mode) : Open a terminal and run the following command:
 
 ```bash
-xxxxxxxxxx
+
 ros2 launch largemodel largemodel_control.launch.py text_chat_mode:
 =
 true
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 ros2 launch largemodel largemodel_control.launch.py text_chat_mode:
@@ -792,13 +228,10 @@ true
 Send text command : Open another terminal again and run the following command,
 
 ```bash
-xxxxxxxxxx
+
 ros2 run text_chat text_chat
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 ros2 run text_chat text_chat

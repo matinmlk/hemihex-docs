@@ -101,9 +101,9 @@ draw_text(
 
 ## 4. Code Explanation
 
--   `cv2.imread()` loads the source image\
--   `cv2.putText()` draws the text\
--   `cv2.imwrite()` saves the annotated image\
+-   `cv2.imread()` loads the source image
+-   `cv2.putText()` draws the text
+-   `cv2.imwrite()` saves the annotated image
 -   Display functions preview the result
 
 ------------------------------------------------------------------------

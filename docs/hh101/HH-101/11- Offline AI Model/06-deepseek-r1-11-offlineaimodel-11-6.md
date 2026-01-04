@@ -5,10 +5,6 @@ sidebar_position: 0
 
 # DeepSeek-R1
 
-:::note
-Demonstration Environment
-:::
-
 Demonstration Environment
 
 Development Board : Jetson Orin series motherboard
@@ -41,25 +37,9 @@ Use the run command to start running the R model. If the model is not downloaded
 ollama run deepseek-r1
 ```
 
-```text
-xxxxxxxxxx
-```
-
-```bash
-ollama run deepseek-r1
-```
-
 ![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-6/1.png)
 
 ### 3.2 Starting a Conversation
-
-```text
-How many minutes are there in a day?
-```
-
-```text
-xxxxxxxxxx
-```
 
 ```text
 How many minutes are there in a day?

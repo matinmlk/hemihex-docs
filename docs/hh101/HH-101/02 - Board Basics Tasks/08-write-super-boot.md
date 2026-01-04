@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # Write SUPER boot
 
-Write SUPER boot 1. Flashing mode 1.1. Hardware connection 1.2. Software connection 2. Write boot 3. Start the system
-
 The purpose of this tutorial is to burn SUPER boot to the Jetson Orin series motherboard (used with Jetpack 6.2 system). There is no need to install a solid-state drive during the burning process. After the burning is completed, install the solid-state drive to the motherboard and start the system to use the factory system that we have set up in advance.
 
 ## 1. Flashing mode
@@ -30,14 +28,6 @@ Virtual machine username: HemiHex
 Virtual machine password: HemiHex
 ```
 
-```
-Virtual machine username: HemiHex
-```
-
-```
-Virtual machine password: HemiHex
-```
-
 ![Screenshot](/img/docs/jetson/02-Basics/2-8/image-20250123100406992.png)
 
 ![Screenshot](/img/docs/jetson/02-Basics/2-8/image-20250122104757404.png)
@@ -48,10 +38,6 @@ Open the terminal, enter the specified folder and run the script: If the burning
 
 ```bash
 cd ~/jetpack_6.2/Linux_for_Tegra && sudo ./yahboom_flash.sh.x
-```
-
-```
-xxxxxxxxxx
 ```
 
 ```bash

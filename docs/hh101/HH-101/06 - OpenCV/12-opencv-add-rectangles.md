@@ -90,9 +90,9 @@ draw_rectangle(
 
 ## 4. Code Explanation
 
--   `cv2.imread()` loads the source image\
--   `cv2.rectangle()` draws the rectangle\
--   `cv2.imwrite()` saves the annotated image\
+-   `cv2.imread()` loads the source image
+-   `cv2.rectangle()` draws the rectangle
+-   `cv2.imwrite()` saves the annotated image
 -   Display functions preview the result
 
 ------------------------------------------------------------------------

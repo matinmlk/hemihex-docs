@@ -24,10 +24,10 @@ A **Docker container** is a lightweight, independent, executable
 software package that contains everything needed to run an application,
 including:
 
--   Application code\
--   Runtime\
--   System tools\
--   System libraries\
+-   Application code
+-   Runtime
+-   System tools
+-   System libraries
 -   Configuration settings
 
 ### Container Features

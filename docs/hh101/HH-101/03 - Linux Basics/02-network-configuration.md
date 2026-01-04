@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # Network configuration
 
-Network configuration 1. WIFI mode 1.1. Connect to WiFi 1.3. Set static IP 2. Hotspot mode 2.1. Create a hotspot 2.2, Hotspot information
-
 :::note
 WiFi and hotspot modes require the use of a wireless network card. Before making the following settings, check whether the wireless network card and antenna are installed!
 :::
@@ -46,9 +44,6 @@ The terminal can use the following command to view the IP addresses of all netwo
 ifconfig
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 ifconfig
@@ -80,9 +75,6 @@ The wireless network card needs to support hotspot to enable hotspot mode.
 Configure the hotspot mode on the desktop system. The hotspot will be automatically turned off after the system restarts. Users who need it can find the tutorial on how to start the hotspot on Ubuntu 22.04
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 Configure the hotspot mode on the desktop system. The hotspot will be automatically turned off after the system restarts. Users who need it can find the tutorial on how to start the hotspot on Ubuntu 22.04

@@ -24,8 +24,8 @@ Where:
 
 -   `src` is the input image
 -   `flipCode` determines the flip direction:
-    -   `0` → vertical flip\
-    -   `1` → horizontal flip\
+    -   `0` → vertical flip
+    -   `1` → horizontal flip
     -   `-1` → both vertical and horizontal
 
 ------------------------------------------------------------------------
@@ -86,9 +86,9 @@ flip_image(
 
 ## 4. Code Explanation
 
--   `cv2.imread()` loads the source image\
+-   `cv2.imread()` loads the source image
 -   `cv2.flip()` mirrors the image based on the flip code\
--   `cv2.imwrite()` saves the flipped image\
+-   `cv2.imwrite()` saves the flipped image
 -   Display functions preview the result
 
 ------------------------------------------------------------------------

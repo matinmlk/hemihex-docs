@@ -11,9 +11,9 @@ and NumPy slicing in Python.
 Image modification is a fundamental operation in computer vision and is
 commonly used for:
 
--   Region masking\
--   Drawing overlays\
--   Data preprocessing\
+-   Region masking
+-   Drawing overlays
+-   Data preprocessing
 -   Debug visualization
 
 ------------------------------------------------------------------------

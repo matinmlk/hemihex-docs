@@ -5,13 +5,7 @@ sidebar_position: 0
 
 # VSCode Usage
 
-VSCode Usage 1. Download VSCode 2. Install VSCode 2.1. Open the installation package 2.2. Agree to the agreement 2.3. Installation location 2.4. Installation options 2.5. Complete the installation 3. Use VSCode 3.1. Basic use 3.2, Extended use 3.2.1, Basic extension Python C/C++ Material Icon Theme 3.2.2, Remote-SSH ssh installation ssh usage
-
 The tutorial demonstrates the steps to install VSCode and SSH remote on Windows platform.
-
-```text
-Users can use this method to remotely control motherboards such as Raspberry Pi and Jetson
-```
 
 ```text
 Users can use this method to remotely control motherboards such as Raspberry Pi and Jetson
@@ -105,13 +99,6 @@ After Remote-SSH is installed, you can use it directly through the status bar on
 Different users may have inconsistent path usernames in the configuration file, and there is no impression
 ```
 
-```text
-xxxxxxxxxx
-```
-
-```text
-Different users may have inconsistent path usernames in the configuration file, and there is no impression
-```
 
 Configure remote: modify the configuration file
 
@@ -125,26 +112,6 @@ Fill in the device information that needs to be remote, the remote device needs 
 # Read more about SSH config files: https://linux.die.net/man/5/ssh_config
 Host MyComputer # Remote device alias
 HostName 192.168.66.152 # Remote device IP
-User GO # Remote device user name
-```
-
-```text
-xxxxxxxxxx
-```
-
-```text
-# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
-```
-
-```text
-Host MyComputer # Remote device alias
-```
-
-```text
-HostName 192.168.66.152 # Remote device IP
-```
-
-```text
 User GO # Remote device user name
 ```
 

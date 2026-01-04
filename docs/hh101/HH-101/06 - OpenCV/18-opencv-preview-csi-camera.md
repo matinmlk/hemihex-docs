@@ -40,7 +40,7 @@ python3 18.camera_preview_csi.py
 ```
 
 :::note
-The program opens **CSI camera 0** by default.\
+The program opens **CSI camera 0** by default.
 If multiple CSI cameras are available, modify the `capture_device` index
 in the code.
 
