@@ -89,16 +89,16 @@ edge_detection(
 
 ## 4. Code Explanation
 
--   `cv2.imread(..., cv2.IMREAD_GRAYSCALE)`\
+-   `cv2.imread(..., cv2.IMREAD_GRAYSCALE)`
     Loads the image in grayscale mode (required for Canny).
 
--   `cv2.Canny()`\
+-   `cv2.Canny()`
     Detects edges based on gradient intensity.
 
--   `cv2.imwrite()`\
+-   `cv2.imwrite()`
     Saves the edge-detected image to disk.
 
--   `cv2.imshow()` / `cv2.waitKey()` / `cv2.destroyAllWindows()`\
+-   `cv2.imshow()` / `cv2.waitKey()` / `cv2.destroyAllWindows()`
     Displays the result and closes the window.
 
 ------------------------------------------------------------------------

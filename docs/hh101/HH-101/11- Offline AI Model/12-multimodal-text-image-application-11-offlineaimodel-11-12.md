@@ -34,7 +34,6 @@ If using our pre-installed image, there is no need to deploy an environment and 
 Open a terminal and execute the following code:
 
 ```bash
-xxxxxxxxxx
 # If Git is not installed on your motherboard, run it first.
 ​
 sudo apt update
@@ -65,121 +64,6 @@ chmod +x install.sh start-webui.sh
 ./install.sh --disable-gui
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-# If Git is not installed on your motherboard, run it first.
-```
-
-```bash
-​
-```
-
-```bash
-sudo apt update
-```
-
-```bash
-sudo apt install git -y
-```
-
-```bash
-sudo apt install python3.10-venv -y
-```
-
-```bash
-​
-```
-
-```bash
-# Add environment variables
-```
-
-```bash
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-```
-
-```bash
-source ~/.bashrc
-```
-
-```bash
-​
-```
-
-```bash
-# Clone the project code
-```
-
-```bash
-git clone https://github.com/rupeshs/fastsdcpu.git
-```
-
-```bash
-cd fastsdcpu
-```
-
-```bash
-​
-```
-
-```bash
-# Create a virtual environment and install dependencies
-```
-
-```bash
-python -m venv venv
-```
-
-```bash
-source venv/bin/activate
-```
-
-```bash
-​
-```
-
-```bash
-# Install uv
-```
-
-```bash
-curl -Ls https://astral.sh/uv/install.sh | sh (This step may not work if you don't have a proxy in China. If not, skip this step and proceed to the next command.)
-```
-
-```bash
-​
-```
-
-```bash
-# If installing uv using curl in the previous step fails, run these three commands.
-```
-
-```bash
-wget https://mirrors.huaweicloud.com/astral/uv/0.8.4/uv-aarch64-unknown-linux-gnu -O ~/.local/bin/uv
-```
-
-```bash
-chmod +x ~/.local/bin/uv
-```
-
-```bash
-~/.local/bin/uv --version
-```
-
-```bash
-​
-```
-
-```bash
-chmod +x install.sh start-webui.sh
-```
-
-```bash
-./install.sh --disable-gui
-```
 
 Installation successful, press any key to exit:
 
@@ -190,13 +74,10 @@ Installation successful, press any key to exit:
 Before starting, you need to modify a file to support LAN access. Otherwise, the webui can only be accessed locally:
 
 ```bash
-xxxxxxxxxx
+
 vim ~/fastsdcpu/src/frontend/webui/ui.py
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim ~/fastsdcpu/src/frontend/webui/ui.py
@@ -209,13 +90,10 @@ Save the code.
 Start:
 
 ```bash
-xxxxxxxxxx
+
 ./start-webui.sh
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 ./start-webui.sh
@@ -260,26 +138,10 @@ This project has better support for English, and the generated images are more c
 ### 2.4 How to start after successful deployment
 
 ```bash
-xxxxxxxxxx
 cd fastsdcpu #Enter the fastsdcpu directory
 source venv/bin/activate #Enter the virtual environment
 ./start-webui.sh #Start the webui
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-cd fastsdcpu #Enter the fastsdcpu directory
-```
-
-```bash
-source venv/bin/activate #Enter the virtual environment
-```
-
-```bash
-./start-webui.sh #Start the webui
-```
 
 After the webui is successfully started, enter your motherboard's IP address: 7860 in your browser to start the image generation function.

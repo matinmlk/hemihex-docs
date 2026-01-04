@@ -18,9 +18,9 @@ correction - Preprocessing for vision algorithms
 OpenCV uses the `cv2.warpAffine()` function to perform **affine
 transformations**, including:
 
--   Translation\
--   Rotation\
--   Scaling\
+-   Translation
+-   Rotation
+-   Scaling
 -   Shearing
 
 For translation, a **2×3 transformation matrix** is defined as:

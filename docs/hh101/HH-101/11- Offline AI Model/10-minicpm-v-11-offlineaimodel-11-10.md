@@ -30,28 +30,10 @@ Due to performance limitations, this model cannot be run on the Jetson Orin Nano
 If the system does not have a running model, the system will automatically pull the TinyLlama 1.1B model and run it:
 
 ```bash
-xxxxxxxxxx
-ollama run minicpm-v:8b
-```
-
-```bash
-xxxxxxxxxx
-```
-
-```bash
 ollama run minicpm-v:8b
 ```
 
 ### 3.2 Starting a Conversation
-
-```bash
-xxxxxxxxxx
-Tell me a mathematician story
-```
-
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 Tell me a mathematician story
@@ -66,20 +48,7 @@ Response time depends on hardware configuration, so please be patient!
 ![test_pic](/img/docs/jetson/11-OfflineAIModel/11-10/test_pic.png)
 
 ```bash
-xxxxxxxxxx
 What do you see in this picture? :./test_pic.png
-#Use ": + image path" in the conversation to enable the model to use its visual function and interpret the information in the image.
-```
-
-```bash
-xxxxxxxxxx
-```
-
-```bash
-What do you see in this picture? :./test_pic.png
-```
-
-```bash
 #Use ": + image path" in the conversation to enable the model to use its visual function and interpret the information in the image.
 ```
 

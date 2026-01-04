@@ -5,10 +5,6 @@ sidebar_position: 0
 
 # Qwen2.5VL
 
-:::note
-Demo Environment
-:::
-
 Demo Environment
 
 Development Board : Jetson Orin Series Motherboard
@@ -42,25 +38,9 @@ Use the run command to start running the model. If the model is not already down
 ollama run qwen2.5vl:3b
 ```
 
-```text
-xxxxxxxxxx
-```
-
-```bash
-ollama run qwen2.5vl:3b
-```
-
 ![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-7/1.png)
 
 ### 3.2 Start a conversation
-
-```text
-Please tell me how many hours there are in a day.
-```
-
-```text
-xxxxxxxxxx
-```
 
 ```text
 Please tell me how many hours there are in a day.
@@ -76,18 +56,6 @@ Response time depends on your hardware configuration. Please be patient!
 
 ```text
 What do you see in this picture? :./test_pic.png
-#Use ": + image path" in the conversation to enable the model to use its visual function and interpret the information in the image.
-```
-
-```text
-xxxxxxxxxx
-```
-
-```text
-What do you see in this picture? :./test_pic.png
-```
-
-```text
 #Use ": + image path" in the conversation to enable the model to use its visual function and interpret the information in the image.
 ```
 

@@ -5,10 +5,6 @@ sidebar_position: 0
 
 # Phi4-mini
 
-:::note
-Demonstration Environment
-:::
-
 Demonstration Environment
 
 Development Board : Jetson Orin Series Board
@@ -39,14 +35,6 @@ Use the run command to start running the model. If the model has not been downlo
 ollama run phi4-mini:3.8b
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-ollama run phi4-mini:3.8b
-```
-
 ![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-5/1.png)
 
 ### 3.2 Starting a Conversation
@@ -55,13 +43,6 @@ ollama run phi4-mini:3.8b
 How many minutes is a quarter of an hour?
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-How many minutes is a quarter of an hour?
-```
 
 Response time depends on your hardware configuration. Please be patient!
 
@@ -73,19 +54,11 @@ Use the Ctrl+D shortcut or /bye to end a conversation!
 
 ## References
 
-:::note
-Ollama
-:::
-
 Ollama
 
 Official Website: https://ollama.com/
 
 GitHub: https://github.com/ollama/ollama
-
-:::note
-Phi4-mini
-:::
 
 Phi4-mini
 

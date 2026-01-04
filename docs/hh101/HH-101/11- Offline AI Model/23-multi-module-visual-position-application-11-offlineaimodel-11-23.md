@@ -22,7 +22,6 @@ Multimodal visual localization is a technology that combines multiple sensor inp
 The visual_positioning function in this file defines the execution flow of the tool, specifically how it constructs a prompt containing the target object name and formatting requirements.
 
 ```bash
-xxxxxxxxxx
 # From largemodel/utils/tools_manager.py
 class
 ToolsManager
@@ -125,9 +124,6 @@ explanation_content
 # ... (Error Handling)
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 # From largemodel/utils/tools_manager.py
@@ -321,7 +317,6 @@ explanation_content
 The infer_with_image function in this file is the unified entry point for all image-related tasks.
 
 ```bash
-xxxxxxxxxx
 # From largemodel/utils/large_model_interface.py
 ​
 class
@@ -396,9 +391,6 @@ copy
 ()}
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 # From largemodel/utils/large_model_interface.py
@@ -540,14 +532,10 @@ This file determines which large-scale model platform the model_service node loa
 Open the file in the terminal :
 
 ```bash
-xxxxxxxxxx
 vim
 ~/yahboom_ws/src/largemodel/config/HemiHex.yaml
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim
@@ -557,7 +545,6 @@ vim
 Modify/Confirm llm_platform :
 
 ```bash
-xxxxxxxxxx
 model_service
 :
 #Model server node parameters
@@ -582,9 +569,6 @@ regional_setting
 "international"
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 model_service
@@ -637,13 +621,10 @@ regional_setting
 This file defines which visual model to use when the platform is selected as ollama .
 
 ```bash
-xxxxxxxxxx
+
 vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
@@ -652,7 +633,6 @@ vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
 2.Find the ollama related configuration
 
 ```bash
-xxxxxxxxxx
 #.....
 ## 离线大模型 (Offline Large Language Models)
 # Ollama Configuration
@@ -665,9 +645,6 @@ ollama_model:
 #.....
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 #.....
@@ -714,13 +691,10 @@ Start largemodel main program :
 Open a terminal and run the following command:
 
 ```bash
-xxxxxxxxxx
+
 ros2 launch largemodel largemodel_control.launch.py
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 ros2 launch largemodel largemodel_control.launch.py

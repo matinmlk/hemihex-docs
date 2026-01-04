@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # VNC remote control
 
-VNC remote control 1. VNC Viewer 1.1. VNC download 1.2. VNC Installation 2. System Settings (Jetson) 2.1. Enable desktop remote 2.1.1. Sharing 2.1.2. Remote Desktop 2.1.3, Media Sharing 2.1.4 Remote Login 2.2, Fixed remote password Passwords and Keys 2.3, Start VNC automatically after booting Desktop extension manager 3. VNC remote control Frequently Asked Questions VNC Remote Display Reconnection Reconnection Phenomenon Solution VNC remote switch uppercase and lowercase
-
 Tutorial to configure the built-in screen sharing of Ubuntu22.04 system for VNC remote control.
 
 :::note
@@ -111,27 +109,12 @@ Install desktop extension manager:
 sudo apt install gnome-shell-extension-manager -y
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-sudo apt install gnome-shell-extension-manager -y
-```
-
 Get the gnome-shell version number:
 
 ```bash
 gnome-shell --version
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-gnome-shell --version
-```
 
 ![Screenshot](/img/docs/jetson/03-LinuxBasics/3-4/image-20241226152159374.png)
 
@@ -141,9 +124,6 @@ Download the plug-in that allows remote access under lock screen according to th
 Official website: https://extensions.gnome.org/extension/4338/allow-locked-remote-desktop/
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 Official website: https://extensions.gnome.org/extension/4338/allow-locked-remote-desktop/
@@ -157,21 +137,6 @@ Install/enable plug-in: Users need to enter the file location to install
 gnome-extensions install allowlockedremotedesktopkamens.us.v9.shell-extension.zip
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-gnome-extensions install allowlockedremotedesktopkamens.us.v9.shell-extension.zip
-```
-
-```bash
-sudo gnome-extensions enable allowlockedremotedesktop@kamens.us
-```
-
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 sudo gnome-extensions enable allowlockedremotedesktop@kamens.us

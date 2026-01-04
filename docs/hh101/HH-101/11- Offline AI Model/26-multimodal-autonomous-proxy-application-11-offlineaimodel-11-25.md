@@ -28,7 +28,6 @@ This think -> act -> observe cycle continues until the initial goal is achieved,
 The _execute_agent_workflow function is the agent's main execution loop, defining the core "plan -> execute" process.
 
 ```bash
-xxxxxxxxxx
 # From largemodel/utils/ai_agent.py
 ​
 class
@@ -208,9 +207,6 @@ execution_results
 # ... (Exception handling)
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 # From largemodel/utils/ai_agent.py
@@ -517,7 +513,6 @@ execution_results
 The core of the _plan_task function is to build a sophisticated prompt, leveraging the large model's inherent reasoning capabilities to generate a structured execution plan.
 
 ```bash
-xxxxxxxxxx
 # From largemodel/utils/ai_agent.py
 ​
 class
@@ -628,9 +623,6 @@ messages_to_use
 # ... (Parse the JSON response and return a list of steps)
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 # From largemodel/utils/ai_agent.py
@@ -859,7 +851,6 @@ messages_to_use
 The _process_step_parameters function is responsible for parsing placeholders and implementing data flow between steps.
 
 ```bash
-xxxxxxxxxx
 # From largemodel/utils/ai_agent.py
 ​
 class
@@ -952,9 +943,6 @@ return
 processed_params
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 # From largemodel/utils/ai_agent.py
@@ -1123,14 +1111,10 @@ This file determines which large model platform the model_service node loads as 
 Open the file in the terminal :
 
 ```bash
-xxxxxxxxxx
 vim
 ~/yahboom_ws/src/largemodel/config/HemiHex.yaml
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim
@@ -1140,7 +1124,6 @@ vim
 Modify/Confirm llm_platform :
 
 ```bash
-xxxxxxxxxx
 model_service
 :
 #Model server node parameters
@@ -1165,9 +1148,6 @@ regional_setting
 "China"
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 model_service
@@ -1220,20 +1200,16 @@ regional_setting
 This file defines which visual model to use when the platform is selected as ollama .
 
 ```bash
-xxxxxxxxxx
+
+vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
+```
+
+
+```bash
 vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
 ```
 
 ```bash
-xxxxxxxxxx
-```
-
-```bash
-vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
-```
-
-```bash
-xxxxxxxxxx
 #.....
 ## 离线大模型 (Offline Large Language Models)
 # Ollama Configuration
@@ -1246,9 +1222,6 @@ ollama_model:
 #.....
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 #.....
@@ -1287,13 +1260,10 @@ Note: Due to performance limitations, this example cannot be run on the Jetson O
 Start the largemodel main program : Open a terminal and run the following command:
 
 ```bash
-xxxxxxxxxx
+
 ros2 launch largemodel largemodel_control.launch.py
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 ros2 launch largemodel largemodel_control.launch.py

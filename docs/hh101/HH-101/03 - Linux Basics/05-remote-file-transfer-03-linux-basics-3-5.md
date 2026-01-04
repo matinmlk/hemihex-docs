@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # Remote file transfer
 
-Remote file transfer 1. MobaXterm 2. MobaXterm installation 2.1. Download MobaXterm 2.2. Install MobaXterm 3. Use MobaXterm 4. MobaXterm: SFTP remote
-
 ## 1. MobaXterm
 
 MobaXterm is a powerful remote tool that integrates SHH, VNC, FTP and other remote tools.
@@ -66,18 +64,6 @@ Select Session → FTP : Fill in the remote device IP and username
 ```text
 Default information of Jetson motherboard:
 Username: jetson
-Password: HemiHex
-```
-
-```text
-Default information of Jetson motherboard:
-```
-
-```text
-Username: jetson
-```
-
-```text
 Password: HemiHex
 ```
 

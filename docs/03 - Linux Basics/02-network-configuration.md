@@ -49,9 +49,6 @@ The terminal can use the following command to view the IP addresses of all netwo
 ifconfig
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 ifconfig
@@ -83,9 +80,6 @@ The wireless network card needs to support hotspot to enable hotspot mode.
 Configure the hotspot mode on the desktop system. The hotspot will be automatically turned off after the system restarts. Users who need it can find the tutorial on how to start the hotspot on Ubuntu 22.04
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 Configure the hotspot mode on the desktop system. The hotspot will be automatically turned off after the system restarts. Users who need it can find the tutorial on how to start the hotspot on Ubuntu 22.04

@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # Linux Basics
 
-Linux Basics 1. Terminal 1.1. Open the terminal 1.2. Basic commands 1.3. Shortcut keys 2. Text editor 2.1. Gedit (Easy) 2.2, Nano (Medium) 2.3, Vi/Vim (difficult)
-
 ## 1. Terminal
 
 Terminal is a command line interface used to interact with the operating system.
@@ -41,9 +39,6 @@ List files and subdirectories in the current directory:
 ls
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 ls
@@ -57,9 +52,6 @@ Create the File_demo directory:
 mkdir File_demo
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 mkdir File_demo
@@ -73,9 +65,6 @@ Enter File_demo directory:
 cd File_demo
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 cd File_demo
@@ -87,9 +76,6 @@ Return to parent directory
 cd ..
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 cd ..
@@ -103,9 +89,6 @@ Create Version.txt file:
 touch Version.txt
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 touch Version.txt
@@ -119,9 +102,6 @@ Add System Information to Version.txt file:
 echo "System Information" >> Version.txt
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 echo "System Information" >> Version.txt
@@ -135,9 +115,6 @@ View Version.txt file content:
 cat Version.txt
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 cat Version.txt
@@ -151,9 +128,6 @@ Delete File_demo directory:
 rm -rf File_demo
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 rm -rf File_demo
@@ -187,9 +161,6 @@ Open file
 gedit Version.txt
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 gedit Version.txt
@@ -208,9 +179,6 @@ sudo apt update
 sudo apt install nano -y
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 sudo apt update
@@ -226,9 +194,6 @@ Open file
 nano Version.txt
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 nano Version.txt
@@ -252,9 +217,6 @@ Open file
 vi Version.txt
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vi Version.txt

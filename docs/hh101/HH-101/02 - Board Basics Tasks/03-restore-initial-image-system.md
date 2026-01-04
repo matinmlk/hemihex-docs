@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # Restore initial image system
 
-Restore initial image system1. Format the SSD1.1. Download DiskGenius1.1. Use DiskGenius1.1.1, Delete partition1.1.2. Create a new partition2. Restore the factory image2.1. Install Win32DiskImager2.2. Use Win32DiskImager3. Description
-
 ## 1. Format the SSD
 
 Before restoring the factory image, you need to format the SSD into exFAT format.

@@ -43,7 +43,7 @@ python3 17.camera_preview_usb.py
 ```
 
 :::note
-The program opens **video0** by default.\
+The program opens **video0** by default.
 To open other cameras, modify the device index in the code.
 
 Select the camera preview window and press **`q`** to exit the program.
@@ -89,10 +89,10 @@ preview_usb_camera()
 
 ## 4. Code Explanation
 
--   `cv2.VideoCapture(0)` opens `/dev/video0`\
--   `cap.read()` captures a frame\
--   `cv2.imshow()` displays the live stream\
--   `cv2.waitKey(1)` listens for keyboard input\
+-   `cv2.VideoCapture(0)` opens `/dev/video0`
+-   `cap.read()` captures a frame
+-   `cv2.imshow()` displays the live stream
+-   `cv2.waitKey(1)` listens for keyboard input
 -   `cap.release()` releases the camera
 
 ------------------------------------------------------------------------

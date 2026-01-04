@@ -84,9 +84,9 @@ grayscale_image(
 
 ## 4. Code Explanation
 
--   `cv2.imread()` loads the source image\
--   `cv2.cvtColor()` converts the image to grayscale\
--   `cv2.imwrite()` saves the grayscale image\
+-   `cv2.imread()` loads the source image
+-   `cv2.cvtColor()` converts the image to grayscale
+-   `cv2.imwrite()` saves the grayscale image
 -   Display functions preview the result
 
 ------------------------------------------------------------------------

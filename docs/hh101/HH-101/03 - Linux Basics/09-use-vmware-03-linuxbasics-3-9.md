@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # Use VMware
 
-Use VMware 1. VMware download 2. VMware installation 2.1. Open the installation package 2.2. Agree to the agreement 2.3. Installation location 2.4. Installation options 2.5. Complete the installation 3. VMware use
-
 ## 1. VMware download
 
 Official website: https://www.broadcom.com/
@@ -14,10 +12,6 @@ Official website: https://www.broadcom.com/
 :::note
 : You need to register an account to download the software. Currently, VMware Workstation Pro is free for personal use!
 :::
-
-```text
-The VMware Workstation Pro software package will be provided in the software data folder
-```
 
 ```text
 The VMware Workstation Pro software package will be provided in the software data folder

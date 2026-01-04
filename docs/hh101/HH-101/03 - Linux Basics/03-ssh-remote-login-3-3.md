@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # SSH remote login
 
-SSH remote login 1. MobaXterm 2. MobaXterm installation 2.1. Download MobaXterm 2.2. Install MobaXterm 3. Use MobaXterm 4. MobaXterm: SSH remote
-
 ## 1. MobaXterm
 
 MobaXterm is a powerful remote tool that integrates SHH, VNC, FTP and other remote tools.

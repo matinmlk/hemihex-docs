@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # Backup SSD system
 
-Backup SSD system1. Hardware connection2. Compress the SSD2.1. Install Gparted2.2. Use GParted2.2.1. Select the SSD2.2.2. Unmount the partition2.2.3. Perform disk compression3. Back up the SSD3.1. Check disk information3.2. Start disk backup
-
 During the development process, users may need to back up the system to prevent subsequent development from affecting the current system environment.
 
 ## 1. Hardware connection

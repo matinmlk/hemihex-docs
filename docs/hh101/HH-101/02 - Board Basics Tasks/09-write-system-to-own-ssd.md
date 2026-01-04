@@ -5,7 +5,6 @@ sidebar_position: 0
 
 # Write the system onto your own solid-state drive
 
-Write the system onto your own solid-state drive 1. Preparations before writing 2. writing the HemiHex Factory System 1.Write SUPER boot 2. Burning the HemiHex factory image to the solid-state drive 2.1. Format the SSD 2.1.1. Download DiskGenius 2.1.2. Use DiskGenius 1, Delete partition 2. Create a new partition 2. Restore the factory image 2.1. Install Win32DiskImager 2.2. Use Win32DiskImager 3. Description
 
 ## 1. Preparations before writing
 

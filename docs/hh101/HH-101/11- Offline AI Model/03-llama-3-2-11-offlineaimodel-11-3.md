@@ -5,12 +5,6 @@ sidebar_position: 0
 
 # Llama 3.2
 
-Llama 3.2 1. Model Size 2. Performance 3. Using Llama 3.2 3.1 Running Llama 3.2 3.2 Starting a Conversation 3.3 Ending a Conversation References
-
-:::note
-Demo Environment
-:::
-
 Demo Environment
 
 Development Board : Jetson Orin series motherboard
@@ -42,25 +36,9 @@ Use the run command to run the model. If the model is not already downloaded, it
 ollama run llama3.2:3b
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-ollama run llama3.2:3b
-```
-
 ![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-3/1.png)
 
 ### 3.2 Starting a Conversation
-
-```bash
-How many minutes are there in a day?
-```
-
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 How many minutes are there in a day?

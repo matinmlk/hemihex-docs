@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # GPIO reading
 
-GPIO reading 1. GPIO pin diagram 2. Run the program 3. Program effect
-
 ## 1. GPIO pin diagram
 
 GPIO.BOARD 12 pin corresponds to GPIO.BCM 18 pin:
@@ -20,27 +18,7 @@ cd ~/jetson-gpio/samples
 ```
 
 ```bash
-cd ~/jetson-gpio/samples
-```
-
-```bash
 export JETSON_MODEL_NAME=JETSON_ORIN_NANO
-```
-
-```bash
-xxxxxxxxxx
-```
-
-```bash
-export JETSON_MODEL_NAME=JETSON_ORIN_NANO
-```
-
-```bash
-python3 simple_input.py
-```
-
-```bash
-xxxxxxxxxx
 ```
 
 ```bash

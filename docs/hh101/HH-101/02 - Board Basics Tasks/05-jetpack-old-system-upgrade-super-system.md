@@ -5,8 +5,6 @@ sidebar_position: 0
 
 ## Jetpack old system upgraded to HemiHex SUPER system
 
-Jetpack old system upgraded to HemiHex SUPER system 1. Description 2. Upgrade method 2.1. Burn SUPER boot 2.2. Restore the factory image system 2.3. SSD expansion
-
 ## 1. Description
 
 This tutorial is mainly provided to the following customers

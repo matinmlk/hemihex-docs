@@ -5,13 +5,7 @@ sidebar_position: 0
 
 # USB camera preview
 
-USB camera preview 1. View video device 2. GUVCView 2.1, GUVCView installation 2.2, GUVCView use 3. VLC 3.1. VLC installation 3.2. VLC usage
-
 ## 1. View video device
-
-```bash
-ls /dev/video*
-```
 
 ```bash
 ls /dev/video*
@@ -32,31 +26,11 @@ sudo apt update
 sudo apt install guvcview -y
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-sudo apt update
-```
-
-```bash
-sudo apt install guvcview -y
-```
-
 ![image-20250110121636596](/img/docs/jetson/05-VisionBasicCourse/5-2/image-20250110121636596.png)
 
 ### 2.2, GUVCView use
 
 Enter the application menu bar and click the guvcview icon or enter the startup command in the terminal: Select USB camera, CSI camera has no preview screen
-
-```bash
-guvcview
-```
-
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 guvcview
@@ -77,31 +51,11 @@ sudo apt update
 sudo apt install vlc -y
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-sudo apt update
-```
-
-```bash
-sudo apt install vlc -y
-```
-
 ![image-20250110122158140](/img/docs/jetson/05-VisionBasicCourse/5-2/image-20250110122158140.png)
 
 ### 3.2. VLC usage
 
 Enter the application menu bar and click VLC media player icon or enter the start command in the terminal: Select USB camera, CSI camera has no preview screen
-
-```bash
-vlc
-```
-
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vlc

@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # Jtop tool
 
-Jtop tool 1. Install Jtop 2. Best performance mode 2.2. Enable MAXN mode 2.2. Enable Jetson Clocks 3. Use Jtop
-
 Jtop is a system monitoring tool developed for NVIDIA Jetson series devices. It can display the resource usage of various aspects of Jetson devices, such as CPU, GPU, memory, disk, network, etc., and can display different hardware temperatures, power consumption, frequency, etc. in real time.
 
 ## 1. Install Jtop
@@ -14,18 +12,6 @@ Jtop is a system monitoring tool developed for NVIDIA Jetson series devices. It 
 ```bash
 sudo apt update
 sudo apt install python3-pip -y
-sudo pip3 install -U jetson-stats
-```
-
-```bash
-sudo apt update
-```
-
-```bash
-sudo apt install python3-pip -y
-```
-
-```bash
 sudo pip3 install -U jetson-stats
 ```
 
@@ -41,14 +27,6 @@ Enabling MAXN Power Mode on Jetson will ensure that all CPU and GPU cores are tu
 sudo nvpmodel -m 2
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-sudo nvpmodel -m 2
-```
-
 ### 2.2. Enable Jetson Clocks
 
 Enabling Jetson Clocks will ensure that all CPU and GPU cores run at maximum frequency:
@@ -57,13 +35,6 @@ Enabling Jetson Clocks will ensure that all CPU and GPU cores run at maximum fre
 sudo jetson_clocks
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-sudo jetson_clocks
-```
 
 ## 3. Use Jtop
 
@@ -73,13 +44,6 @@ Only after restarting the system can you enter the jtop command in the terminal 
 jtop
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-jtop
-```
 
 :::note
 : The motherboard power mode must be set to MAXN to display the strongest performance parameters!

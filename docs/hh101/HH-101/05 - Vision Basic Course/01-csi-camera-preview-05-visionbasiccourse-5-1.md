@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # CSI camera preview
 
-CSI camera preview 1. Enable CSI camera 1.1. Configure pins 2. Check the video device 3. Preview the camera screen 3.1. Specify the camera 3.2. Specify preview resolution
-
 ## 1. Enable CSI camera
 
 If the user has installed the CSI camera but does not have the /dev/video* device, you can enable the CSI camera pins as follows.
@@ -51,14 +49,6 @@ Select Save and reboot to reconfigure pins , and then wait for the system to res
 ls /dev/video*
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-ls /dev/video*
-```
-
 The result of the picture is the result of connecting two CSI cameras: generally one CSI camera displays one video device
 
 ![image-20250110120003496](/img/docs/jetson/05-VisionBasicCourse/5-1/image-20250110120003496.png)
@@ -71,13 +61,6 @@ Enter the following command in the terminal, and the system will automatically p
 nvgstcapture-1.0
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-nvgstcapture-1.0
-```
 
 ![image-20250110120335665](/img/docs/jetson/05-VisionBasicCourse/5-1/image-20250110120335665.png)
 
@@ -89,27 +72,11 @@ If there are multiple cameras, you can specify the camera ID:
 nvgstcapture-1.0 --sensor-id=1
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-nvgstcapture-1.0 --sensor-id=1
-```
-
 ![image-20250110120513459](/img/docs/jetson/05-VisionBasicCourse/5-1/image-20250110120513459.png)
 
 ### 3.2. Specify preview resolution
 
 If there is only one CSI camera, change --sensor-id=1 to --sensor-id=0 :
-
-```bash
-nvgstcapture-1.0 --sensor-id=1 --cus-prev-res=1280x720
-```
-
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 nvgstcapture-1.0 --sensor-id=1 --cus-prev-res=1280x720
