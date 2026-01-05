@@ -5,8 +5,6 @@ sidebar_position: 0
 
 # Ollama
 
-Ollama 1. Large Language Model (LLM) 2. Ollama Installation Script Installation 3. Use Ollama 4. Ollama Uninstall References
-
 > Demo Environment
 
 Demo Environment
@@ -26,20 +24,8 @@ The tutorial demonstrates the use of scripts to install Ollama on the Jetson Ori
 ### Script Installation
 
 ```bash
-xxxxxxxxxx
+
 sudo apt install curl -y
-sudo curl -fsSL https://ollama.com/install.sh | sh
-```
-
-```bash
-xxxxxxxxxx
-```
-
-```bash
-sudo apt install curl -y
-```
-
-```bash
 sudo curl -fsSL https://ollama.com/install.sh | sh
 ```
 
@@ -70,69 +56,27 @@ Type ollama in the terminal and you will see the prompt:
 ## 4. Ollama Uninstall
 
 ```bash
-xxxxxxxxxx
+
 sudo systemctl stop ollama
 sudo systemctl disable ollama
 sudo rm /etc/systemd/system/ollama.service
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-sudo systemctl stop ollama
-```
-
-```bash
-sudo systemctl disable ollama
-```
-
-```bash
-sudo rm /etc/systemd/system/ollama.service
-```
-
-```bash
-xxxxxxxxxx
-sudo rm $(which ollama)
-```
-
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 sudo rm $(which ollama)
 ```
 
-```bash
-xxxxxxxxxx
-sudo rm -r /usr/share/ollama
-sudo userdel ollama
-sudo groupdel ollama
-```
-
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 sudo rm -r /usr/share/ollama
-```
-
-```bash
 sudo userdel ollama
-```
-
-```bash
 sudo groupdel ollama
 ```
 
 ## References
 
 > Ollama
-
-Ollama
 
 Official website: https://ollama.com/
 

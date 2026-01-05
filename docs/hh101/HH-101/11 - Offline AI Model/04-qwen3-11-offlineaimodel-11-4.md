@@ -5,10 +5,6 @@ sidebar_position: 0
 
 # Qwen3
 
-:::note
-Demo Environment
-:::
-
 Demo Environment
 
 Development Board : Jetson Orin Series Motherboard
@@ -44,14 +40,6 @@ Use the run command to start running the model. If you haven't downloaded the mo
 ollama run qwen3:8b
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-ollama run qwen3:8b
-```
-
 ![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-4/1.png)
 
 ### 3.2. Starting a Conversation
@@ -60,13 +48,6 @@ ollama run qwen3:8b
 Please tell me how many hours there are in a day.
 ```
 
-```bash
-xxxxxxxxxx
-```
-
-```bash
-Please tell me how many hours there are in a day.
-```
 
 Response time depends on your hardware configuration, so please be patient!
 

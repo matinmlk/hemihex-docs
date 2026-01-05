@@ -27,96 +27,597 @@ Simply put, it condenses a video into a few key images and their sequence, allow
 
 The analyze_video function in this file defines the tool's execution flow.
 
-```python
+```bash
 # From largemodel/utils/tools_manager.py
+class
+ToolsManager
+:
+# ...
+def
+analyze_video
+(
+self
+,
+args
+):
+"""
+Analyze video file and provide content description.
+分析视频文件并提供内容描述。
+:param args: Arguments containing video path.
+:return: Dictionary with video description and path.
+"""
+self
+.
+node
+.
+get_logger
+().
+info
+(
+f"Executing analyze_video() tool with args: {args}"
+)
+try
+:
+video_path
+=
+args
+.
+get
+(
+"video_path"
+)
+# ... (智能路径回退机制)
+if
+video_path
+and
+os
+.
+path
+.
+exists
+(
+video_path
+):
+# ... (构建Prompt)
+# Use a fully isolated, one-time context for video analysis to ensure a plain text description. / 使用完全隔离的一次性上下文进行视频分析，以确保获得纯文本描述。
+simple_context
+= [{
+"role"
+:
+"system"
+,
+"content"
+:
+"You are a video description assistant. ..."
+}]
+result
+=
+self
+.
+node
+.
+model_client
+.
+infer_with_video
+(
+video_path
+,
+prompt
+,
+message
+=
+simple_context
+)
+# ... (处理结果)
+return
+{
+"description"
+:
+description
+,
+"video_path"
+:
+video_path
+}
+# ... (错误处理)
+```
 
-class ToolsManager:
-    # ...
-    def analyze_video(self, args):
-        """
-        Analyze video file and provide content description.
-        分析视频文件并提供内容描述。
+```bash
+# From largemodel/utils/tools_manager.py
+```
 
-        :param args: Arguments containing video path.
-        :return: Dictionary with video description and path.
-        """
-        self.node.get_logger().info(
-            f"Executing analyze_video() tool with args: {args}"
-        )
-        try:
-            video_path = args.get("video_path")
-            # ... (智能路径回退机制)
+```bash
+class
+ToolsManager
+:
+```
 
-            if video_path and os.path.exists(video_path):
-                # ... (构建 Prompt)
+```bash
+# ...
+```
 
-                # Use a fully isolated, one-time context for video analysis
-                # to ensure a plain text description.
-                # 使用完全隔离的一次性上下文进行视频分析，以确保获得纯文本描述。
-                simple_context = [
-                    {
-                        "role": "system",
-                        "content": "You are a video description assistant. ..."
-                    }
-                ]
+```bash
+def
+analyze_video
+(
+self
+,
+args
+):
+```
 
-                result = self.node.model_client.infer_with_video(
-                    video_path,
-                    prompt,
-                    message=simple_context
-                )
+```bash
+"""
+```
 
-                # ... (处理结果)
-                return {
-                    "description": description,
-                    "video_path": video_path
-                }
+```bash
+Analyze video file and provide content description.
+```
 
-            # ... (错误处理)
-        except Exception as e:
-            self.node.get_logger().error(str(e))
-            raise
+```bash
+分析视频文件并提供内容描述。
+```
+
+```bash
+:param args: Arguments containing video path.
+```
+
+```bash
+:return: Dictionary with video description and path.
+```
+
+```bash
+"""
+```
+
+```bash
+self
+.
+node
+.
+get_logger
+().
+info
+(
+f"Executing analyze_video() tool with args: {args}"
+)
+```
+
+```bash
+try
+:
+```
+
+```bash
+video_path
+=
+args
+.
+get
+(
+"video_path"
+)
+```
+
+```bash
+# ... (智能路径回退机制)
+```
+
+```bash
+if
+video_path
+and
+os
+.
+path
+.
+exists
+(
+video_path
+):
+```
+
+```bash
+# ... (构建Prompt)
+```
+
+```bash
+# Use a fully isolated, one-time context for video analysis to ensure a plain text description. / 使用完全隔离的一次性上下文进行视频分析，以确保获得纯文本描述。
+```
+
+```bash
+simple_context
+= [{
+```
+
+```bash
+"role"
+:
+"system"
+,
+```
+
+```bash
+"content"
+:
+"You are a video description assistant. ..."
+```
+
+```bash
+}]
+```
+
+```bash
+result
+=
+self
+.
+node
+.
+model_client
+.
+infer_with_video
+(
+video_path
+,
+prompt
+,
+message
+=
+simple_context
+)
+```
+
+```bash
+# ... (处理结果)
+```
+
+```bash
+return
+{
+```
+
+```bash
+"description"
+:
+description
+,
+```
+
+```bash
+"video_path"
+:
+video_path
+```
+
+```bash
+}
+```
+
+```bash
+# ... (错误处理)
 ```
 
 #### 2. Model Interface Layer and Frame Extraction ( largemodel/utils/large_model_interface.py )
 
 The functions in this file are responsible for processing video files and passing them to the underlying model.
 
-```python
+```bash
 ​
-class model_interface:
-    # ...
-    def infer_with_video(self, video_path, text=None, message=None):
-        """Unified video inference interface. / 统一的视频推理接口。"""
-        # ... (Prepare Message)
-        try:
-            # Determine which specific implementation to call based on self.llm_platform
-            if self.llm_platform == 'ollama':
-                response_content = self.ollama_infer(
-                    self.messages,
-                    video_path=video_path
-                )
-            # ... (The logic of other online platforms)
-        # ...
-        return {
-            'response': response_content,
-            'messages': self.messages.copy()
-        }
+x
+# From largemodel/utils/large_model_interface.py
+​
+class
+model_interface
+:
+# ...
+def
+infer_with_video
+(
+self
+,
+video_path
+,
+text
+=
+None
+,
+message
+=
+None
+):
+"""Unified video inference interface. / 统一的视频推理接口。"""
+# ... (Prepare Message)
+try
+:
+# Determine which specific implementation to call based on self.llm_platform
+if
+self
+.
+llm_platform
+==
+'ollama'
+:
+response_content
+=
+self
+.
+ollama_infer
+(
+self
+.
+messages
+,
+video_path
+=
+video_path
+)
+# ... (The logic of other online platforms)
+# ...
+return
+{
+'response'
+:
+response_content
+,
+'messages'
+:
+self
+.
+messages
+.
+copy
+()}
+​
+def
+_extract_video_frames
+(
+self
+,
+video_path
+,
+max_frames
+=
+5
+):
+"""Extract keyframes from a video for analysis. / 从视频中提取关键帧用于分析。"""
+try
+:
+import
+cv2
+# ... (Video reading and frame interval calculation)
+while
+extracted_count
+<
+max_frames
+:
+# ... (Looping through video frames)
+if
+frame_count
+%
+frame_interval
+==
+0
+:
+# ... (Save the frame as a temporary image)
+frame_base64
+=
+self
+.
+encode_file_to_base64
+(
+temp_path
+)
+frame_images
+.
+append
+(
+frame_base64
+)
+# ...
+return
+frame_images
+# ... (Exception handling)
+```
 
-    def _extract_video_frames(self, video_path, max_frames=5):
-        """Extract keyframes from a video for analysis. / 从视频中提取关键帧用于分析。"""
-        try:
-            import cv2
-            # ... (Video reading and frame interval calculation)
-            while extracted_count < max_frames:
-                # ... (Looping through video frames)
-                if frame_count % frame_interval == 0:
-                    # ... (Save the frame as a temporary image)
-                    frame_base64 = self.encode_file_to_base64(temp_path)
-                    frame_images.append(frame_base64)
-            # ...
-            return frame_images
-        # ... (Exception handling)
+```bash
+# From largemodel/utils/large_model_interface.py
+```
+
+```bash
+​
+```
+
+```bash
+class
+model_interface
+:
+```
+
+```bash
+# ...
+```
+
+```bash
+def
+infer_with_video
+(
+self
+,
+video_path
+,
+text
+=
+None
+,
+message
+=
+None
+):
+```
+
+```bash
+"""Unified video inference interface. / 统一的视频推理接口。"""
+```
+
+```bash
+# ... (Prepare Message)
+```
+
+```bash
+try
+:
+```
+
+```bash
+# Determine which specific implementation to call based on self.llm_platform
+```
+
+```bash
+if
+self
+.
+llm_platform
+==
+'ollama'
+:
+```
+
+```bash
+response_content
+=
+self
+.
+ollama_infer
+(
+self
+.
+messages
+,
+video_path
+=
+video_path
+)
+```
+
+```bash
+# ... (The logic of other online platforms)
+```
+
+```bash
+# ...
+```
+
+```bash
+return
+{
+'response'
+:
+response_content
+,
+'messages'
+:
+self
+.
+messages
+.
+copy
+()}
+```
+
+```bash
+​
+```
+
+```bash
+def
+_extract_video_frames
+(
+self
+,
+video_path
+,
+max_frames
+=
+5
+):
+```
+
+```bash
+"""Extract keyframes from a video for analysis. / 从视频中提取关键帧用于分析。"""
+```
+
+```bash
+try
+:
+```
+
+```bash
+import
+cv2
+```
+
+```bash
+# ... (Video reading and frame interval calculation)
+```
+
+```bash
+while
+extracted_count
+<
+max_frames
+:
+```
+
+```bash
+# ... (Looping through video frames)
+```
+
+```bash
+if
+frame_count
+%
+frame_interval
+==
+0
+:
+```
+
+```bash
+# ... (Save the frame as a temporary image)
+```
+
+```bash
+frame_base64
+=
+self
+.
+encode_file_to_base64
+(
+temp_path
+)
+```
+
+```bash
+frame_images
+.
+append
+(
+frame_base64
+)
+```
+
+```bash
+# ...
+```
+
+```bash
+return
+frame_images
+```
+
+```bash
+# ... (Exception handling)
 ```
 
 ### Code Analysis
@@ -136,14 +637,10 @@ This file determines which large model platform the model_service node loads as 
 Open the file in Terminal :
 
 ```bash
-xxxxxxxxxx
 vim
 ~/yahboom_ws/src/largemodel/config/HemiHex.yaml
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim
@@ -153,7 +650,6 @@ vim
 Modify/Confirm llm_platform :
 
 ```bash
-xxxxxxxxxx
 model_service
 :
 #Model server node parameters
@@ -178,9 +674,6 @@ regional_setting
 "international"
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 model_service
@@ -233,13 +726,10 @@ regional_setting
 This file defines which visual model to use when the platform is selected as ollama .
 
 ```bash
-xxxxxxxxxx
+
 vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
@@ -248,7 +738,6 @@ vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
 2.Find the ollama related configuration
 
 ```bash
-xxxxxxxxxx
 #.....
 ## 离线大模型 (Offline Large Language Models)
 # Ollama Configuration
@@ -261,9 +750,6 @@ ollama_model:
 #.....
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 #.....
@@ -310,13 +796,10 @@ Start the largemodel main program :
 Open a terminal and run the following command
 
 ```bash
-xxxxxxxxxx
+
 ros2 launch largemodel largemodel_control.launch.py
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 ros2 launch largemodel largemodel_control.launch.py

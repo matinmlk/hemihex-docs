@@ -26,7 +26,6 @@ Multimodal Fusion
 The scan_table function in this file defines the tool's execution flow, specifically how it constructs a prompt that returns a Markdown-formatted result.
 
 ```bash
-xxxxxxxxxx
 # From largemodel/utils/tools_manager.py
 class
 ToolsManager
@@ -159,9 +158,6 @@ table_content
 # ... (Error Handling)
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 # From largemodel/utils/tools_manager.py
@@ -406,7 +402,6 @@ table_content
 The infer_with_image function in this file serves as the unified entry point for all image-related tasks.
 
 ```bash
-xxxxxxxxxx
 # From largemodel/utils/large_model_interface.py
 ​
 class
@@ -481,9 +476,6 @@ copy
 ()}
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 # From largemodel/utils/large_model_interface.py
@@ -629,14 +621,10 @@ This file determines which large model platform the model_service node loads as 
 Open the file in the terminal :
 
 ```bash
-xxxxxxxxxx
 vim
 ~/yahboom_ws/src/largemodel/config/HemiHex.yaml
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim
@@ -646,7 +634,6 @@ vim
 Modify/Confirm llm_platform :
 
 ```bash
-xxxxxxxxxx
 model_service
 :
 #Model server node parameters
@@ -671,9 +658,6 @@ regional_setting
 "international"
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 model_service
@@ -726,13 +710,10 @@ regional_setting
 This file defines which visual model to use when the ollama platform is selected.
 
 ```bash
-xxxxxxxxxx
+
 vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
@@ -741,7 +722,6 @@ vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
 2.Find the ollama related configuration
 
 ```bash
-xxxxxxxxxx
 #.....
 ## 离线大模型 (Offline Large Language Models)
 # Ollama Configuration
@@ -754,9 +734,6 @@ ollama_model:
 #.....
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 #.....
@@ -803,13 +780,10 @@ Start the largemodel main program :
 Open a terminal and run the following command:
 
 ```bash
-xxxxxxxxxx
+
 ros2 launch largemodel largemodel_control.launch.py
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 ros2 launch largemodel largemodel_control.launch.py

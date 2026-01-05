@@ -28,7 +28,6 @@ Simply put, this involves highlighting the corresponding parts of the image with
 The seewhat function in this file defines the execution flow of the tool.
 
 ```bash
-xxxxxxxxxx
 # From largemodel/utils/tools_manager.py
 ​
 class
@@ -153,9 +152,6 @@ e
 # ...
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 # From largemodel/utils/tools_manager.py
@@ -422,7 +418,6 @@ e
 The infer_with_image function in this file is the unified entry point for all image understanding tasks. It is responsible for calling the specific model implementation according to the configuration.
 
 ```bash
-xxxxxxxxxx
 # From largemodel/utils/large_model_interface.py
 ​
 class
@@ -498,9 +493,6 @@ copy
 ​
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 # From largemodel/utils/large_model_interface.py
@@ -644,14 +636,10 @@ This file determines which large model platform the model_service node loads as 
 Open the file in the terminal :
 
 ```bash
-xxxxxxxxxx
 vim
 ~/yahboom_ws/src/largemodel/config/HemiHex.yaml
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim
@@ -661,7 +649,6 @@ vim
 Modify/Confirm llm_platform :
 
 ```bash
-xxxxxxxxxx
 model_service
 :
 #模型服务器节点参数 Model server node parameters
@@ -686,9 +673,6 @@ regional_setting
 "international"
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 model_service
@@ -743,13 +727,10 @@ This file defines which vision model to use when the ollama platform is selected
 1.Open the file in Terminal
 
 ```bash
-xxxxxxxxxx
+
 vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
@@ -758,7 +739,6 @@ vim ~/yahboom_ws/src/largemodel/config/large_model_interface.yaml
 2.Find the ollama related configuration
 
 ```bash
-xxxxxxxxxx
 #.....
 ## 离线大模型 (Offline Large Language Models)
 # Ollama Configuration
@@ -771,9 +751,6 @@ ollama_model:
 #.....
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 #.....
@@ -812,13 +789,10 @@ Note: Due to performance limitations, this example cannot be run on the Jetson O
 Start the largemodel main program : Open a terminal and run the following command:
 
 ```bash
-xxxxxxxxxx
+
 ros2 launch largemodel largemodel_control.launch.py
 ```
 
-```bash
-xxxxxxxxxx
-```
 
 ```bash
 ros2 launch largemodel largemodel_control.launch.py
