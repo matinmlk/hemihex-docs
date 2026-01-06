@@ -1,0 +1,86 @@
+---
+title: AI large model online voice assistant
+sidebar_position: 13
+---
+
+# 8.AI large model online voice assistant
+
+## 1. Online Voice Configuration
+
+Before setting up automatic startup, we must ensure that the program itself can operate independently in an online state. This can be accomplished by modifying the configuration file.
+
+1. Locate the Configuration File : In your project code, find and open the configuration file:
+
+`config/HemiHex.yaml`
+
+1. Modify Configuration Parameters : Please check the following parameters in the file and ensure that their values match those shown below. If the parameters do not exist, add them.  x asr : #Voice node parameters ros__parameters : VAD_MODE : 2 #vad sensitivity sample_rate : 16000 #asr recording audio sampling rate frame_duration_ms : 30 #vad frame size in ms use_oline_asr : True #Whether to use online ASR recognition (True uses online, False uses offline) mic_serial_port : "/dev/ttyUSB0" #Microphone serial port alias mic_index : 0 #Microphone Index language : 'zh' #asr language  model_service : #Model server node parameters ros__parameters : language : 'zh' #Large Model Interface Language useolinetts : True #Whether to use online speech synthesis (True uses online, False uses offline)  # Large model configuration # llm_platform: 'ollama'              # Optional platforms:'ollama', 'tongyi', 'spark', 'qianfan', 'openrouter' llm_platform : 'tongyi' # Here we take Tongyi as an example  use_oline_asr and useolinetts must be set to tongyi . llm_platform must be set to tongyi .
+
+With this setup, everything is online.
+
+1. Save the file and recompile the project to apply the changes: xxxxxxxxxx cd ~/hemihex_ws colcon build source install/setup.bash
+
+After completing this step, the program is now a fully online voice service.
+
+## 2. Create a Startup Service (Systemd)
+
+Now, we will create a systemd service to automatically run`largemodel_control.launch.py`at system startup.
+
+### 2.1 Create a Startup Script
+
+To ensure`systemd`can correctly load the ROS2 environment, it's best to create a simple`bash`script to encapsulate our startup commands.
+
+1. Create a Script File : In the directory ( ~/hemihex_ws/src/largemodel/ ), create a file named start_largemodel.sh . xxxxxxxxxx vim ~/hemihex_ws/src/largemodel/start_largemodel.sh
+2. Write the script : Copy and paste the following content into the script file. xxxxxxxxxx #!/bin/bash  # Source ROS2 Humble Environment source /opt/ros/humble/setup.bash  # Source HemiHex Workspace environment source /home/jetson/hemihex_ws/install/setup.bash  # 启动 largemodel Control Script ros2 launch largemodel largemodel_control.launch.py Important : Please make sure to replace /home/sunrise/ in the script with your own home directory path.
+3. Save and exit
+4. Give the script execute permissions : xxxxxxxxxx chmod + x ~/hemihex_ws/src/largemodel/start_largemodel.sh
+
+### 2.2 Creating the Systemd Service File
+
+This is the most crucial step. We'll tell the system that we have a new service to manage.
+
+1. Creating the Service File : You will need sudo privileges to create this file.
+
+```bash
+sudo vim /etc/systemd/system/largemodel.service
+```
+
+1. Write the Service Configuration : Copy and paste the following content exactly into the service file. xxxxxxxxxx [Unit] Description = Robot Service After = network.target sound.target graphical.target multi-user.target Wants = network.target sound.target graphical.target multi-user.target  [Service] Type = simple User = sunrise Group = sunrise Environment = DISPLAY =: 0 Environment = XDG_RUNTIME_DIR = /run/user/1000 Environment = PULSE_SERVER = unix : /run/user/1000/pulse/native SupplementaryGroups = audio video ExecStartPre = /bin/sleep 10 ExecStart = /home/sunrise/hemihex_ws/src/largemodel/start_largemodel.sh Restart = on-failure StandardOutput = journal StandardError = journal  [Install] WantedBy = multi-user.target !!! EXTREMELY IMPORTANT! Make sure the paths in WorkingDirectory and ExecStart match your actual paths exactly.
+2. Save and exit .
+
+### 2.3 Managing and Debugging Services
+
+Now that your service is created, we need to have`systemd`load it and set it to start automatically at boot.
+
+1. Reload the systemd daemon so it reads our newly created service file:
+
+```bash
+sudo systemctl daemon-reload
+```
+
+1. Set the service to start automatically at boot :
+
+```bash
+sudo systemctl enable largemodel.service
+```
+
+1. Start the service immediately :
+
+```bash
+sudo systemctl start largemodel.service
+```
+
+1. Check the service status : This is the most important command to verify that the service is running successfully.
+
+```bash
+sudo systemctl status largemodel.service
+``` * If you see `Active: active (running)`, congratulations! The service has started successfully!
+* If the status is `failed` or something else, proceed to the next step for debugging.
+```
+
+1. View the service log (essential for debugging) : If the service fails to start, you can view all real-time logs generated by the ros2 launch command using the following command. This is crucial for troubleshooting.
+
+```bash
+journalctl -u largemodel.service -f
+```
+
+After completing all the above steps, the fully online`largemodel`voice service will automatically start every time you boot your computer.

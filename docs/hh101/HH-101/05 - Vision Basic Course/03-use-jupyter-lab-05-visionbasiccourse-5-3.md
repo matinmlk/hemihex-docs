@@ -82,7 +82,6 @@ jupyter lab
 The host refers to the Jetson motherboard system access, which can be accessed directly through http://localhost:8888/ :
 
 ```bash
-
 http://localhost:8888/
 ```
 
@@ -152,14 +151,12 @@ Automatically generated configuration file location: [JupyterPasswordApp] Wrote 
 #### 3.3.1, Edit the service file
 
 ```bash
-
 sudo gedit /etc/systemd/system/jupyterlab.service
 ```
 
 Add content: Click Save and close the file after adding
 
 ```bash
-
 [Unit]
 Description=jupyterlab
 After=network.target
@@ -186,7 +183,6 @@ config: change to JupyterLab configuration file path
 WorkingDirectory: the working directory opened by starting Jupyter-lab, which can be changed by yourself (it is recommended to change to the user directory)
 
 ```bash
-
 Check Jupyter-lab installation path: which jupyter-lab
 Configuration file path: refer to the path of the configuration file generated above
 ```
@@ -199,7 +195,6 @@ Configuration file path: refer to the path of the configuration file generated a
 ##### Startup service automatically
 
 ```bash
-
 sudo systemctl enable jupyterlab
 # Disable startup systemctl disable jupyterlab
 ```
@@ -224,7 +219,6 @@ systemctl status jupyterlab
 After restarting the system, use the same LAN device to access the motherboard IP:8888 based on the system IP.
 
 ```bash
-
 You need to enter a password for the first access, which is the information set in the previous step;
 When taking the screenshot, the IP of the motherboard is 192.168.2.114, so devices in the same LAN can access 192.168.2.114:8888
 ```

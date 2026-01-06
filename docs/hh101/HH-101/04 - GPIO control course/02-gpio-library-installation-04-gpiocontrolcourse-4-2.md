@@ -12,7 +12,6 @@ The system installs Jetson.GPIO library by default, so you can skip this step.
 ### 1.1. Automatic installation
 
 ```bash
-
 sudo pip3 install Jetson.GPIO
 ```
 

@@ -57,7 +57,6 @@ width: image output width
 height: image output height
 
 ```python
-
 from jetcam.csi_camera import CSICamera
 camera = CSICamera(width=224, height=224)
 ```
@@ -91,7 +90,6 @@ After opening the program file, a single unit block runs from top to bottom:
 Source code path
 
 ```bash
-
 /home/jetson/jetcam/notebooks/csi_camera/multi_csi_camera.ipynb
 ```
 
