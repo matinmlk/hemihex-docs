@@ -1,6 +1,7 @@
 ---
-title: Jetson Board Introduction
-sidebar_position: 0
+title: 01-Jetson Board Introduction
+sidebar_position: 01
+
 ---
 
 # Jetson Board Introduction
