@@ -8,14 +8,14 @@ Open the Ubuntu (or Ubuntu VM) terminal and install **gparted**:
 sudo apt install gparted
 ```
 
-![](/img/docs/2-4//image-2022081602443.jpg)
+![](/img/docs/hh101/legacy/2-4//image-2022081602443.jpg)
 
 Remove the NVMe SSD from the board, insert it into an NVMe enclosure, and connect it to the computer/VM.  
 The system will automatically recognize the drive.
 
 Open the system application menu, search for **gparted**, and launch it:
 
-![](/img/docs/2-4//image-20220815154055172.png)
+![](/img/docs/hh101/legacy/2-4//image-20220815154055172.png)
 
 ⚠️ **Be careful to select the correct disk device number. Incorrect operations may cause data loss.**
 
@@ -41,7 +41,7 @@ If the script lacks execute permissions:
 chmod +x parted_info.sh
 ```
 
-![](/img/docs/2-4//image-20220815163507764.png)
+![](/img/docs/hh101/legacy/2-4//image-20220815163507764.png)
 
 ### `parted_info.sh` content:
 
@@ -75,7 +75,7 @@ Where:
 - **bs=512** → block size  
 - **count=27875328** → number of blocks (from partition info)
 
-![](/img/docs/2-4//image-20220815164843642.png)
+![](/img/docs/hh101/legacy/2-4//image-20220815164843642.png)
 
 To monitor backup progress in another terminal:
 
@@ -83,7 +83,7 @@ To monitor backup progress in another terminal:
 sudo watch -n 3 pkill -USR1 ^dd$
 ```
 
-![](/img/docs/2-4//image-20220815164737048.png)
+![](/img/docs/hh101/legacy/2-4//image-20220815164737048.png)
 
 Wait until the backup completes.
 
@@ -95,11 +95,11 @@ Since the backup image is created inside a Linux VM, enable **Shared Folders** t
 
 Open the VM settings:
 
-![](/img/docs/2-4//image-20220816103039458.png)
+![](/img/docs/hh101/legacy/2-4//image-20220816103039458.png)
 
 Enable **Shared Folders**, then add a Windows path (example: `D:\Virtual Machines\share`):
 
-![](/img/docs/2-4//image-20220816103155807.png)
+![](/img/docs/hh101/legacy/2-4//image-20220816103155807.png)
 
 Copy the backup image to the shared folder:
 

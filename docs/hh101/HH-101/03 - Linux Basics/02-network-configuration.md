@@ -20,23 +20,23 @@ It is recommended to switch networks by connecting to the display screen. Once t
 
 Select the menu option in the upper right corner of the system desktop → WiFi options → Wi-Fi Settings:
 
-![image-20250110142107961](/img/docs/jetson/03-LinuxBasics/3-2/image-20250110142107961.png)
+![image-20250110142107961](/img/docs/hh101/03-LinuxBasics/3-2/image-20250110142107961.png)
 
 Select the WiFi you want to connect to: If the WiFi signal is very weak, check whether the antenna is not installed or the signal in the environment is poor
 
-![image-20250110142144574](/img/docs/jetson/03-LinuxBasics/3-2/image-20250110142144574.png)
+![image-20250110142144574](/img/docs/hh101/03-LinuxBasics/3-2/image-20250110142144574.png)
 
 After entering the password, click Connect : ### 1.2. Check WiFi information
 
-![image-20250110142252074](/img/docs/jetson/03-LinuxBasics/3-2/image-20250110142252074.png)
+![image-20250110142252074](/img/docs/hh101/03-LinuxBasics/3-2/image-20250110142252074.png)
 
-![image-20250110142302019](/img/docs/jetson/03-LinuxBasics/3-2/image-20250110142302019.png)
+![image-20250110142302019](/img/docs/hh101/03-LinuxBasics/3-2/image-20250110142302019.png)
 
-![image-20250110142334374](/img/docs/jetson/03-LinuxBasics/3-2/image-20250110142334374.png)
+![image-20250110142334374](/img/docs/hh101/03-LinuxBasics/3-2/image-20250110142334374.png)
 
 Click the settings icon of the connected WiFi:
 
-![image-20250110142811857](/img/docs/jetson/03-LinuxBasics/3-2/image-20250110142811857.png)
+![image-20250110142811857](/img/docs/hh101/03-LinuxBasics/3-2/image-20250110142811857.png)
 
 The terminal can use the following command to view the IP addresses of all networks: enP8p1s0 is the IP connected by the network cable, and wlP1p1s0 is the IP connected by WiFi
 
@@ -49,7 +49,7 @@ ifconfig
 ifconfig
 ```
 
-![image-20250110143429233](/img/docs/jetson/03-LinuxBasics/3-2/image-20250110143429233.png)
+![image-20250110143429233](/img/docs/hh101/03-LinuxBasics/3-2/image-20250110143429233.png)
 
 ### 1.3. Set static IP
 
@@ -61,11 +61,11 @@ Netmask: Fill in 255.255.255.0
 
 Gateway: Fill in the WiFi default gateway address
 
-![image-20250110151740342](/img/docs/jetson/03-LinuxBasics/3-2/image-20250110151740342.png)
+![image-20250110151740342](/img/docs/hh101/03-LinuxBasics/3-2/image-20250110151740342.png)
 
 After completion, reconnect WiFi to take effect:
 
-![image-20250110151939300](/img/docs/jetson/03-LinuxBasics/3-2/image-20250110151939300.png)
+![image-20250110151939300](/img/docs/hh101/03-LinuxBasics/3-2/image-20250110151939300.png)
 
 ## 2. Hotspot mode
 
@@ -84,7 +84,7 @@ Configure the hotspot mode on the desktop system. The hotspot will be automatica
 
 Enter WiFi settings and select Turn On Wi-Fi Hotspot...
 
-![image-20250110143648422](/img/docs/jetson/03-LinuxBasics/3-2/image-20250110143648422.png)
+![image-20250110143648422](/img/docs/hh101/03-LinuxBasics/3-2/image-20250110143648422.png)
 
 ### 2.2, Hotspot information
 
@@ -94,6 +94,6 @@ Hotspot password: 12345678 (customizable)
 
 Hotspot mode default IP: 10.42.0.1
 
-![image-20250110143824381](/img/docs/jetson/03-LinuxBasics/3-2/image-20250110143824381.png)
+![image-20250110143824381](/img/docs/hh101/03-LinuxBasics/3-2/image-20250110143824381.png)
 
-![image-20250110145951438](/img/docs/jetson/03-LinuxBasics/3-2/image-20250110145951438.png)
+![image-20250110145951438](/img/docs/hh101/03-LinuxBasics/3-2/image-20250110145951438.png)

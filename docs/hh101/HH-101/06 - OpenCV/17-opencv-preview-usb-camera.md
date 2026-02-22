@@ -50,7 +50,7 @@ Select the camera preview window and press **`q`** to exit the program.
 :::
 
 ![USB Camera Preview
-Result](/img/docs/jetson/06-OpenCV/6-17/image-20250106185612930.png)
+Result](/img/docs/hh101/06-OpenCV/6-17/image-20250106185612930.png)
 
 ------------------------------------------------------------------------
 

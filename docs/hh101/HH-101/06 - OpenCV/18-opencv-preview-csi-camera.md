@@ -48,7 +48,7 @@ Select the camera preview window and press **`q`** to exit the program.
 :::
 
 ![CSI Camera Preview
-Result](/img/docs/jetson/06-OpenCV/6-18/image-20250106190647333.png)
+Result](/img/docs/hh101/06-OpenCV/6-18/image-20250106190647333.png)
 
 ------------------------------------------------------------------------
 

@@ -54,7 +54,7 @@ Output videos are saved to:
 ```
 
 ![CLI Prediction
-Result](/img/docs/jetson/07-AdvancedVision/7-16/image-20250102163340185.png)
+Result](/img/docs/hh101/07-AdvancedVision/7-16/image-20250102163340185.png)
 
 ------------------------------------------------------------------------
 
@@ -88,7 +88,7 @@ Press **q** to exit the preview window.
 ```
 
 ![USB Camera
-Result](/img/docs/jetson/07-AdvancedVision/7-16/image-20250102165136998.png)
+Result](/img/docs/hh101/07-AdvancedVision/7-16/image-20250102165136998.png)
 
 ------------------------------------------------------------------------
 
@@ -181,7 +181,7 @@ cv2.destroyAllWindows()
 ```
 
 ![CSI Camera
-Result](/img/docs/jetson/07-AdvancedVision/7-16/image-20250102164847286.png)
+Result](/img/docs/hh101/07-AdvancedVision/7-16/image-20250102164847286.png)
 
 ------------------------------------------------------------------------
 

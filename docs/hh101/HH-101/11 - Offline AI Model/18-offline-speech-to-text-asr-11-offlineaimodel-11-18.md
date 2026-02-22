@@ -208,4 +208,4 @@ ros2 launch largemodel asr_only.launch.py
 ros2 launch largemodel asr_only.launch.py
 ```
 
-![image-20250807154240917](/img/docs/jetson/11-OfflineAIModel/11-18/1.png)
+![image-20250807154240917](/img/docs/hh101/11-OfflineAIModel/11-18/1.png)

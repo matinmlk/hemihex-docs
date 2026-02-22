@@ -17,7 +17,7 @@ Note: 1. The solid-state drive that comes with the product has a factory image, 
 
 The Jetson Orin motherboard needs to short-circuit the FC REC and GND under the core board to enter the flashing mode:
 
-![image-20250109180636160](/img/docs/jetson/02-Basics/2-2/image-20250109180636160.png)
+![image-20250109180636160](/img/docs/hh101/02-Basics/2-2/image-20250109180636160.png)
 
 ### 1.2. Motherboard connection
 
@@ -25,7 +25,7 @@ The Jetson Orin motherboard needs to be connected to a DC power adapter, DP data
 
 This illustration is based on the official version of Jetson Orin Nano. Users of other versions can refer to it for use (the hardware interface and functional layout are the same).
 
-![image-20250109180831845](/img/docs/jetson/02-Basics/2-2/image-20250109180831845.png)
+![image-20250109180831845](/img/docs/hh101/02-Basics/2-2/image-20250109180831845.png)
 
 ## 2. Software connection
 
@@ -33,7 +33,7 @@ The tutorial uses VMware Workstation 17 Pro to burn the system!
 
 After starting the virtual machine, select in the menu bar: Virtual Machine → NVIDIA APX → Confirm the status of the connection with the virtual machine
 
-![image-20250123100406992](/img/docs/jetson/02-Basics/2-2/image-20250123100406992.png)
+![image-20250123100406992](/img/docs/hh101/02-Basics/2-2/image-20250123100406992.png)
 
 ## 3. Use of SDK Manager
 
@@ -47,7 +47,7 @@ You don't need to install SDK Manager to use our virtual machine. If you can't u
 
 Official website: https://developer.nvidia.com/sdk-manager
 
-![image-20250109171631722](/img/docs/jetson/02-Basics/2-2/image-20250109171631722.png)
+![image-20250109171631722](/img/docs/hh101/02-Basics/2-2/image-20250109171631722.png)
 
 ### 3.2, SDK Manager installation
 
@@ -63,7 +63,7 @@ Repair dependency: A clean system may have an error message when installing sdkm
 sudo apt --fix-broken install -y
 ```
 
-![image-20250109173336117](/img/docs/jetson/02-Basics/2-2/image-20250109173336117.png)
+![image-20250109173336117](/img/docs/hh101/02-Basics/2-2/image-20250109173336117.png)
 
 ### 3.3, Start and log in to your account
 
@@ -75,59 +75,59 @@ sdkmanager# To burn the old version of Jetpack, you need to use the command: sdk
 
 After clicking login, the browser login page will pop up automatically:
 
-![image-20250109173851025](/img/docs/jetson/02-Basics/2-2/09173851025.png)
+![image-20250109173851025](/img/docs/hh101/02-Basics/2-2/09173851025.png)
 
 Enter the previously registered account and password to enter the software:
 
-![image-20250109174138690](/img/docs/jetson/02-Basics/2-2/image-20250109174138690.png)
+![image-20250109174138690](/img/docs/hh101/02-Basics/2-2/image-20250109174138690.png)
 
 ### 3.4, Motherboard selection
 
 Choose according to your own motherboard model: For the official kit, select Jetson Orin Nano [*GB developer kit version]
 
-![image-20250109174226263](/img/docs/jetson/02-Basics/2-2/image-20250109174226263.png)
+![image-20250109174226263](/img/docs/hh101/02-Basics/2-2/image-20250109174226263.png)
 
 ### 3.5, STEP1
 
 Check the options below, confirm that they are consistent, and click CONTINUE:
 
-![image-20250109174317901](/img/docs/jetson/02-Basics/2-2/image-20250116184501461-1737441307076-4.png)
+![image-20250109174317901](/img/docs/hh101/02-Basics/2-2/image-20250116184501461-1737441307076-4.png)
 
 ### 3.6, STEP2
 
 Check the options below, confirm that they are consistent, and click CONTINUE:
 
-![image-20250109174508253](/img/docs/jetson/02-Basics/2-2/image-20250109174508253.png)
+![image-20250109174508253](/img/docs/hh101/02-Basics/2-2/image-20250109174508253.png)
 
-![image-20250109174519757](/img/docs/jetson/02-Basics/2-2/image-20250109174519757.png)
+![image-20250109174519757](/img/docs/hh101/02-Basics/2-2/image-20250109174519757.png)
 
 Enter the virtual machine password: HemiHex
 
-![image-20250109174549168](/img/docs/jetson/02-Basics/2-2/image-20250109174549168.png)
+![image-20250109174549168](/img/docs/hh101/02-Basics/2-2/image-20250109174549168.png)
 
-![image-20250109174556721](/img/docs/jetson/02-Basics/2-2/image-20250109174556721.png)
+![image-20250109174556721](/img/docs/hh101/02-Basics/2-2/image-20250109174556721.png)
 
 ### 3.7, STEP3
 
 Wait for the system to download successfully:
 
-![image-20250109174659266](/img/docs/jetson/02-Basics/2-2/image-20250109174659266.png)
+![image-20250109174659266](/img/docs/hh101/02-Basics/2-2/image-20250109174659266.png)
 
-![image-20250109174901170](/img/docs/jetson/02-Basics/2-2/image-20250109174901170.png)
+![image-20250109174901170](/img/docs/hh101/02-Basics/2-2/image-20250109174901170.png)
 
 Select the motherboard model, OEM configuration, and system storage medium:
 
-![image-20250109175753447](/img/docs/jetson/02-Basics/2-2/image-20250109175753447.png)
+![image-20250109175753447](/img/docs/hh101/02-Basics/2-2/image-20250109175753447.png)
 
 The virtual machine automatically controls the connection and disconnection of the device during the whole process, but more than 95% of the progress needs to pay attention to the SDK Manager burning system progress, once disconnected and not automatically connected to the virtual machine, you need to manually connect the motherboard to the virtual machine in time:
 
-![image-20250109181833561](/img/docs/jetson/02-Basics/2-2/image-20250109181833561.png)
+![image-20250109181833561](/img/docs/hh101/02-Basics/2-2/image-20250109181833561.png)
 
-![image-20250116113445820](/img/docs/jetson/02-Basics/2-2/image-20250116113445820.png)
+![image-20250116113445820](/img/docs/hh101/02-Basics/2-2/image-20250116113445820.png)
 
 ### 3.8, STEP4
 
-![image-20250109182517227](/img/docs/jetson/02-Basics/2-2/image-20250109182517227.png)
+![image-20250109182517227](/img/docs/hh101/02-Basics/2-2/image-20250109182517227.png)
 
 ## 4, start the system
 

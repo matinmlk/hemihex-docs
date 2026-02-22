@@ -12,7 +12,7 @@ The main difference between the Jetson Orin **official development kit** and the
 
 ### 1.1 Front of the Development Board
 
-![Front view of Jetson Orin development board with labeled interfaces](/img/docs/jetson/02-Basics/2-1/image-20250109194932086.png)
+![Front view of Jetson Orin development board with labeled interfaces](/img/docs/hh101/02-Basics/2-1/image-20250109194932086.png)
 
 | Serial Number | Description                                   | Serial Number | Description                              |
 |---------------|-----------------------------------------------|---------------|------------------------------------------|
@@ -27,7 +27,7 @@ The main difference between the Jetson Orin **official development kit** and the
 
 ### 1.2 Back of the Development Board
 
-![Back view of Jetson Orin development board showing M.2 slots](/img/docs/jetson/02-Basics/2-1/image-20250109194957501.png)
+![Back view of Jetson Orin development board showing M.2 slots](/img/docs/hh101/02-Basics/2-1/image-20250109194957501.png)
 
 | Serial Number | Description                       | Serial Number | Description             |
 |---------------|-----------------------------------|---------------|-------------------------|

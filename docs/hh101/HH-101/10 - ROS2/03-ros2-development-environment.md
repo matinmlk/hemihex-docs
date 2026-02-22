@@ -19,7 +19,7 @@ environment.
 -   Search for **VS Code** in your browser.
 -   Download and install the version for your operating system.
 
-![VS Code Download](/img/docs/jetson/10-ROS2/10-3/image-20250814155106188.png)
+![VS Code Download](/img/docs/hh101/10-ROS2/10-3/image-20250814155106188.png)
 
 ------------------------------------------------------------------------
 
@@ -35,9 +35,9 @@ as:
 -   YAML
 -   Docker
 
-![VS Code Plugins](/img/docs/jetson/10-ROS2/10-3/image-20250814155201019.png) ![VS Code
-Plugins](/img/docs/jetson/10-ROS2/10-3/image-20250814155255572.png) ![VS Code
-Plugins](/img/docs/jetson/10-ROS2/10-3/image-20250814155341084.png)
+![VS Code Plugins](/img/docs/hh101/10-ROS2/10-3/image-20250814155201019.png) ![VS Code
+Plugins](/img/docs/hh101/10-ROS2/10-3/image-20250814155255572.png) ![VS Code
+Plugins](/img/docs/hh101/10-ROS2/10-3/image-20250814155341084.png)
 
 ------------------------------------------------------------------------
 
@@ -47,7 +47,7 @@ In ROS 2 development, you will frequently use the terminal. A highly
 recommended terminal tool is **Terminator**, which supports multi-window
 and split-screen workflows.
 
-![Terminator Interface](/img/docs/jetson/10-ROS2/10-3/image-20231023123012987.png)
+![Terminator Interface](/img/docs/hh101/10-ROS2/10-3/image-20231023123012987.png)
 
 ------------------------------------------------------------------------
 

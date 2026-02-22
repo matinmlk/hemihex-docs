@@ -50,7 +50,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Rectangle Drawing
-Result](/img/docs/jetson/06-OpenCV/6-12/image-20250106163403911.png)
+Result](/img/docs/hh101/06-OpenCV/6-12/image-20250106163403911.png)
 
 ------------------------------------------------------------------------
 

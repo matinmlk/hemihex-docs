@@ -29,7 +29,7 @@ sudo apt install curl -y
 sudo curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-![image-20250111132928934](/img/docs/jetson/11-OfflineAIModel/11-1/image-20250111132928934.png)
+![image-20250111132928934](/img/docs/hh101/11-OfflineAIModel/11-1/image-20250111132928934.png)
 
 The entire installation process takes a long time, please wait patiently!
 
@@ -37,7 +37,7 @@ The entire installation process takes a long time, please wait patiently!
 
 Type ollama in the terminal and you will see the prompt:
 
-![image-20250111135927014](/img/docs/jetson/11-OfflineAIModel/11-1/image-20250111135927014.png)
+![image-20250111135927014](/img/docs/hh101/11-OfflineAIModel/11-1/image-20250111135927014.png)
 
 | Command | Purpose |
 | --- | --- |

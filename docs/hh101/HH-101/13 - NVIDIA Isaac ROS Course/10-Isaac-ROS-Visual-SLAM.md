@@ -11,7 +11,7 @@ Isaac ROS Visual SLAM official website link：[https://nvidia-isaac-ros.github.i
 
 Isaac ROS Visual SLAM provides a high-performance, best-in-class ROS 2 package for VSLAM (visual simultaneous localization and mapping). This package uses one or more stereo cameras and optionally an IMU to estimate odometry as an input to navigation. It is GPU accelerated to provide real-time, low-latency results in a robotics application. VSLAM provides an additional odometry source for mobile robots (ground based) and can be the primary odometry source for drones.
 
-![Screenshot](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-10/1.png)
+![Screenshot](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-10/1.png)
 
 ## Quick Experience
 
@@ -78,4 +78,4 @@ ros2 bag play ${ISAAC_ROS_WS}/isaac_ros_assets/isaac_ros_visual_slam/quickstart_
 /back_stereo_camera/right/camera_info:=/rear_right/camera_info_rect
 ```
 
-![Screenshot](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-10/2.png)
+![Screenshot](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-10/2.png)

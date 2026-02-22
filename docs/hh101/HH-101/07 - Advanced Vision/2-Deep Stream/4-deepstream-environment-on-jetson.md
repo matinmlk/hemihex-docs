@@ -18,7 +18,7 @@ environment on Jetson**.
 Check your system information before installation.
 
 ![System
-Information](/img/docs/jetson/07-AdvancedVision/7-4/image-20250121150858152.png)
+Information](/img/docs/hh101/07-AdvancedVision/7-4/image-20250121150858152.png)
 
 ------------------------------------------------------------------------
 
@@ -33,7 +33,7 @@ If you are using an automated installer or SDK Manager, enable the
 :::
 
 ![Select DeepStream
-Option](/img/docs/jetson/07-AdvancedVision/7-4/image-20250116194316209.png)
+Option](/img/docs/hh101/07-AdvancedVision/7-4/image-20250116194316209.png)
 
 ------------------------------------------------------------------------
 
@@ -54,7 +54,7 @@ deepstream-app --version-all
 If installed correctly, version information will be displayed:
 
 ![DeepStream Version
-Output](/img/docs/jetson/07-AdvancedVision/7-4/image-20241227113542806.png)
+Output](/img/docs/hh101/07-AdvancedVision/7-4/image-20241227113542806.png)
 
 ------------------------------------------------------------------------
 
@@ -90,7 +90,7 @@ Use a **power adapter rated at least 45W** to avoid throttling issues.
 :::
 
 ![DeepStream Sample
-Output](/img/docs/jetson/07-AdvancedVision/7-4/image-20250102184609430.png)
+Output](/img/docs/hh101/07-AdvancedVision/7-4/image-20250102184609430.png)
 
 ------------------------------------------------------------------------
 

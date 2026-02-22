@@ -190,7 +190,7 @@ ros2 launch largemodel tts_only.launch.py
 ros2 launch largemodel tts_only.launch.py
 ```
 
-![image-20250807165129463](/img/docs/jetson/11-OfflineAIModel/11-19/1.png)
+![image-20250807165129463](/img/docs/hh101/11-OfflineAIModel/11-19/1.png)
 
 Send the text to be synthesized : Open a new terminal and run the following command to publish a voice message:
 
@@ -225,4 +225,4 @@ Check the audio output : Confirm that your system audio output device is selecte
 
 In the Sound settings, set the Balance to the middle position.
 
-![image-20250807155119783](/img/docs/jetson/11-OfflineAIModel/11-19/image-20250807155119783.png)
+![image-20250807155119783](/img/docs/hh101/11-OfflineAIModel/11-19/image-20250807155119783.png)

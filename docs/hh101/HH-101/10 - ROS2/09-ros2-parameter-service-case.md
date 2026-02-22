@@ -46,7 +46,7 @@ ros2 run turtlesim turtlesim_node
 ros2 run turtlesim turtle_teleop_key
 ```
 
-![Turtlesim Running](/img/docs/jetson/10-ROS2/10-11/image-20231030182608893.png)
+![Turtlesim Running](/img/docs/hh101/10-ROS2/10-11/image-20231030182608893.png)
 
 ------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@ Open another terminal and list all available parameters:
 ros2 param list
 ```
 
-![Parameter List](/img/docs/jetson/10-ROS2/10-11/image-20231030182640039.png)
+![Parameter List](/img/docs/hh101/10-ROS2/10-11/image-20231030182640039.png)
 
 ------------------------------------------------------------------------
 
@@ -99,7 +99,7 @@ ros2 pkg create pkg_param --build-type ament_python --dependencies rclpy --node-
 After execution, the `pkg_param` package and `param_demo` node will be
 created.
 
-![Package Structure](/img/docs/jetson/10-ROS2/10-11/image-20231030185328553.png)
+![Package Structure](/img/docs/hh101/10-ROS2/10-11/image-20231030185328553.png)
 
 ------------------------------------------------------------------------
 
@@ -148,7 +148,7 @@ def main(args=None):
 colcon build --packages-select pkg_param
 ```
 
-![Build Result](/img/docs/jetson/10-ROS2/10-11/image-20250905150404041.png)
+![Build Result](/img/docs/hh101/10-ROS2/10-11/image-20250905150404041.png)
 
 ------------------------------------------------------------------------
 
@@ -161,7 +161,7 @@ source install/setup.bash
 ros2 run pkg_param param_demo
 ```
 
-![Program Running](/img/docs/jetson/10-ROS2/10-11/image-20250905150438440.png)
+![Program Running](/img/docs/hh101/10-ROS2/10-11/image-20250905150438440.png)
 
 Open another terminal and modify the parameter value:
 
@@ -173,4 +173,4 @@ You will see the log output update dynamically.\
 `"muto"` is the default value of `robot_name`, and it changes
 immediately after setting a new value.
 
-![Parameter Change Output](/img/docs/jetson/10-ROS2/10-11/image-20231030190533095.png)
+![Parameter Change Output](/img/docs/hh101/10-ROS2/10-11/image-20231030190533095.png)

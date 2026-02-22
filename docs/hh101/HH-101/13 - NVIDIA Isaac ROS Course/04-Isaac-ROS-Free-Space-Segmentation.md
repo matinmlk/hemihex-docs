@@ -11,7 +11,7 @@ Isaac ROS Free Space Segmentation official website link：[https://nvidia-isaac-
 
 Isaac ROS Freespace Segmentation contains an ROS 2 package to produce occupancy grids for navigation. By processing a freespace segmentation mask with the pose of the robot relative to the ground, Bi3D Freespace produces an occupancy grid for Nav2, which is used to avoid obstacles during navigation. This package is GPU accelerated to provide real-time, low latency results in a robotics application. Bi3D Freespace provides an additional occupancy grid source for mobile robots (ground based).
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-4/1.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-4/1.png)
 
 ## Quick Experience
 
@@ -71,4 +71,4 @@ Run the following command to view the results.
 rviz2
 ```
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-4/2.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-4/2.png)

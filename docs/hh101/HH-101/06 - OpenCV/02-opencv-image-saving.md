@@ -37,7 +37,7 @@ python3 02.image_save.py
 Select the image display window and press **`q`** to exit the program.
 :::
 
-![Saved Image Result](/img/docs/jetson/06-OpenCV/6-2/image-20250106143055215.png)
+![Saved Image Result](/img/docs/hh101/06-OpenCV/6-2/image-20250106143055215.png)
 
 ------------------------------------------------------------------------
 

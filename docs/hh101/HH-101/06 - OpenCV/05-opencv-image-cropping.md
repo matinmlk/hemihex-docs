@@ -47,7 +47,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Cropping
-Result](/img/docs/jetson/06-OpenCV/6-5/image-20250106151751452.png)
+Result](/img/docs/hh101/06-OpenCV/6-5/image-20250106151751452.png)
 
 ------------------------------------------------------------------------
 

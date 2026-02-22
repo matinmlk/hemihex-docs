@@ -49,7 +49,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Circular Shape
-Result](/img/docs/jetson/06-OpenCV/6-13/image-20250106182835811.png)
+Result](/img/docs/hh101/06-OpenCV/6-13/image-20250106182835811.png)
 
 ------------------------------------------------------------------------
 

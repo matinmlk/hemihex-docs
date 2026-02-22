@@ -23,7 +23,7 @@ Start the Ubuntu 18.04 image in interactive mode:
 docker run -it ubuntu:18.04 /bin/bash
 ```
 
-![Start Container](/img/docs/jetson/8-docker/8-4/image-20250105145841732.png)
+![Start Container](/img/docs/hh101/8-docker/8-4/image-20250105145841732.png)
 
 ------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ Ensure system packages are up to date:
 apt update && apt upgrade
 ```
 
-![System Update](/img/docs/jetson/8-docker/8-4/image-20250105150409953.png)
+![System Update](/img/docs/hh101/8-docker/8-4/image-20250105150409953.png)
 
 ------------------------------------------------------------------------
 
@@ -51,7 +51,7 @@ ROS requires UTF-8 support.
 locale
 ```
 
-![Locale Check](/img/docs/jetson/8-docker/8-4/image-20250105150553931.png)
+![Locale Check](/img/docs/hh101/8-docker/8-4/image-20250105150553931.png)
 
 ------------------------------------------------------------------------
 
@@ -67,7 +67,7 @@ echo "export LANG=en_US.UTF-8" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-![UTF-8 Setup](/img/docs/jetson/8-docker/8-4/image-20250105150825784.png)
+![UTF-8 Setup](/img/docs/hh101/8-docker/8-4/image-20250105150825784.png)
 
 ------------------------------------------------------------------------
 
@@ -85,7 +85,7 @@ Add ROS software source:
 sh -c '. /etc/lsb-release && echo "deb http://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu/ `lsb_release -cs` main" > /etc/apt/sources.list.d/ros-latest.list'
 ```
 
-![ROS Source](/img/docs/jetson/8-docker/8-4/image-20250105151200285.png)
+![ROS Source](/img/docs/hh101/8-docker/8-4/image-20250105151200285.png)
 
 ------------------------------------------------------------------------
 
@@ -95,7 +95,7 @@ sh -c '. /etc/lsb-release && echo "deb http://mirrors.tuna.tsinghua.edu.cn/ros/u
 apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 ```
 
-![ROS Key](/img/docs/jetson/8-docker/8-4/image-20250105151255171.png)
+![ROS Key](/img/docs/hh101/8-docker/8-4/image-20250105151255171.png)
 
 ------------------------------------------------------------------------
 
@@ -108,11 +108,11 @@ apt update && apt upgrade
 apt install ros-melodic-desktop-full -y
 ```
 
-![ROS Install](/img/docs/jetson/8-docker/8-4/image-20250105151509965.png)
+![ROS Install](/img/docs/hh101/8-docker/8-4/image-20250105151509965.png)
 
 During installation, select your region and city when prompted.
 
-![Timezone Select](/img/docs/jetson/8-docker/8-4/image-20250105153026285.png)
+![Timezone Select](/img/docs/hh101/8-docker/8-4/image-20250105153026285.png)
 
 ------------------------------------------------------------------------
 
@@ -122,7 +122,7 @@ During installation, select your region and city when prompted.
 apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential -y
 ```
 
-![Dependencies](/img/docs/jetson/8-docker/8-4/image-20250105153047221.png)
+![Dependencies](/img/docs/hh101/8-docker/8-4/image-20250105153047221.png)
 
 ------------------------------------------------------------------------
 

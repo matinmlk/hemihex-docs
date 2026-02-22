@@ -22,7 +22,7 @@ Due to performance limitations, the Jetson Orin Nano 4GB cannot run this model.
 
 ## 2. Performance
 
-![img](/img/docs/jetson/11-OfflineAIModel/11-9/pie_llava_gpt4.png)
+![img](/img/docs/hh101/11-OfflineAIModel/11-9/pie_llava_gpt4.png)
 
 ## 3. Using Llava
 
@@ -34,7 +34,7 @@ Use the run command to start running the model. If the model has not been downlo
 ollama run llava:7b
 ```
 
-![image-20250630141438495](/img/docs/jetson/11-OfflineAIModel/11-9/1.png)
+![image-20250630141438495](/img/docs/hh101/11-OfflineAIModel/11-9/1.png)
 
 ### 3.2 Starting a Conversation
 
@@ -44,18 +44,18 @@ How many minutes is half an hour?
 
 Response time depends on your hardware configuration. Please be patient!
 
-![image-20250630143938794](/img/docs/jetson/11-OfflineAIModel/11-9/image-20250630143938794.png)
+![image-20250630143938794](/img/docs/hh101/11-OfflineAIModel/11-9/image-20250630143938794.png)
 
 ### 3.3 Visual Function
 
-![test_pic](/img/docs/jetson/11-OfflineAIModel/11-9/test_pic.png)
+![test_pic](/img/docs/hh101/11-OfflineAIModel/11-9/test_pic.png)
 
 ```text
 What do you see in this picture? :./test_pic.png
 #Use ": + image path" in the conversation to enable the model to use its visual function and interpret the information in the image.
 ```
 
-![image-20250702095903866](/img/docs/jetson/11-OfflineAIModel/11-9/2.png)
+![image-20250702095903866](/img/docs/hh101/11-OfflineAIModel/11-9/2.png)
 
 ### 3.4 Ending the Conversation
 

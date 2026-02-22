@@ -50,7 +50,7 @@ python3 03.image_modify.py
 Select the image display window and press **`q`** to exit the program.
 :::
 
-![Image Modification Result](/img/docs/jetson/06-OpenCV/6-3/image-20250106144557431.png)
+![Image Modification Result](/img/docs/hh101/06-OpenCV/6-3/image-20250106144557431.png)
 
 ------------------------------------------------------------------------
 

@@ -9,4 +9,4 @@ To run the voice interaction function, you must use the AI large model voice mod
 
 Wiring Diagram:
 
-![Wiring diagram](/img/docs/jetson/12-OnlineAIModel/12-6/1.png)
+![Wiring diagram](/img/docs/hh101/12-OnlineAIModel/12-6/1.png)

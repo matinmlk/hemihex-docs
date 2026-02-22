@@ -52,7 +52,7 @@ python3 01.image_read.py
 Select the image display window and press **`q`** to exit the program.
 :::
 
-![Image Display Result](/img/docs/jetson/06-OpenCV/6-1/image-20250106121841781.png)
+![Image Display Result](/img/docs/hh101/06-OpenCV/6-1/image-20250106121841781.png)
 
 ------------------------------------------------------------------------
 

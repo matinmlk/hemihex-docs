@@ -48,7 +48,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Grayscale
-Result](/img/docs/jetson/06-OpenCV/6-8/image-20250106155910684.png)
+Result](/img/docs/hh101/06-OpenCV/6-8/image-20250106155910684.png)
 
 ------------------------------------------------------------------------
 

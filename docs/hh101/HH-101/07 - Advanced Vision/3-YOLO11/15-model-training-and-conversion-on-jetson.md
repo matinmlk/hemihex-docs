@@ -46,12 +46,12 @@ yolo detect train data=orange.yaml model=yolo11n.pt epochs=100 imgsz=640
 During training, logs and checkpoints are saved automatically.
 
 ![Training
-Progress](/img/docs/jetson/07-AdvancedVision/7-15/image-20250102154708344.png)
+Progress](/img/docs/hh101/07-AdvancedVision/7-15/image-20250102154708344.png)
 
 ![Loss
-Curves](/img/docs/jetson/07-AdvancedVision/7-15/image-20250102154743659.png)
+Curves](/img/docs/hh101/07-AdvancedVision/7-15/image-20250102154743659.png)
 
-![Metrics](/img/docs/jetson/07-AdvancedVision/7-15/image-20250102160400563.png)
+![Metrics](/img/docs/hh101/07-AdvancedVision/7-15/image-20250102160400563.png)
 
 ------------------------------------------------------------------------
 
@@ -91,10 +91,10 @@ The TensorRT engine file (`.engine`) will be generated in the same
 directory.
 
 ![TensorRT
-Export](/img/docs/jetson/07-AdvancedVision/7-15/image-20250102161426410.png)
+Export](/img/docs/hh101/07-AdvancedVision/7-15/image-20250102161426410.png)
 
 ![Engine Generation
-Complete](/img/docs/jetson/07-AdvancedVision/7-15/image-20250102161435503.png)
+Complete](/img/docs/hh101/07-AdvancedVision/7-15/image-20250102161435503.png)
 
 ------------------------------------------------------------------------
 

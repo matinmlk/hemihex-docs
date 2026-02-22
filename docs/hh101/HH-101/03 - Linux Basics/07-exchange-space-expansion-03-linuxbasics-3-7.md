@@ -24,7 +24,7 @@ echo "/var/8GB.swap none swap sw 0 0" | sudo tee -a /etc/fstab
 ```
 
 
-![image-20250111115707961](/img/docs/jetson/03-LinuxBasics/3-7/image-20250111115707961.png)
+![image-20250111115707961](/img/docs/hh101/03-LinuxBasics/3-7/image-20250111115707961.png)
 
 ### 2.1. Disable ZRAM swap configuration
 
@@ -69,4 +69,4 @@ echo "/var/8GB.swap none swap sw 0 0" | sudo tee -a /etc/fstab
 
 After restarting the system, the system swap space increases to 8GB:
 
-![image-20250114114800477](/img/docs/jetson/03-LinuxBasics/3-7/image-20250114114800477.png)
+![image-20250114114800477](/img/docs/hh101/03-LinuxBasics/3-7/image-20250114114800477.png)

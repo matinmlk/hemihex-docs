@@ -29,7 +29,7 @@ NVIDIA Jetson Linux 36.4.3 corresponds to Jetpack 6.2
 
 Download the compressed package files corresponding to Driver Package (BSP) and Sample Root Filesystem :
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120150532008.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120150532008.png)
 
 ## 2. Flashing mode
 
@@ -41,13 +41,13 @@ The Jetson Orin motherboard needs to be connected to a DC power adapter, DP data
 
 This illustration is based on the official version of Jetson Orin Nano. Users of other versions can refer to it for use (the hardware interface and functional layout are the same).
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120171038907.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120171038907.png)
 
 ### 2.2, Software connection
 
 The motherboard is successfully connected to the Ubuntu system, and the lsusb command will show the NVIDIA Corp. APX information:
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120154019235.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120154019235.png)
 
 ## 3. Burning system
 
@@ -73,7 +73,7 @@ sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_R36.4.3_aarch64.tbz2 -C Linux_fo
 cd Linux_for_Tegra/
 ```
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120151802071.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120151802071.png)
 
 ### 3.2. Run the script
 
@@ -81,14 +81,14 @@ cd Linux_for_Tegra/
 sudo ./tools/l4t_flash_prerequisites.sh
 ```
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120151922577.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120151922577.png)
 
 ```bash
 sudo ./apply_binaries.sh
 ```
 
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120152138271.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120152138271.png)
 
 ### 3.3. Burn the system to the solid state drive
 
@@ -100,25 +100,25 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c too
 Both Jetson Orin Nano and Jetson Orin NX can use the same command to burn the system to the SSD
 :::
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120152242874.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120152242874.png)
 
 :::note
 During the burning process, the user needs to connect the device to the virtual machine in time, otherwise it will cause the link to time out!
 :::
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120155459747.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120155459747.png)
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120155405246.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120155405246.png)
 
 ## 4. Start the system
 
 After the system is successfully burned, disconnect the mainboard power supply (disconnect the DC power adapter and Type-C data cable), and then unplug the jumper cap that shorts FC REC and GND under the core board; after confirming that the above operations are completed, reconnect the DC power adapter and DP data cable (connect to the display) to start the system.
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120161524122.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120161524122.png)
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120162024278-1737361225177-3.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120162024278-1737361225177-3.png)
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120162037749.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120162037749.png)
 
 ## 5. Component environment
 

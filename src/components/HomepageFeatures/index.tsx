@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'From Unboxed to Inspecting in Minutes',
-    Svg: require('@site/static/img/vision_ai.svg').default,
+    Svg: require('@site/static/img/site/vision_ai.svg').default,
     description: (
       <>
         Plug in your inspection device, follow the quick-start guide, and run
@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Built for Real Manufacturing Workflows',
-    Svg: require('@site/static/img/factory_workflow.svg').default,
+    Svg: require('@site/static/img/site/factory_workflow.svg').default,
     description: (
       <>
         Use the documentation to model your actual line: stations, recipes,
@@ -36,7 +36,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'AI-Powered Vision, Fully Extensible',
-    Svg: require('@site/static/img/extensible_system.svg').default,
+    Svg: require('@site/static/img/site/extensible_system.svg').default,
     description: (
       <>
         The platform uses modern computer vision and AI. These docs show how to

@@ -53,7 +53,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Translation
-Result](/img/docs/jetson/06-OpenCV/6-6/image-20250106154840955.png)
+Result](/img/docs/hh101/06-OpenCV/6-6/image-20250106154840955.png)
 
 ------------------------------------------------------------------------
 

@@ -15,7 +15,7 @@ sudo apt install python3-pip -y
 sudo pip3 install -U jetson-stats
 ```
 
-![image-20241228194459229](/img/docs/jetson/03-LinuxBasics/3-6/image-20241228194459229.png)
+![image-20241228194459229](/img/docs/hh101/03-LinuxBasics/3-6/image-20241228194459229.png)
 
 ## 2. Best performance mode
 
@@ -49,16 +49,16 @@ jtop
 : The motherboard power mode must be set to MAXN to display the strongest performance parameters!
 :::
 
-![image-20250122195343553](/img/docs/jetson/03-LinuxBasics/3-6/image-20250122195343553.png)
+![image-20250122195343553](/img/docs/hh101/03-LinuxBasics/3-6/image-20250122195343553.png)
 
-![image-20250122195350543](/img/docs/jetson/03-LinuxBasics/3-6/image-20250122195350543.png)
+![image-20250122195350543](/img/docs/hh101/03-LinuxBasics/3-6/image-20250122195350543.png)
 
-![image-20250122195358919](/img/docs/jetson/03-LinuxBasics/3-6/image-20250122195358919.png)
+![image-20250122195358919](/img/docs/hh101/03-LinuxBasics/3-6/image-20250122195358919.png)
 
-![image-20250122195405567](/img/docs/jetson/03-LinuxBasics/3-6/image-20250122195405567.png)
+![image-20250122195405567](/img/docs/hh101/03-LinuxBasics/3-6/image-20250122195405567.png)
 
-![image-20250122195413447](/img/docs/jetson/03-LinuxBasics/3-6/image-20250122195413447.png)
+![image-20250122195413447](/img/docs/hh101/03-LinuxBasics/3-6/image-20250122195413447.png)
 
-![image-20250122195419958](/img/docs/jetson/03-LinuxBasics/3-6/image-20250122195419958.png)
+![image-20250122195419958](/img/docs/hh101/03-LinuxBasics/3-6/image-20250122195419958.png)
 
-![image-20250121150858152](/img/docs/jetson/03-LinuxBasics/3-6/image-20250121150858152.png)
+![image-20250121150858152](/img/docs/hh101/03-LinuxBasics/3-6/image-20250121150858152.png)

@@ -50,7 +50,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Add Text
-Result](/img/docs/jetson/06-OpenCV/6-16/image-20250106184848293.png)
+Result](/img/docs/hh101/06-OpenCV/6-16/image-20250106184848293.png)
 
 ------------------------------------------------------------------------
 

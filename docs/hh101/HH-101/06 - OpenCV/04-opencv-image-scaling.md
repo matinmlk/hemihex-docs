@@ -47,7 +47,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Scaling
-Result](/img/docs/jetson/06-OpenCV/6-4/image-20250106150844174.png)
+Result](/img/docs/hh101/06-OpenCV/6-4/image-20250106150844174.png)
 
 ------------------------------------------------------------------------
 

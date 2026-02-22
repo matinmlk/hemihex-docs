@@ -51,7 +51,7 @@ int main(int argc, char **argv)
 }
 ```
 
-![C++ Subscriber Flow](/img/docs/jetson/9-ROS1/9-5/sub_c++.jpg)
+![C++ Subscriber Flow](/img/docs/hh101/9-ROS1/9-5/sub_c++.jpg)
 
 ```cmake
 add_executable(turtle_pose_subscriber src/turtle_pose_subscriber.cpp)
@@ -70,7 +70,7 @@ rosrun turtlesim turtlesim_node
 rosrun learning_topic turtle_pose_subscriber
 ```
 
-![C++ Subscriber Output](/img/docs/jetson/9-ROS1/9-5/image-20220225102205852.png)
+![C++ Subscriber Output](/img/docs/hh101/9-ROS1/9-5/image-20220225102205852.png)
 
 ---
 
@@ -99,7 +99,7 @@ if __name__ == '__main__':
     turtle_pose_subscriber()
 ```
 
-![Python Subscriber Flow](/img/docs/jetson/9-ROS1/9-5/image-20220225103401539.png)
+![Python Subscriber Flow](/img/docs/hh101/9-ROS1/9-5/image-20220225103401539.png)
 
 ```bash
 roscore

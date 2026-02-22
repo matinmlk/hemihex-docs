@@ -13,7 +13,7 @@ Isaac ROS Image Segmentation contains ROS packages for semantic image segmentati
 
 These packages provide methods for classification of an input image at the pixel level by running GPU-accelerated inference on a DNN model. Each pixel of the input image is predicted to belong to a set of defined classes. The output prediction can be used by perception functions to understand where each class is spatially in a 2D image or fuse with a corresponding depth location in a 3D scene.
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-6/1.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-6/1.png)
 
 ## Quick Experience
 
@@ -68,4 +68,4 @@ Run the following command to view the results.
 ros2 run rqt_image_view rqt_image_view /segformer/colored_segmentation_mask
 ```
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-6/2.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-6/2.png)

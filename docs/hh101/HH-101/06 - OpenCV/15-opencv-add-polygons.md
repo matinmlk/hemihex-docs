@@ -26,7 +26,7 @@ Select the image and press `q` to exit the program.
 :::
 
 ![Polygon Drawing
-Result](/img/docs/jetson/06-OpenCV/6-15/image-20250106184000971.png)
+Result](/img/docs/hh101/06-OpenCV/6-15/image-20250106184000971.png)
 
 ------------------------------------------------------------------------
 

@@ -26,16 +26,16 @@ Note: The tutorial only demonstrates GPIO.BOARD mode
 
 One-to-one correspondence between BOARD mode pins and 40Pin pins on the motherboard:
 
-![image-20250108121230644](/img/docs/jetson/04-GPIOcontrolcourse/4-1/image-20250108121230644.png)
+![image-20250108121230644](/img/docs/hh101/04-GPIOcontrolcourse/4-1/image-20250108121230644.png)
 
 ### 2.2. GPIO.BCM mode
 
 One-to-one correspondence between BCM mode pins and 40Pin pins on the motherboard:
 
-![image-20250109153031466](/img/docs/jetson/04-GPIOcontrolcourse/4-1/image-20250109153031466.png)
+![image-20250109153031466](/img/docs/hh101/04-GPIOcontrolcourse/4-1/image-20250109153031466.png)
 
 ## 3. Other pins
 
 12Pin pin description under the Jetson core board:
 
-![image-20250109161945494](/img/docs/jetson/04-GPIOcontrolcourse/4-1/image-20250109161945494.png)
+![image-20250109161945494](/img/docs/hh101/04-GPIOcontrolcourse/4-1/image-20250109161945494.png)

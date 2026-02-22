@@ -90,7 +90,7 @@ int main(int argc, char** argv)
 
 ### Process Flow Diagram
 
-![Client Flow Chart](/img/docs/jetson/9-ROS1/9-7/client.jpg)
+![Client Flow Chart](/img/docs/hh101/9-ROS1/9-7/client.jpg)
 
 ------------------------------------------------------------------------
 
@@ -127,7 +127,7 @@ rosrun learning_server a_new_turtle
 
 ### Program Output Example
 
-![Client Output](/img/docs/jetson/9-ROS1/9-7/image-20220218180224285.png)
+![Client Output](/img/docs/hh101/9-ROS1/9-7/image-20220218180224285.png)
 
 ------------------------------------------------------------------------
 
@@ -143,7 +143,7 @@ To view all available services:
 rosservice list
 ```
 
-![Service List](/img/docs/jetson/9-ROS1/9-7/image-20220218180756612.png)
+![Service List](/img/docs/hh101/9-ROS1/9-7/image-20220218180756612.png)
 
 To inspect the `/spawn` service:
 
@@ -151,7 +151,7 @@ To inspect the `/spawn` service:
 rosservice info /spawn
 ```
 
-![Spawn Service Info](/img/docs/jetson/9-ROS1/9-7/image-20220218181244822.png)
+![Spawn Service Info](/img/docs/hh101/9-ROS1/9-7/image-20220218181244822.png)
 
 The parameters required are:
 
@@ -208,4 +208,4 @@ if __name__ == "__main__":
 
 ### Python Program Flow Diagram
 
-![Python Client Flow](/img/docs/jetson/9-ROS1/9-7/image-20220225112117967.png)
+![Python Client Flow](/img/docs/hh101/9-ROS1/9-7/image-20220225112117967.png)

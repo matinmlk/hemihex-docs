@@ -13,7 +13,7 @@ who subscribe to that topic receive the data.
 
 Topic communication is based on the publish/subscribe model.
 
-![Topic Communication Model](/img/docs/jetson/10-ROS2/10-7/image8.gif)
+![Topic Communication Model](/img/docs/hh101/10-ROS2/10-7/image8.gif)
 
 Topic data transmission is a process where data is transmitted from one
 node to another. The object sending data is called a publisher, and the
@@ -38,7 +38,7 @@ After executing the above command, the `pkg_topic` package will be
 created along with a `publisher_demo` node and the relevant
 configuration files.
 
-![Package Structure](/img/docs/jetson/10-ROS2/10-7/image-20231023170921392.png)
+![Package Structure](/img/docs/hh101/10-ROS2/10-7/image-20231023170921392.png)
 
 ------------------------------------------------------------------------
 
@@ -76,7 +76,7 @@ def main():
 
 ### 3.2 Editing the Configuration File
 
-![Config File](/img/docs/jetson/10-ROS2/10-7/image-20231023173312172.png)
+![Config File](/img/docs/hh101/10-ROS2/10-7/image-20231023173312172.png)
 
 ------------------------------------------------------------------------
 
@@ -106,7 +106,7 @@ Check published topics:
 ros2 topic list
 ```
 
-![Topic List](/img/docs/jetson/10-ROS2/10-7/image-20231023173728019.png)
+![Topic List](/img/docs/hh101/10-ROS2/10-7/image-20231023173728019.png)
 
 View topic data:
 
@@ -114,7 +114,7 @@ View topic data:
 ros2 topic echo /topic_demo
 ```
 
-![Topic Echo Output](/img/docs/jetson/10-ROS2/10-7/image-20231023173821223.png)
+![Topic Echo Output](/img/docs/hh101/10-ROS2/10-7/image-20231023173821223.png)
 
 ------------------------------------------------------------------------
 
@@ -125,7 +125,7 @@ ros2 topic echo /topic_demo
 Create a new file `subscriber_demo.py` in the same directory as
 `publisher_demo.py`.
 
-![Subscriber File](/img/docs/jetson/10-ROS2/10-7/image-20231023174819565.png)
+![Subscriber File](/img/docs/hh101/10-ROS2/10-7/image-20231023174819565.png)
 
 Edit the file with the following code:
 
@@ -154,7 +154,7 @@ def main():
 
 ### 4.2 Editing the Configuration File
 
-![Subscriber Config](/img/docs/jetson/10-ROS2/10-7/image-20231023175338754.png)
+![Subscriber Config](/img/docs/hh101/10-ROS2/10-7/image-20231023175338754.png)
 
 ------------------------------------------------------------------------
 

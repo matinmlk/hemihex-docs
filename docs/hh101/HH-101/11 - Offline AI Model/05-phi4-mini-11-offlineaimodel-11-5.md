@@ -23,7 +23,7 @@ The Phi-4-mini-instruction is a lightweight, open model built on synthetic data 
 
 ## 2. Performance
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-5/F4.webp)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-5/F4.webp)
 
 ## 3. Using Phi4-mini
 
@@ -35,7 +35,7 @@ Use the run command to start running the model. If the model has not been downlo
 ollama run phi4-mini:3.8b
 ```
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-5/1.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-5/1.png)
 
 ### 3.2 Starting a Conversation
 
@@ -46,7 +46,7 @@ How many minutes is a quarter of an hour?
 
 Response time depends on your hardware configuration. Please be patient!
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-5/image-20250628174758777.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-5/image-20250628174758777.png)
 
 ### 3.3 Ending a Conversation
 

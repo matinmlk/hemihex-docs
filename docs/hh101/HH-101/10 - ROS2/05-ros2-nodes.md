@@ -72,7 +72,7 @@ def main(args=None):
     rclpy.shutdown()               # Shutdown ROS 2
 ```
 
-![Python Node File Structure](/img/docs/jetson/10-ROS2/10-6/image-20231023163116372.png)
+![Python Node File Structure](/img/docs/hh101/10-ROS2/10-6/image-20231023163116372.png)
 
 ------------------------------------------------------------------------
 
@@ -88,7 +88,7 @@ entry_points={
 },
 ```
 
-![Setup.py Entry Point](/img/docs/jetson/10-ROS2/10-6/image-20231023172134879.png)
+![Setup.py Entry Point](/img/docs/hh101/10-ROS2/10-6/image-20231023172134879.png)
 
 ------------------------------------------------------------------------
 
@@ -116,4 +116,4 @@ ros2 run pkg_helloworld_py helloworld
 
 If successful, you will see recurring output:
 
-![Hello World Output](/img/docs/jetson/10-ROS2/10-6/image-20231023163749024.png)
+![Hello World Output](/img/docs/hh101/10-ROS2/10-6/image-20231023163749024.png)

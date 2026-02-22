@@ -90,7 +90,7 @@ docker pull ghcr.io/open-webui/open-webui:main
 
 
 
-![image-20250111142233349](/img/docs/jetson/11-OfflineAIModel/11-2/image-20250111142233349.png)
+![image-20250111142233349](/img/docs/hh101/11-OfflineAIModel/11-2/image-20250111142233349.png)
 
 ## 4. Open WebUI and run
 
@@ -100,7 +100,7 @@ Enter the following command in the terminal to start the specified Docker:
 docker run --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ```
 
-![image-20250111142656802](/img/docs/jetson/11-OfflineAIModel/11-2/image-20250111142656802.png)
+![image-20250111142656802](/img/docs/hh101/11-OfflineAIModel/11-2/image-20250111142656802.png)
 
 After successful startup, use the following URL to access the browser:
 
@@ -129,15 +129,15 @@ Password: HemiHex
 
 ### 4.2. Register and log in
 
-![image-20250111142737164](/img/docs/jetson/11-OfflineAIModel/11-2/image-20250111142737164.png)
+![image-20250111142737164](/img/docs/hh101/11-OfflineAIModel/11-2/image-20250111142737164.png)
 
-![image-20250111142854678](/img/docs/jetson/11-OfflineAIModel/11-2/image-20250111142854678.png)
+![image-20250111142854678](/img/docs/hh101/11-OfflineAIModel/11-2/image-20250111142854678.png)
 
-![image-20250111143126879](/img/docs/jetson/11-OfflineAIModel/11-2/image-20250111143126879.png)
+![image-20250111143126879](/img/docs/hh101/11-OfflineAIModel/11-2/image-20250111143126879.png)
 
 ### 4.3 User Interface
 
-![image-20250111143544710](/img/docs/jetson/11-OfflineAIModel/11-2/image-20250111143544710.png)
+![image-20250111143544710](/img/docs/hh101/11-OfflineAIModel/11-2/image-20250111143544710.png)
 
 ## 5. Model dialogue
 
@@ -155,7 +155,7 @@ Click Select a model to select a specific model for dialogue.
 The model pulled by ollama will be automatically added to the Open WebUI model option. Refresh the web page and the new model will appear!
 ```
 
-![image-20240708190915884](/img/docs/jetson/11-OfflineAIModel/11-2/image-20240708190915884.png)
+![image-20240708190915884](/img/docs/hh101/11-OfflineAIModel/11-2/image-20240708190915884.png)
 
 ### 5.2. Demonstration: LLaVA
 
@@ -165,7 +165,7 @@ The LLaVA case demonstrated requires 8G or even more than 8G to run. Users can u
 What's in this image?
 ```
 
-![image-20240708191214680](/img/docs/jetson/11-OfflineAIModel/11-2/image-20240708191214680.png)
+![image-20240708191214680](/img/docs/hh101/11-OfflineAIModel/11-2/image-20240708191214680.png)
 
 ## 6. Common Problems
 

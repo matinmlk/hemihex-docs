@@ -51,7 +51,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Edge Detection
-Result](/img/docs/jetson/06-OpenCV/6-10/image-20250106161749169.png)
+Result](/img/docs/hh101/06-OpenCV/6-10/image-20250106161749169.png)
 
 ------------------------------------------------------------------------
 

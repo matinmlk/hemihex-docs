@@ -13,7 +13,7 @@ ls /dev/video*
 
 The result of the picture is the result of connecting two CSI cameras and one USB camera: generally, a CSI camera displays one video device, and a USB camera displays two video devices. The USB camera selects the newly added and smaller /dev/video2 call (connecting the USB camera system adds /dev/video2 and /dev/video3 device numbers)
 
-![image-20250110120951302](/img/docs/jetson/05-VisionBasicCourse/5-2/image-20250110120951302.png)
+![image-20250110120951302](/img/docs/hh101/05-VisionBasicCourse/5-2/image-20250110120951302.png)
 
 ## 2. GUVCView
 
@@ -26,7 +26,7 @@ sudo apt update
 sudo apt install guvcview -y
 ```
 
-![image-20250110121636596](/img/docs/jetson/05-VisionBasicCourse/5-2/image-20250110121636596.png)
+![image-20250110121636596](/img/docs/hh101/05-VisionBasicCourse/5-2/image-20250110121636596.png)
 
 ### 2.2, GUVCView use
 
@@ -36,9 +36,9 @@ Enter the application menu bar and click the guvcview icon or enter the startup 
 guvcview
 ```
 
-![image-20250110121901605](/img/docs/jetson/05-VisionBasicCourse/5-2/image-20250110121901605.png)
+![image-20250110121901605](/img/docs/hh101/05-VisionBasicCourse/5-2/image-20250110121901605.png)
 
-![image-20250110122007230](/img/docs/jetson/05-VisionBasicCourse/5-2/image-20250110122007230.png)
+![image-20250110122007230](/img/docs/hh101/05-VisionBasicCourse/5-2/image-20250110122007230.png)
 
 ## 3. VLC
 
@@ -51,7 +51,7 @@ sudo apt update
 sudo apt install vlc -y
 ```
 
-![image-20250110122158140](/img/docs/jetson/05-VisionBasicCourse/5-2/image-20250110122158140.png)
+![image-20250110122158140](/img/docs/hh101/05-VisionBasicCourse/5-2/image-20250110122158140.png)
 
 ### 3.2. VLC usage
 
@@ -61,12 +61,12 @@ Enter the application menu bar and click VLC media player icon or enter the star
 vlc
 ```
 
-![image-20250110122350426](/img/docs/jetson/05-VisionBasicCourse/5-2/image-20250110122350426.png)
+![image-20250110122350426](/img/docs/hh101/05-VisionBasicCourse/5-2/image-20250110122350426.png)
 
-![image-20250110122452349](/img/docs/jetson/05-VisionBasicCourse/5-2/image-20250110122452349.png)
+![image-20250110122452349](/img/docs/hh101/05-VisionBasicCourse/5-2/image-20250110122452349.png)
 
 Select the device number corresponding to the USB camera:
 
-![image-20250110122526067](/img/docs/jetson/05-VisionBasicCourse/5-2/image-20250110122526067.png)
+![image-20250110122526067](/img/docs/hh101/05-VisionBasicCourse/5-2/image-20250110122526067.png)
 
-![image-20250110123134360](/img/docs/jetson/05-VisionBasicCourse/5-2/image-20250110123134360.png)
+![image-20250110123134360](/img/docs/hh101/05-VisionBasicCourse/5-2/image-20250110123134360.png)

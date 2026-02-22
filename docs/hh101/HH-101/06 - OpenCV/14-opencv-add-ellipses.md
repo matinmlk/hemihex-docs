@@ -50,7 +50,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Ellipse Drawing
-Result](/img/docs/jetson/06-OpenCV/6-14/image-20250106172939112.png)
+Result](/img/docs/hh101/06-OpenCV/6-14/image-20250106172939112.png)
 
 ------------------------------------------------------------------------
 

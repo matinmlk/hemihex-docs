@@ -12,7 +12,7 @@ client sends a request to the server, and the server responds with data.
 
 This follows the **Client/Server (CS)** communication model.
 
-![Service Communication Model](/img/docs/jetson/10-ROS2/10-8/image8.gif)
+![Service Communication Model](/img/docs/hh101/10-ROS2/10-8/image8.gif)
 
 In this model: - The **client** requests data. - The **server**
 processes the request and returns a response.
@@ -33,7 +33,7 @@ ros2 pkg create pkg_service --build-type ament_python --dependencies rclpy --nod
 After execution, the `pkg_service` package and `server_demo` node will
 be created.
 
-![Package Structure](/img/docs/jetson/10-ROS2/10-8/image-20231023181903517.png)
+![Package Structure](/img/docs/hh101/10-ROS2/10-8/image-20231023181903517.png)
 
 ------------------------------------------------------------------------
 
@@ -77,7 +77,7 @@ To view the structure of the service message:
 ros2 interface show example_interfaces/srv/AddTwoInts
 ```
 
-![Service Interface](/img/docs/jetson/10-ROS2/10-8/image-20231023183333410.png)
+![Service Interface](/img/docs/hh101/10-ROS2/10-8/image-20231023183333410.png)
 
 ------------------------------------------------------------------------
 
@@ -89,7 +89,7 @@ Open `setup.py` and add:
 'server_demo = pkg_service.server_demo:main',
 ```
 
-![Setup Config](/img/docs/jetson/10-ROS2/10-8/image-20231023183130612.png)
+![Setup Config](/img/docs/hh101/10-ROS2/10-8/image-20231023183130612.png)
 
 ------------------------------------------------------------------------
 
@@ -99,7 +99,7 @@ Open `setup.py` and add:
 colcon build --packages-select pkg_service
 ```
 
-![Build Result](/img/docs/jetson/10-ROS2/10-8/image-20250905121820983.png)
+![Build Result](/img/docs/hh101/10-ROS2/10-8/image-20250905121820983.png)
 
 ------------------------------------------------------------------------
 
@@ -109,7 +109,7 @@ colcon build --packages-select pkg_service
 ros2 run pkg_service server_demo
 ```
 
-![Server Running](/img/docs/jetson/10-ROS2/10-8/image-20250905121914903.png)
+![Server Running](/img/docs/hh101/10-ROS2/10-8/image-20250905121914903.png)
 
 List services:
 
@@ -117,7 +117,7 @@ List services:
 ros2 service list
 ```
 
-![Service List](/img/docs/jetson/10-ROS2/10-8/image-20231023183459015.png)
+![Service List](/img/docs/hh101/10-ROS2/10-8/image-20231023183459015.png)
 
 Call the service:
 
@@ -125,7 +125,7 @@ Call the service:
 ros2 service call /add_two_ints example_interfaces/srv/AddTwoInts "{a: 1, b: 4}"
 ```
 
-![Service Response](/img/docs/jetson/10-ROS2/10-8/image-20231023183636466.png)
+![Service Response](/img/docs/hh101/10-ROS2/10-8/image-20231023183636466.png)
 
 ------------------------------------------------------------------------
 
@@ -135,7 +135,7 @@ ros2 service call /add_two_ints example_interfaces/srv/AddTwoInts "{a: 1, b: 4}"
 
 Create `client_demo.py` in the same directory as `server_demo.py`.
 
-![Client File](/img/docs/jetson/10-ROS2/10-8/image-20231023184928672.png)
+![Client File](/img/docs/hh101/10-ROS2/10-8/image-20231023184928672.png)
 
 Add the following code:
 

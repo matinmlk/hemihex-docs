@@ -25,7 +25,7 @@ This illustration is based on the official version of Jetson Orin Nano. Users of
 There is no need to enter the flashing mode to install the Jetson component environment, the motherboard can be turned on!
 :::
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250109180831845.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250109180831845.png)
 
 ## 2. Software connection
 
@@ -33,7 +33,7 @@ The tutorial uses VMware Workstation 17 Pro to burn the system!
 
 After starting the virtual machine, select in the menu bar: Virtual Machine → NVIDIA Linux for Tegra → Confirm the status of the connection with the virtual machine
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250123100937979.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250123100937979.png)
 
 ## 3. Use of SDK Manager
 
@@ -47,37 +47,37 @@ After opening `SDK Manager` , select according to your motherboard model: select
 
 Check the options below, confirm that the check is consistent, and click `CONTINUE` :
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116194316209-1737442070436-3.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116194316209-1737442070436-3.png)
 
 ### 3.3, STEP2
 
 The system has been successfully installed, we only need to check the required component environment: SDK Manager will automatically download all components. Once the download is complete, you can proceed to the next step
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116194450017.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116194450017.png)
 
 Enter the virtual machine password: HemiHex
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116194516622.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116194516622.png)
 
 ### 3.4, STEP3
 
 Here, fill in the username and password information you set when starting the system: the whole process takes a long time, please wait patiently
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116194558310.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116194558310.png)
 
 Wait for the system to download and install: the virtual machine has a network failure during the whole process, which can be ignored. The actual test did not affect the burning of the component environment
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116194622869.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116194622869.png)
 
 The whole installation process takes a long time, please wait patiently. If the installation fails, you can restart the motherboard system and restart the SDK Manager installation:
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116194818632.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116194818632.png)
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116200418604.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116200418604.png)
 
 ### 3.5、STEP4
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116203345930.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116203345930.png)
 
 ## 4、Environment verification
 
@@ -114,7 +114,7 @@ sudo nvpmodel -m 2 # Jetson Orin Nano
 sudo nvpmodel -m 0 # Jetson Orin NX
 ```
 
-![88d179920f811d989b1c909d6adb59b9](/img/docs/jetson/02-Basics/2-3/88d179920f811d989b1c909d6adb59b9.png)
+![88d179920f811d989b1c909d6adb59b9](/img/docs/hh101/02-Basics/2-3/88d179920f811d989b1c909d6adb59b9.png)
 
 Enable Jetson clocks: CPU and GPU cores run at maximum frequency
 
@@ -128,6 +128,6 @@ Use the Jtop tool to view system information:
 jtop
 ```
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250121150457398.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250121150457398.png)
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250121150858152.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250121150858152.png)

@@ -13,7 +13,7 @@ Isaac ROS Nvblox contains ROS 2 packages for 3D reconstruction and cost maps for
 
 `isaac_ros_nvblox`is designed to work with depth-cameras and/or 3D LiDAR. The package uses GPU acceleration to compute a 3D reconstruction and 2D costmaps using nvblox, the underlying framework-independent C++ library.
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-7/1.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-7/1.png)
 
 ## Quick Experience
 
@@ -44,4 +44,4 @@ navigation:=False
 
 Run Results
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-7/2.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-7/2.png)

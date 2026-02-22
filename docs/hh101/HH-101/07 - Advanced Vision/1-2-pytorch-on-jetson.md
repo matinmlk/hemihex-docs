@@ -20,7 +20,7 @@ systems.
 Before installing PyTorch, confirm your system environment.
 
 ![System
-Information](/img/docs/jetson/07-AdvancedVision/7-2/image-20250121150858152.png)
+Information](/img/docs/hh101/07-AdvancedVision/7-2/image-20250121150858152.png)
 
 ------------------------------------------------------------------------
 
@@ -101,7 +101,7 @@ python3 -c "import torch; print(f'Torch: {torch.__version__}')"
 If successful, the PyTorch version will be printed:
 
 ![PyTorch Version
-Output](/img/docs/jetson/07-AdvancedVision/7-2/image-20241226201901856.png)
+Output](/img/docs/hh101/07-AdvancedVision/7-2/image-20241226201901856.png)
 
 ------------------------------------------------------------------------
 

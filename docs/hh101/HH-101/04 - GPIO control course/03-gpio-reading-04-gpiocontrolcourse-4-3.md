@@ -9,7 +9,7 @@ sidebar_position: 0
 
 GPIO.BOARD 12 pin corresponds to GPIO.BCM 18 pin:
 
-![image-20250110104406267](/img/docs/jetson/04-GPIOcontrolcourse/4-3/image-20250110104406267.png)
+![image-20250110104406267](/img/docs/hh101/04-GPIOcontrolcourse/4-3/image-20250110104406267.png)
 
 ## 2. Run the program
 
@@ -33,4 +33,4 @@ Use Dupont wire to connect GPIO.BOARD 12 pin to GND and 3.3V pin on the motherbo
 Do not connect incorrectly or cause pin short circuit, as mistakes may damage the motherboard hardware!
 :::
 
-![image-20250110103545095](/img/docs/jetson/04-GPIOcontrolcourse/4-3/image-20250110103545095.png)
+![image-20250110103545095](/img/docs/hh101/04-GPIOcontrolcourse/4-3/image-20250110103545095.png)

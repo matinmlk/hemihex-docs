@@ -13,9 +13,9 @@ Terminal is a command line interface used to interact with the operating system.
 
 In Ubuntu, you can open it by using the shortcut keys Ctrl + Alt + T or by finding the terminal in the application menu:
 
-![image-20250104214102250](/img/docs/jetson/03-LinuxBasics/3-1/image-20250104214102250.png)
+![image-20250104214102250](/img/docs/hh101/03-LinuxBasics/3-1/image-20250104214102250.png)
 
-![image-20250104214129097](/img/docs/jetson/03-LinuxBasics/3-1/image-20250104214129097.png)
+![image-20250104214129097](/img/docs/hh101/03-LinuxBasics/3-1/image-20250104214129097.png)
 
 ### 1.2. Basic commands
 
@@ -133,7 +133,7 @@ rm -rf File_demo
 rm -rf File_demo
 ```
 
-![image-20250104220819889](/img/docs/jetson/03-LinuxBasics/3-1/image-20250104220819889.png)
+![image-20250104220819889](/img/docs/hh101/03-LinuxBasics/3-1/image-20250104220819889.png)
 
 ### 1.3. Shortcut keys
 
@@ -166,7 +166,7 @@ gedit Version.txt
 gedit Version.txt
 ```
 
-![image-20250104221546150](/img/docs/jetson/03-LinuxBasics/3-1/image-20250104221546150.png)
+![image-20250104221546150](/img/docs/hh101/03-LinuxBasics/3-1/image-20250104221546150.png)
 
 ### 2.2, Nano (Medium)
 
@@ -205,7 +205,7 @@ Ctrl + U : Paste clipboard contents
 
 Ctrl + W : Search text
 
-![image-20250104225215119](/img/docs/jetson/03-LinuxBasics/3-1/image-20250104225215119.png)
+![image-20250104225215119](/img/docs/hh101/03-LinuxBasics/3-1/image-20250104225215119.png)
 
 ### 2.3, Vi/Vim (difficult)
 
@@ -242,4 +242,4 @@ Last line mode
 
 :q! : Force exit without saving
 
-![image-20250104225248056](/img/docs/jetson/03-LinuxBasics/3-1/image-20250104225248056.png)
+![image-20250104225248056](/img/docs/hh101/03-LinuxBasics/3-1/image-20250104225248056.png)

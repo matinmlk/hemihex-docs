@@ -15,7 +15,7 @@ The system installs Jetson.GPIO library by default, so you can skip this step.
 sudo pip3 install Jetson.GPIO
 ```
 
-![image-20250110101719371](/img/docs/jetson/04-GPIOcontrolcourse/4-2/image-20250110101719371.png)
+![image-20250110101719371](/img/docs/hh101/04-GPIOcontrolcourse/4-2/image-20250110101719371.png)
 
 ### 1.2. Manual installation
 
@@ -35,7 +35,7 @@ cd ~/jetson-gpio/
 sudo python3 setup.py install
 ```
 
-![image-20250110102057706](/img/docs/jetson/04-GPIOcontrolcourse/4-2/image-20250110102057706.png)
+![image-20250110102057706](/img/docs/hh101/04-GPIOcontrolcourse/4-2/image-20250110102057706.png)
 
 ## 2. Set user permissions
 
@@ -46,7 +46,7 @@ sudo groupadd -f -r gpio
 sudo usermod -a -G gpio jetson
 ```
 
-![image-20250110102615802](/img/docs/jetson/04-GPIOcontrolcourse/4-2/image-20250110102615802.png)
+![image-20250110102615802](/img/docs/hh101/04-GPIOcontrolcourse/4-2/image-20250110102615802.png)
 
 ## 3. Custom rule file
 
@@ -63,7 +63,7 @@ sudo cp lib/python/Jetson/GPIO/99-gpio.rules /etc/udev/rules.d/
 sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 
-![image-20250110102901779](/img/docs/jetson/04-GPIOcontrolcourse/4-2/image-20250110102901779.png)
+![image-20250110102901779](/img/docs/hh101/04-GPIOcontrolcourse/4-2/image-20250110102901779.png)
 
 ## 4. Set the motherboard model
 

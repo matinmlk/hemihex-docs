@@ -11,7 +11,7 @@ Isaac ROS Depth Segmentation official website link:[https://nvidia-isaac-ros.git
 
 Isaac ROS Depth Segmentation provides NVIDIA NVIDIA-accelerated packages for depth segmentation. The`isaac_ros_bi3d`package uses the optimized Bi3D DNN model to perform stereo-depth estimation via binary classification, which is used for depth segmentation. Depth segmentation can be used to determine whether an obstacle is within a proximity field and to avoid collisions with obstacles during navigation.
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-2/1.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-2/1.png)
 
 Bi3D is used in a graph of nodes to provide depth segmentation from a time-synchronized input left and right stereo image pair. Images to Bi3D need to be rectified and resized to the appropriate input resolution. The aspect ratio of the image needs to be maintained; hence, a crop and resize may be required to maintain the input aspect ratio. The graph for DNN encode, to DNN inference, to DNN decode is part of the Bi3D node. Inference is performed using TensorRT, as the Bi3D DNN model is designed to use optimizations supported by TensorRT.
 
@@ -75,7 +75,7 @@ Run the following command to view the depth segmentation map
 ros2 run isaac_ros_bi3d isaac_ros_bi3d_visualizer.py --max_disparity_value 30
 ```
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-2/2.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-2/2.png)
 
 Open the fourth terminal and enter the container
 
@@ -90,4 +90,4 @@ Run the following command to view the image
 ros2 run image_view image_view --ros-args -r image:=right/image_rect
 ```
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-2/3.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-2/3.png)

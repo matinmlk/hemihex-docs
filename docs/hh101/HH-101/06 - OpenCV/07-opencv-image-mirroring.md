@@ -49,7 +49,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Mirroring
-Result](/img/docs/jetson/06-OpenCV/6-7/image-20250106155337268.png)
+Result](/img/docs/hh101/06-OpenCV/6-7/image-20250106155337268.png)
 
 ------------------------------------------------------------------------
 

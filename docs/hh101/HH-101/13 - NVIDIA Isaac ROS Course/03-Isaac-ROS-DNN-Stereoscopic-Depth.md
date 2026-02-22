@@ -11,7 +11,7 @@ Isaac ROS DNN Stereo Depth official website link：[https://nvidia-isaac-ros.git
 
 The vision depth perception problem is generally useful in many fields of robotics such as estimating the pose of a robotic arm in an object manipulation task, estimating distance of static or moving targets in autonomous robot navigation, tracking targets in delivery robots and so on. Isaac ROS DNN Stereo Depth is targeted at two Isaac applications, Isaac Manipulator and Isaac Perceptor. In Isaac Manipulator application, ESS is deployed in Isaac ROS cuMotion package as a plug-in node to provide depth perception maps for robot arm motion planning and control. In this scenario, multi-camera stereo streams of industrial robot arms on a table task are passed to ESS to obtain corresponding depth streams. The depth streams are used to segment the relative distance of robot arms from corresponding objects on the table; thus providing signals for collision avoidance and fine-grain control. Similarly, the Isaac Perceptor application uses several Isaac ROS packages, namely, Isaac ROS Nova, Isaac ROS Visual Slam, Isaac ROS Stereo Depth (ESS), Isaac ROS Nvblox and Isaac ROS Image Pipeline.
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-3/1.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-3/1.png)
 
 ## Quick Experience
 
@@ -71,8 +71,8 @@ ros2 run isaac_ros_ess isaac_ros_ess_visualizer.py
 
 When threshold is set to 0.0, the display results are as follows:
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-3/2.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-3/2.png)
 
 When the threshold is set to 0.4, the results are as follows:
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-3/3.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-3/3.png)
