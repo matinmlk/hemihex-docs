@@ -1,9 +1,9 @@
 ---
-sidebar_position: 19
-title: Add Polygons with OpenCV
+sidebar_position: 15
+title: 15-Add Polygons with OpenCV
 ---
 
-# Add Polygons with OpenCV
+# 15-Add Polygons with OpenCV
 
 ## 1. Implementation Principle
 

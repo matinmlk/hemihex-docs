@@ -1,9 +1,9 @@
 ---
-sidebar_position: 13
-title: Development Environment
+sidebar_position: 3
+title: 03-Development Environment
 ---
 
-# 3. ROS 2 Development Environment
+# 03-ROS 2 Development Environment
 
 In theory, you can write basic ROS 2 programs in a simple text editor,
 but to significantly improve development efficiency, it is recommended

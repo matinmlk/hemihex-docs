@@ -1,9 +1,9 @@
 ---
 title: 04-Backup SSD System
-sidebar_position: 04
+sidebar_position: 4
 ---
 
-# Backup SSD system
+# 04-Backup SSD system
 
 During the development process, users may need to back up the system to prevent subsequent development from affecting the current system environment.
 

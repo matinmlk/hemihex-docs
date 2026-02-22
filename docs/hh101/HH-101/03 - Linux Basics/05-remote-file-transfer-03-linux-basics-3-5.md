@@ -1,9 +1,9 @@
 ---
-title: Remote File Transfer
-sidebar_position: 0
+title: 05-Remote File Transfer
+sidebar_position: 5
 ---
 
-# Remote file transfer
+# 05-Remote file transfer
 
 ## 1. MobaXterm
 

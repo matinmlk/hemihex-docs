@@ -1,9 +1,9 @@
 ---
-title: Linux Basics
-sidebar_position: 0
+title: 01-Linux Basics
+sidebar_position: 1
 ---
 
-# Linux Basics
+# 01-Linux Basics
 
 ## 1. Terminal
 

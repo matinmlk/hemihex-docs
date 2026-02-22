@@ -1,9 +1,9 @@
 ---
 sidebar_position: 6
-title: YOLO Environment Construction
+title: 6-YOLO Environment Construction
 ---
 
-# YOLO Environment Construction
+# 6-YOLO Environment Construction
 
 This document describes how to **set up a YOLO development and inference
 environment** on NVIDIA Jetson platforms using Ultralytics YOLO with GPU

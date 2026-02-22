@@ -1,9 +1,9 @@
 ---
-title: GPIO Reading
-sidebar_position: 0
+title: 03-GPIO Reading
+sidebar_position: 3
 ---
 
-# GPIO reading
+# 03-GPIO reading
 
 ## 1. GPIO pin diagram
 

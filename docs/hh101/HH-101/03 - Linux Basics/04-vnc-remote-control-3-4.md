@@ -1,9 +1,9 @@
 ---
-title: VNC Remote Control
-sidebar_position: 0
+title: 04-VNC Remote Control
+sidebar_position: 4
 ---
 
-# VNC remote control
+# 04-VNC remote control
 
 Tutorial to configure the built-in screen sharing of Ubuntu22.04 system for VNC remote control.
 

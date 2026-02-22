@@ -1,9 +1,9 @@
 ---
-sidebar_position: 16
-title:  Topic Communication
+sidebar_position: 6
+title: 06-Topic Communication
 ---
 
-# 7. ROS 2 Topic Communication
+# 06-ROS 2 Topic Communication
 
 ## 1. Introduction to Topic Communication
 

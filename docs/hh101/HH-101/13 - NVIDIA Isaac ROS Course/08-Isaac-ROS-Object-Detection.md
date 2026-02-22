@@ -1,9 +1,9 @@
 ---
-title: Isaac ROS Object detection
+title: 08-Isaac ROS Object detection
 sidebar_position: 8
 ---
 
-# Isaac ROS Object detection
+# 08-Isaac ROS Object detection
 
 Isaac ROS Object Detection Official Website Link：[https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_object_detection/index.html](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_object_detection/index.html)
 

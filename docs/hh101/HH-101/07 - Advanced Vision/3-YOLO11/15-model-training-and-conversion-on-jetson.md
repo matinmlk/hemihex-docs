@@ -1,9 +1,9 @@
 ---
 sidebar_position: 15
-title: Model Training and Conversion on Jetson
+title: 15-Model Training and Conversion on Jetson
 ---
 
-# Model Training and Conversion
+# 15-Model Training and Conversion
 
 After completing dataset annotation, you can train a custom model
 directly on the Jetson and convert it for optimized deployment.

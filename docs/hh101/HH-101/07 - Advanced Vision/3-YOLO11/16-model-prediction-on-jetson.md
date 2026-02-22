@@ -1,9 +1,9 @@
 ---
 sidebar_position: 16
-title: Model Prediction on Jetson
+title: 16-Model Prediction on Jetson
 ---
 
-# Model Prediction on Jetson
+# 16-Model Prediction on Jetson
 
 This section explains how to perform **model prediction (inference)** on
 NVIDIA Jetson using trained YOLO models in **PyTorch**, **ONNX**, or

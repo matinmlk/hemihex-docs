@@ -1,9 +1,9 @@
 ---
 title: 08-SSD Expansion
-sidebar_position: 08
+sidebar_position: 8
 ---
 
-# SSD expansion
+# 08-SSD expansion
 
 The factory image system will perform disk compression, so the capacity displayed in the system will be inconsistent with the actual capacity. Users can follow the tutorial to expand the SSD.
 

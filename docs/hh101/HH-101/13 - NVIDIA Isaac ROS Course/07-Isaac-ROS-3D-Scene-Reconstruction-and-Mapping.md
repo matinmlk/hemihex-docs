@@ -1,9 +1,9 @@
 ---
-title: Isaac ROS 3D scene reconstruction and mapping
+title: 07-Isaac ROS 3D scene reconstruction and mapping
 sidebar_position: 7
 ---
 
-# Isaac ROS 3D scene reconstruction and mapping
+# 07-Isaac ROS 3D scene reconstruction and mapping
 
 Isaac ROS 3D scene reconstruction and mapping official website link：[https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_nvblox/index.html](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_nvblox/index.html)
 

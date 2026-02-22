@@ -1,9 +1,9 @@
 ---
-sidebar_position: 22
-title: Preview CSI Camera Image
+sidebar_position: 18
+title: 18-Preview CSI Camera Image
 ---
 
-# Preview CSI Camera Image
+# 18-Preview CSI Camera Image
 
 This section explains how to **preview live images from a CSI camera**
 (such as a Raspberry Pi CSI camera) using OpenCV and `jetcam` on NVIDIA

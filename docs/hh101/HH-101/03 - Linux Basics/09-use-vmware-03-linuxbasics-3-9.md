@@ -1,9 +1,9 @@
 ---
-title: Use VMware
-sidebar_position: 0
+title: 09-Use VMware
+sidebar_position: 9
 ---
 
-# Use VMware
+# 09-Use VMware
 
 ## 1. VMware download
 

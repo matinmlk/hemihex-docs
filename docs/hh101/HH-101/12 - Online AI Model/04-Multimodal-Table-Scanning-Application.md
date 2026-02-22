@@ -1,9 +1,9 @@
 ---
-title: Multimodal table scanning application
+title: 04-Multimodal table scanning application
 sidebar_position: 4
 ---
 
-# 4.Multimodal table scanning application
+# 04-Multimodal table scanning application
 
 ## 1. Concept Introduction
 

@@ -1,9 +1,9 @@
 ---
-title: Qwen3
-sidebar_position: 0
+title: 04-Qwen3
+sidebar_position: 4
 ---
 
-# Qwen3
+# 04-Qwen3
 
 Demo Environment
 

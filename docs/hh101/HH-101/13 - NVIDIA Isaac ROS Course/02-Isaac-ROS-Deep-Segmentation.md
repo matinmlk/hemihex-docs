@@ -1,9 +1,9 @@
 ---
-title: Isaac ROS Deep segmentation
+title: 02-Isaac ROS Deep segmentation
 sidebar_position: 2
 ---
 
-# Isaac ROS Deep segmentation
+# 02-Isaac ROS Deep segmentation
 
 Isaac ROS Depth Segmentation official website link:[https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_depth_segmentation/index.html](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_depth_segmentation/index.html)
 

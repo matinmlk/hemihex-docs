@@ -1,9 +1,9 @@
 ---
-sidebar_position: 25
-title:  Common Command Tools
+sidebar_position: 13
+title: 13-Common Command Tools
 ---
 
-# 16. ROS 2 Common Command Tools
+# 13-ROS 2 Common Command Tools
 
 ## 1. Package Management Tool: `ros2 pkg`
 

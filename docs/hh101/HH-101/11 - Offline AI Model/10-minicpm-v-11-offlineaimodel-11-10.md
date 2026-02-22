@@ -1,9 +1,9 @@
 ---
-title: MiniCPM-V
-sidebar_position: 0
+title: 10-MiniCPM-V
+sidebar_position: 10
 ---
 
-# MiniCPM-V
+# 10-MiniCPM-V
 
 Demonstration Environment
 

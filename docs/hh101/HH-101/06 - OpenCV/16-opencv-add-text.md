@@ -1,9 +1,9 @@
 ---
-sidebar_position: 20
-title: Add Text with OpenCV
+sidebar_position: 16
+title: 16-Add Text with OpenCV
 ---
 
-# Add Text with OpenCV
+# 16-Add Text with OpenCV
 
 This section explains how to **draw text on an image** using OpenCV in
 Python.

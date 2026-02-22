@@ -1,9 +1,9 @@
 ---
-sidebar_position: 12
-title: Image Mirroring with OpenCV
+sidebar_position: 7
+title: 07-Image Mirroring with OpenCV
 ---
 
-# Image Mirroring with OpenCV
+# 07-Image Mirroring with OpenCV
 
 This section explains how to **mirror (flip) an image** using OpenCV.
 

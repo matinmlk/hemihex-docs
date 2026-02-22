@@ -1,9 +1,9 @@
 ---
-title: Jtop Tool
-sidebar_position: 0
+title: 06-Jtop Tool
+sidebar_position: 6
 ---
 
-# Jtop tool
+# 06-Jtop tool
 
 Jtop is a system monitoring tool developed for NVIDIA Jetson series devices. It can display the resource usage of various aspects of Jetson devices, such as CPU, GPU, memory, disk, network, etc., and can display different hardware temperatures, power consumption, frequency, etc. in real time.
 

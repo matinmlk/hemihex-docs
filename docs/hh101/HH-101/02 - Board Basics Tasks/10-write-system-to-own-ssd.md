@@ -3,7 +3,7 @@ title: 10-Write the System to Your Own SSD
 sidebar_position: 10
 ---
 
-# Write the system onto your own solid-state drive
+# 10-Write the system onto your own solid-state drive
 
 
 ## 1. Preparations before writing

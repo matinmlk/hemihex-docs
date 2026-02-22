@@ -1,9 +1,9 @@
 ---
-title: Llama 3.2
-sidebar_position: 0
+title: 03-Llama 3.2
+sidebar_position: 3
 ---
 
-# Llama 3.2
+# 03-Llama 3.2
 
 Demo Environment
 

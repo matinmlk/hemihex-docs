@@ -1,9 +1,9 @@
 ---
-sidebar_position: 14
-title: Function Packages
+sidebar_position: 4
+title: 04-Function Packages
 ---
 
-# 5. ROS 2 Function Packages
+# 04-ROS 2 Function Packages
 
 ## 1. Introduction to Function Packages
 

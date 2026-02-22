@@ -1,9 +1,9 @@
 ---
-sidebar_position: 10
-title: Image Cropping with OpenCV
+sidebar_position: 5
+title: 05-Image Cropping with OpenCV
 ---
 
-# Image Cropping with OpenCV
+# 05-Image Cropping with OpenCV
 
 This section explains how to **crop an image using OpenCV** by slicing
 the underlying NumPy array.

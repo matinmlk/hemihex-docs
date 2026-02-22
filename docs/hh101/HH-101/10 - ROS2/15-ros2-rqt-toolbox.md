@@ -1,9 +1,9 @@
 ---
-sidebar_position: 27
-title:  RQt Toolbox
+sidebar_position: 15
+title: 15-RQt Toolbox
 ---
 
-# 18. ROS 2 RQt Toolbox
+# 15-ROS 2 RQt Toolbox
 
 -   This tutorial folder contains demo animations that visually
     illustrate the process of implementing the examples in this section.

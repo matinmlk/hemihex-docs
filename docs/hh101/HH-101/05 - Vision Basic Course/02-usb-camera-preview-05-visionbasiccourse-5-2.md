@@ -1,9 +1,9 @@
 ---
-title: USB Camera Preview
-sidebar_position: 0
+title: 02-USB Camera Preview
+sidebar_position: 2
 ---
 
-# USB camera preview
+# 02-USB camera preview
 
 ## 1. View video device
 

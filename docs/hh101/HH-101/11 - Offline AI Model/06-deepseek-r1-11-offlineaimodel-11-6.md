@@ -1,9 +1,9 @@
 ---
-title: DeepSeek-R1
-sidebar_position: 0
+title: 06-DeepSeek-R1
+sidebar_position: 6
 ---
 
-# DeepSeek-R1
+# 06-DeepSeek-R1
 
 Demonstration Environment
 

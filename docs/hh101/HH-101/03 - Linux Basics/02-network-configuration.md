@@ -1,9 +1,9 @@
 ---
-title: Network Configuration
-sidebar_position: 0
+title: 02-Network Configuration
+sidebar_position: 2
 ---
 
-# Network configuration
+# 02-Network configuration
 
 :::note
 WiFi and hotspot modes require the use of a wireless network card. Before making the following settings, check whether the wireless network card and antenna are installed!

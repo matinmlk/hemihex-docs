@@ -1,9 +1,9 @@
 ---
-title: Use JetCam
-sidebar_position: 0
+title: 04-Use JetCam
+sidebar_position: 4
 ---
 
-# Use JetCam
+# 04-Use JetCam
 
 Use JetCam 1. JetCam installation 2. JetCam use 2.1, CSI camera Main code explanation Call the camera Get the camera image 2.1.1, single-channel camera 2.1.2, multi-channel camera 2.2, USB camera References
 

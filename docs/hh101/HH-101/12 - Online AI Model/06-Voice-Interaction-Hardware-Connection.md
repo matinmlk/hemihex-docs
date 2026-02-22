@@ -1,9 +1,9 @@
 ---
-title: Voice Interaction Hardware Connection
+title: 06-Voice Interaction Hardware Connection
 sidebar_position: 6
 ---
 
-# 0.Voice interaction hardware connection (ReadMe)
+# 06-Voice interaction hardware connection (ReadMe)
 
 To run the voice interaction function, you must use the AI large model voice module included in the AI large model package that comes with the Jetson Orin series motherboard.
 

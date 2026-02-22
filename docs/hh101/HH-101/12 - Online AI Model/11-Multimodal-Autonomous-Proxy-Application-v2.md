@@ -1,9 +1,9 @@
 ---
-title: Multimodal autonomous proxy application-11
+title: 11-Multimodal autonomous proxy application-11
 sidebar_position: 11
 ---
 
-# 7.Multimodal autonomous proxy application
+# 11-Multimodal autonomous proxy application
 
 ## 1. Concept Introduction
 

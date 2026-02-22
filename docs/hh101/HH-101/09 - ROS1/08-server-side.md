@@ -1,9 +1,9 @@
 ---
 sidebar_position: 8
-title: Server Side
+title: 08-Server Side
 ---
 
-# 8. Server Side
+# 08-Server Side
 
 In the previous lesson, we discussed how the client requests services
 and how the server provides services. In this section, we focus on **how

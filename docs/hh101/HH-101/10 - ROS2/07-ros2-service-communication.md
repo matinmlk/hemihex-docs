@@ -1,9 +1,9 @@
 ---
-sidebar_position: 17
-title:  Service Communication
+sidebar_position: 7
+title: 07-Service Communication
 ---
 
-# 8. ROS 2 Service Communication
+# 07-ROS 2 Service Communication
 
 ## 1. Introduction to Service Communication
 

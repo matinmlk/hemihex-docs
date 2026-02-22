@@ -1,9 +1,9 @@
 ---
-title: Qwen2.5VL
-sidebar_position: 0
+title: 07-Qwen2.5VL
+sidebar_position: 7
 ---
 
-# Qwen2.5VL
+# 07-Qwen2.5VL
 
 Demo Environment
 

@@ -1,9 +1,9 @@
 ---
-title: VSCode Usage
-sidebar_position: 0
+title: 08-VSCode Usage
+sidebar_position: 8
 ---
 
-# VSCode Usage
+# 08-VSCode Usage
 
 The tutorial demonstrates the steps to install VSCode and SSH remote on Windows platform.
 

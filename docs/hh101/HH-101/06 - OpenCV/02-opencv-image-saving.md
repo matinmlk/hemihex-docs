@@ -1,9 +1,9 @@
 ---
-sidebar_position: 7
-title: Image Saving with OpenCV
+sidebar_position: 2
+title: 02-Image Saving with OpenCV
 ---
 
-# Image Saving with OpenCV
+# 02-Image Saving with OpenCV
 
 This section explains both the **concepts** and a **practical Python
 example** for saving images to disk using OpenCV.

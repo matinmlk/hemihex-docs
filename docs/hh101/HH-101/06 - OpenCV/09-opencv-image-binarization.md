@@ -1,9 +1,9 @@
 ---
-sidebar_position: 14
-title: Image Binarization with OpenCV
+sidebar_position: 9
+title: 09-Image Binarization with OpenCV
 ---
 
-# Image Binarization with OpenCV
+# 09-Image Binarization with OpenCV
 
 This section explains how to **convert a grayscale image into a binary
 image** using OpenCV.

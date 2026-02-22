@@ -1,9 +1,9 @@
 ---
-title: Multimodal Text and Graphics Application
-sidebar_position: 0
+title: 21-Multimodal Text and Graphics Application
+sidebar_position: 21
 ---
 
-# Multimodal Text and Graphics Application
+# 21-Multimodal Text and Graphics Application
 
 Since Ollama does not support the text-based image function, we need to use other tools to implement the local text-based image function. Currently, voice control of the text-based image function is not supported, so the content of this article is the same as the offline text multimodal text-based image application.
 

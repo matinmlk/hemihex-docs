@@ -1,9 +1,9 @@
 ---
-sidebar_position: 15
-title: Add Rectangles with OpenCV
+sidebar_position: 12
+title: 12-Add Rectangles with OpenCV
 ---
 
-# Add Rectangles with OpenCV
+# 12-Add Rectangles with OpenCV
 
 This section explains how to **draw rectangles on an image** using
 OpenCV in Python.

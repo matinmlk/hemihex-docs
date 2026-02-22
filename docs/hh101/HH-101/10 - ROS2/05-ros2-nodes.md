@@ -1,9 +1,9 @@
 ---
-sidebar_position: 15
-title: Nodes
+sidebar_position: 5
+title: 05-Nodes
 ---
 
-# 6. ROS 2 Nodes
+# 05-ROS 2 Nodes
 
 ## 1. Node Introduction
 

@@ -1,9 +1,9 @@
 ---
-sidebar_position: 22
-title: Hand Detection with MediaPipe
+sidebar_position: 2
+title: 2-Hand Detection with MediaPipe
 ---
 
-# Hand Detection
+# 2-Hand Detection
 
 MediaPipe provides real-time **hand detection and tracking**,
 identifying **21 key landmarks** per hand. This section demonstrates

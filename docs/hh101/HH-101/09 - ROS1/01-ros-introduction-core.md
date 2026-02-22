@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-title: ROS Introduction
+title: 01-ROS Introduction
 ---
 
-# 1. ROS Introduction
+# 01-ROS Introduction
 
 -   **ROS Wiki:** http://wiki.ros.org/\
 -   **ROS Tutorials:** http://wiki.ros.org/ROS/Tutorials\

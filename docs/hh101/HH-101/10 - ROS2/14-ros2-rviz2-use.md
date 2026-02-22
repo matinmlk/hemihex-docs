@@ -1,9 +1,9 @@
 ---
-sidebar_position: 26
-title: Using ROS 2 RViz2
+sidebar_position: 14
+title: 14-Using ROS 2 RViz2
 ---
 
-# Using ROS 2 RViz2
+# 14-Using ROS 2 RViz2
 
 ## 1. Introduction to RViz2
 

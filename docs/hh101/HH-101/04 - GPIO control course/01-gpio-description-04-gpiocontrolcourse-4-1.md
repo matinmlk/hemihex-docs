@@ -1,9 +1,9 @@
 ---
-title: GPIO Description
-sidebar_position: 0
+title: 01-GPIO Description
+sidebar_position: 1
 ---
 
-# GPIO Description
+# 01-GPIO Description
 
 The Jetson.GPIO library of the Jetson series motherboards allows developers to interact with external hardware devices through the 40-pin GPIO pins.
 

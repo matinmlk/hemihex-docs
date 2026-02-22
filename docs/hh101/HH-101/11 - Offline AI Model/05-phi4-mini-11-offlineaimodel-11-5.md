@@ -1,9 +1,9 @@
 ---
-title: Phi4-mini
-sidebar_position: 0
+title: 05-Phi4-mini
+sidebar_position: 5
 ---
 
-# Phi4-mini
+# 05-Phi4-mini
 
 Demonstration Environment
 

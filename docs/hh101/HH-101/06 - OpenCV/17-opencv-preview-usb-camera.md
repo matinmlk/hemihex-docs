@@ -1,9 +1,9 @@
 ---
-sidebar_position: 21
-title: Preview USB Camera Image
+sidebar_position: 17
+title: 17-Preview USB Camera Image
 ---
 
-# Preview USB Camera Image
+# 17-Preview USB Camera Image
 
 This section explains how to **preview live images from a USB camera**
 using OpenCV in Python.

@@ -1,9 +1,9 @@
 ---
-sidebar_position: 20
-title:  Parameter Service Case
+sidebar_position: 9
+title: 09-Parameter Service Case
 ---
 
-# 11. ROS 2 Parameter Service Case
+# 09-ROS 2 Parameter Service Case
 
 ## 1. Introduction to Parameters
 

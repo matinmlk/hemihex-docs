@@ -1,9 +1,9 @@
 ---
-title: Isaac ROS  pose estimation
+title: 09-Isaac ROS  pose estimation
 sidebar_position: 9
 ---
 
-# Isaac ROS  pose estimation
+# 09-Isaac ROS  pose estimation
 
 Isaac ROS 3D pose estimation official website link：https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_pose_estimation/isaac_ros_centerpose/index.html
 

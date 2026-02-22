@@ -1,6 +1,6 @@
 ---
 title: 09-Jetpack Old System Upgrade to SUPER System
-sidebar_position: 09
+sidebar_position: 9
 ---
 
 ## Jetpack old system upgraded to HemiHex SUPER system

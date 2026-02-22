@@ -1,9 +1,9 @@
 ---
-sidebar_position: 6
-title: Image Reading with OpenCV
+sidebar_position: 1
+title: 01-Image Reading with OpenCV
 ---
 
-# Image Reading with OpenCV
+# 01-Image Reading with OpenCV
 
 **OpenCV (Open Source Computer Vision Library)** is an open-source
 computer vision and machine learning library widely used in:

@@ -1,9 +1,9 @@
 ---
 sidebar_position: 9
-title: Custom Service Messages and Usage
+title: 09-Custom Service Messages and Usage
 ---
 
-# 9. Custom Service Messages and Usage
+# 09-Custom Service Messages and Usage
 
 This section explains how to define and use **custom ROS service
 messages**, including configuration, compilation, and both C++

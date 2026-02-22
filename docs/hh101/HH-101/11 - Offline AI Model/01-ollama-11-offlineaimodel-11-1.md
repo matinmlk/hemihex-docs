@@ -1,9 +1,9 @@
 ---
-title: Ollama
-sidebar_position: 0
+title: 01-Ollama
+sidebar_position: 1
 ---
 
-# Ollama
+# 01-Ollama
 
 > Demo Environment
 

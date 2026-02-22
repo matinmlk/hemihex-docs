@@ -1,9 +1,9 @@
 ---
-title: Build Isaac ROS environment
-sidebar_position: 0
+title: 01-Build Isaac ROS environment
+sidebar_position: 1
 ---
 
-# Build Isaac ROS environment
+# 01-Build Isaac ROS environment
 
 :::note
 The HemiHex factory image already has a pre-configured environment. You can skip this step if you don't need to set it up yourself.

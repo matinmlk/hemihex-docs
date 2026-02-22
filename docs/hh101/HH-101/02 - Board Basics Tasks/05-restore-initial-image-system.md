@@ -1,9 +1,9 @@
 ---
 title: 05-Restore Initial Image System
-sidebar_position: 05
+sidebar_position: 5
 ---
 
-# Restore initial image system
+# 05-Restore initial image system
 
 ## 1. Format the SSD
 

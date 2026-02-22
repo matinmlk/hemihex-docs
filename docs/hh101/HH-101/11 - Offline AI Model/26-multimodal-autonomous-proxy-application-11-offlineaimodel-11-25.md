@@ -1,9 +1,9 @@
 ---
-title: Multimodal Autonomous Proxy Application
-sidebar_position: 0
+title: 26-Multimodal Autonomous Proxy Application
+sidebar_position: 26
 ---
 
-# 9.Multimodal autonomous proxy application
+# 26-Multimodal autonomous proxy application
 
 ## 1. Concept Introduction
 

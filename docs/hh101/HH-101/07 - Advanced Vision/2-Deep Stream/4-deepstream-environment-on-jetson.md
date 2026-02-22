@@ -1,9 +1,9 @@
 ---
 sidebar_position: 4
-title: DeepStream Environment on Jetson
+title: 4-DeepStream Environment on Jetson
 ---
 
-# DeepStream Environment
+# 4-DeepStream Environment
 
 NVIDIA DeepStream is a high‑performance SDK for building AI‑powered
 video analytics applications on **Jetson** and **dGPU** platforms.

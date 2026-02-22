@@ -1,9 +1,9 @@
 ---
-title: Publisher
+title: 04-Publisher
 sidebar_position: 4
 ---
 
-# 4. Publisher
+# 04-Publisher
 
 ## 4.1 Publisher
 

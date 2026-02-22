@@ -1,9 +1,9 @@
 ---
-title: I2C Communication
-sidebar_position: 0
+title: 04-I2C Communication
+sidebar_position: 4
 ---
 
-# I2C communication
+# 04-I2C communication
 ## 1. GPIO pin diagram
 
 Use 0.91-inch OLED to test the I2C communication function and connect according to the following wiring:

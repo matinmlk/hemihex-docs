@@ -1,9 +1,9 @@
 ---
-title: GPIO Library Installation
-sidebar_position: 0
+title: 02-GPIO Library Installation
+sidebar_position: 2
 ---
 
-# GPIO library installation
+# 02-GPIO library installation
 
 ## 1. Install Jetson.GPIO library
 

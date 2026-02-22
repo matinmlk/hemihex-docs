@@ -1,9 +1,9 @@
 ---
-title: Image segmentation
+title: 06-Image segmentation
 sidebar_position: 6
 ---
 
-# Isaac ROS Image segmentation
+# 06-Isaac ROS Image segmentation
 
 Isaac ROS image segmentation official website link：https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_image_segmentation/index.html
 

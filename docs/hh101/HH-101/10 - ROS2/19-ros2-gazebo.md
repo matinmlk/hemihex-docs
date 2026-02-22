@@ -1,9 +1,9 @@
 ---
-sidebar_position: 32
-title:  Gazebo Simulation Platform
+sidebar_position: 19
+title: 19-Gazebo Simulation Platform
 ---
 
-# ROS 2 Gazebo Simulation Platform
+# 19-ROS 2 Gazebo Simulation Platform
 
 ## 1. Introduction to Gazebo
 

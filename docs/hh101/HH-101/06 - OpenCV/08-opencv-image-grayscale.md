@@ -1,9 +1,9 @@
 ---
-sidebar_position: 13
-title: Image Grayscale Conversion with OpenCV
+sidebar_position: 8
+title: 08-Image Grayscale Conversion with OpenCV
 ---
 
-# Image Grayscale Conversion with OpenCV
+# 08-Image Grayscale Conversion with OpenCV
 
 This section explains how to **convert a color image to grayscale**
 using OpenCV.

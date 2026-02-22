@@ -1,9 +1,9 @@
 ---
-sidebar_position: 11
-title: Image Translation with OpenCV
+sidebar_position: 6
+title: 06-Image Translation with OpenCV
 ---
 
-# Image Translation with OpenCV
+# 06-Image Translation with OpenCV
 
 This section explains how to **translate (shift) an image** using OpenCV
 with an affine transformation.

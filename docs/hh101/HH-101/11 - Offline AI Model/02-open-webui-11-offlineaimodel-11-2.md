@@ -1,9 +1,9 @@
 ---
-title: Open WebUI
-sidebar_position: 0
+title: 02-Open WebUI
+sidebar_position: 2
 ---
 
-# Open WebUI
+# 02-Open WebUI
 
 
 

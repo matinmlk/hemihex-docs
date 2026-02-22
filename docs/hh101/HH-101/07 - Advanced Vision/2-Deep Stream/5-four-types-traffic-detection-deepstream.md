@@ -1,9 +1,9 @@
 ---
 sidebar_position: 5
-title: Four Types of Traffic Detection (DeepStream)
+title: 5-Four Types of Traffic Detection (DeepStream)
 ---
 
-# Four Types of Traffic Detection (DeepStream)
+# 5-Four Types of Traffic Detection (DeepStream)
 
 This document demonstrates **four traffic-related detection scenarios**
 using NVIDIA DeepStream example applications. These demos showcase

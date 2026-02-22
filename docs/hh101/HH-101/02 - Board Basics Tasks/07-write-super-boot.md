@@ -1,9 +1,9 @@
 ---
 title: 07-Write SUPER Boot (Official Kit)
-sidebar_position: 07
+sidebar_position: 7
 ---
 
-# Write SUPER boot
+# 07-Write SUPER boot
 
 The purpose of this tutorial is to burn SUPER boot to the Jetson Orin series motherboard (used with Jetpack 6.2 system). There is no need to install a solid-state drive during the burning process. After the burning is completed, install the solid-state drive to the motherboard and start the system to use the factory system that we have set up in advance.
 

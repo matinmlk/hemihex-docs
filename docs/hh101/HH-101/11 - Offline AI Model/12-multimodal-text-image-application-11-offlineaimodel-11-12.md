@@ -1,9 +1,9 @@
 ---
-title: Multimodal Text Image Application
-sidebar_position: 0
+title: 12-Multimodal Text Image Application
+sidebar_position: 12
 ---
 
-# Multimodal Text Image Application
+# 12-Multimodal Text Image Application
 
 Since Ollama doesn't support text-to-image, we need to use other tools to implement this functionality natively.
 

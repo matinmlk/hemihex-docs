@@ -1,9 +1,9 @@
 ---
-title: Use Jupyter Lab
-sidebar_position: 0
+title: 03-Use Jupyter Lab
+sidebar_position: 3
 ---
 
-# Use Jupyter Lab
+# 03-Use Jupyter Lab
 
 ## 1. Jupyter Lab installation
 

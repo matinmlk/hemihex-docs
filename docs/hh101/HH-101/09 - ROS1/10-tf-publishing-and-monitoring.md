@@ -1,9 +1,9 @@
 ---
 sidebar_position: 10
-title: TF Publishing and Monitoring
+title: 10-TF Publishing and Monitoring
 ---
 
-# 10. TF Publishing and Monitoring
+# 10-TF Publishing and Monitoring
 
 ## 10.1 TF Function Package
 

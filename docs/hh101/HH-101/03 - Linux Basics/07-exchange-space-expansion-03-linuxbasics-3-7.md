@@ -1,9 +1,9 @@
 ---
-title: Exchange Space Expansion
-sidebar_position: 0
+title: 07-Exchange Space Expansion
+sidebar_position: 7
 ---
 
-# Exchange space expansion
+# 07-Exchange space expansion
 
 ## 1. Exchange space
 

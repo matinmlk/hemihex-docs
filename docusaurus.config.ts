@@ -61,6 +61,11 @@ const config: Config = {
 
 
   themeConfig: {
+  docs: {
+    sidebar: {
+      autoCollapseCategories: true,
+    },
+  },
   image: 'img/site/logo.png',
   colorMode: { respectPrefersColorScheme: true },
   navbar: {

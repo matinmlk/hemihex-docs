@@ -1,9 +1,9 @@
 ---
-sidebar_position: 22
-title:  Distributed Communication - Basics
+sidebar_position: 10
+title: 10-Distributed Communication - Basics
 ---
 
-# ROS 2 Distributed Communication (Part 1: Basics)
+# 10-ROS 2 Distributed Communication (Part 1: Basics)
 
 ## 1. Concept
 

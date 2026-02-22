@@ -1,9 +1,9 @@
 ---
-title: Gemma3
-sidebar_position: 0
+title: 08-Gemma3
+sidebar_position: 8
 ---
 
-# Gemma3
+# 08-Gemma3
 
 Demo Environment
 

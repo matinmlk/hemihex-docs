@@ -1,9 +1,9 @@
 ---
 sidebar_position: 8
-title: Object Detection on Jetson (YOLO)
+title: 8-Object Detection on Jetson (YOLO)
 ---
 
-# Object Detection on Jetson (Ultralytics YOLO)
+# 8-Object Detection on Jetson (Ultralytics YOLO)
 
 This section demonstrates **object detection** on NVIDIA Jetson using
 **Ultralytics YOLO**. It covers detection on **images**, **videos**, and

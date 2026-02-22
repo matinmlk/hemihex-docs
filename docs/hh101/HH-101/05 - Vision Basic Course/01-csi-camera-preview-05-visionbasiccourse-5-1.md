@@ -1,9 +1,9 @@
 ---
-title: CSI Camera Preview
-sidebar_position: 0
+title: 01-CSI Camera Preview
+sidebar_position: 1
 ---
 
-# CSI camera preview
+# 01-CSI camera preview
 
 ## 1. Enable CSI camera
 

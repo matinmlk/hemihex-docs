@@ -1,9 +1,9 @@
 ---
-title: Multimodal Autonomous Agent Application
-sidebar_position: 0
+title: 16-Multimodal Autonomous Agent Application
+sidebar_position: 16
 ---
 
-# Multimodal autonomous agent application
+# 16-Multimodal autonomous agent application
 
 ## 1. Concept Introduction
 

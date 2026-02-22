@@ -1,9 +1,9 @@
 ---
-title: Common Commands and Tools
+title: 03-Common Commands and Tools
 sidebar_position: 3
 ---
 
-# 3. Common Commands and Tools
+# 03-Common Commands and Tools
 
 ## 3.1 Starting Node Methods
 

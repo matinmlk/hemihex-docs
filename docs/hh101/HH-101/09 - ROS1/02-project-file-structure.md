@@ -1,9 +1,9 @@
 ---
-title: Project File Structure
+title: 02-Project File Structure
 sidebar_position: 2
 ---
 
-# 2. Project File Structure
+# 02-Project File Structure
 
 ## 2.1 Project File Structure
 

@@ -1,9 +1,9 @@
 ---
-sidebar_position: 2
-title: Torchvision on Jetson
+sidebar_position: 1.03
+title: 1-3-Torchvision on Jetson
 ---
 
-# Torchvision
+# 1-3-Torchvision
 
 Torchvision is a PyTorch companion library that provides popular
 **datasets, model architectures, and image transformations** for

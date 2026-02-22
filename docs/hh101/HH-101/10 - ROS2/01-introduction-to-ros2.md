@@ -1,9 +1,9 @@
 ---
-sidebar_position: 11
-title: Introduction to ROS 2
+sidebar_position: 1
+title: 01-Introduction to ROS 2
 ---
 
-# 1. Introduction to ROS 2
+# 01-Introduction to ROS 2
 
 ## 1. Overview of ROS 2
 

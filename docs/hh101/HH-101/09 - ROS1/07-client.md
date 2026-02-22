@@ -1,9 +1,9 @@
 ---
 sidebar_position: 7
-title: Client
+title: 07-Client
 ---
 
-# 7. Client
+# 07-Client
 
 In ROS communication, in addition to topic communication, there is also
 a type of **service communication**. Services include both **client**

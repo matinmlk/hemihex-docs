@@ -1,9 +1,9 @@
 ---
-sidebar_position: 28
-title:  Launch Startup File Configuration
+sidebar_position: 16
+title: 16-Launch Startup File Configuration
 ---
 
-# 19. ROS 2 Launch Startup File Configuration
+# 16-ROS 2 Launch Startup File Configuration
 
 ## 1. Introduction to Launch
 

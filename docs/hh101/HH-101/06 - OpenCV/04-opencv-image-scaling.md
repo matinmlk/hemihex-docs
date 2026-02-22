@@ -1,9 +1,9 @@
 ---
-sidebar_position: 9
-title: Image Scaling with OpenCV
+sidebar_position: 4
+title: 04-Image Scaling with OpenCV
 ---
 
-# Image Scaling with OpenCV
+# 04-Image Scaling with OpenCV
 
 This section explains how to **resize images using OpenCV** in Python.
 

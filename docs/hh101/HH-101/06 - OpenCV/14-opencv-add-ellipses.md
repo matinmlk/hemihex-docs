@@ -1,9 +1,9 @@
 ---
-sidebar_position: 18
-title: Add Ellipses with OpenCV
+sidebar_position: 14
+title: 14-Add Ellipses with OpenCV
 ---
 
-# Add Ellipses with OpenCV
+# 14-Add Ellipses with OpenCV
 
 This section explains how to **draw ellipses on an image** using OpenCV
 in Python.

@@ -1,9 +1,9 @@
 ---
-sidebar_position: 24
-title:  DDS
+sidebar_position: 12
+title: 12-DDS
 ---
 
-# 14. ROS 2 DDS
+# 12-ROS 2 DDS
 
 ## 1. Introduction to DDS
 

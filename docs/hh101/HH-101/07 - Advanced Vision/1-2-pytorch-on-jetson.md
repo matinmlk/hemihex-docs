@@ -1,9 +1,9 @@
 ---
-sidebar_position: 2
-title: PyTorch on Jetson
+sidebar_position: 1.02
+title: 1-2-PyTorch on Jetson
 ---
 
-# PyTorch
+# 1-2-PyTorch
 
 PyTorch is an open-source deep learning framework developed by Meta. It
 is widely used in research and production for building and deploying
