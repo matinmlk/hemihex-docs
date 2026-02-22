@@ -1,9 +1,9 @@
 ---
-sidebar_position: 1
-title: TensorFlow on Jetson
+sidebar_position: 1.01
+title: 1-1-TensorFlow on Jetson
 ---
 
-# TensorFlow
+# 1-1-TensorFlow
 
 TensorFlow is an end-to-end machine learning and deep learning framework
 developed and open-sourced by Google. It is widely used to build, train,
@@ -20,7 +20,7 @@ Jetson** systems.
 Before installing TensorFlow, verify your system and CUDA environment.
 
 ![System Information
-Overview](/img/docs/jetson/07-AdvancedVision/7-1/image-20250121150858152.png)
+Overview](/img/docs/hh101/07-AdvancedVision/7-1/image-20250121150858152.png)
 
 ### Query CUDA Version
 
@@ -29,7 +29,7 @@ nvcc --version
 ```
 
 ![CUDA Version
-Output](/img/docs/jetson/07-AdvancedVision/7-1/image-20241226155536623.png)
+Output](/img/docs/hh101/07-AdvancedVision/7-1/image-20241226155536623.png)
 
 ------------------------------------------------------------------------
 
@@ -88,7 +88,7 @@ python3 -c "import tensorflow as tf; print(tf.__version__)"
 ```
 
 ![TensorFlow Version
-Output](/img/docs/jetson/07-AdvancedVision/7-1/image-20241230110433117.png)
+Output](/img/docs/hh101/07-AdvancedVision/7-1/image-20241230110433117.png)
 
 ------------------------------------------------------------------------
 

@@ -1,9 +1,9 @@
 ---
-sidebar_position: 26
-title: Using ROS 2 RViz2
+sidebar_position: 14
+title: 14-Using ROS 2 RViz2
 ---
 
-# Using ROS 2 RViz2
+# 14-Using ROS 2 RViz2
 
 ## 1. Introduction to RViz2
 
@@ -82,7 +82,7 @@ export TURTLEBOT3_MODEL=waffle
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
-![TurtleBot3 Gazebo Simulation](/img/docs/jetson/10-ROS2/10-17/image-20250905164250419.png)
+![TurtleBot3 Gazebo Simulation](/img/docs/hh101/10-ROS2/10-17/image-20250905164250419.png)
 
 ------------------------------------------------------------------------
 
@@ -97,7 +97,7 @@ rviz2
 If you are starting RViz2 inside Docker, make sure GUI support is
 properly enabled.
 
-![RViz2 Startup Interface](/img/docs/jetson/10-ROS2/10-17/image-20231031104047357.png)
+![RViz2 Startup Interface](/img/docs/hh101/10-ROS2/10-17/image-20231031104047357.png)
 
 ------------------------------------------------------------------------
 
@@ -107,7 +107,7 @@ properly enabled.
 2.  Select **Image** and confirm.
 3.  Configure the topic that the display subscribes to.
 
-![Adding Image Display](/img/docs/jetson/10-ROS2/10-17/image-20231031104244974.png)
+![Adding Image Display](/img/docs/hh101/10-ROS2/10-17/image-20231031104244974.png)
 
 ### Configuration Tips
 
@@ -125,7 +125,7 @@ properly enabled.
 
 You can now view the robot's real-time camera feed.
 
-![Camera Image View](/img/docs/jetson/10-ROS2/10-17/image-20250905165626951.png)
+![Camera Image View](/img/docs/hh101/10-ROS2/10-17/image-20250905165626951.png)
 
 ------------------------------------------------------------------------
 
@@ -135,7 +135,7 @@ You can now view the robot's real-time camera feed.
 2.  Select **LaserScan**.
 3.  Configure the topic name.
 
-![Adding LaserScan Display](/img/docs/jetson/10-ROS2/10-17/image-20231031104528033.png)
+![Adding LaserScan Display](/img/docs/hh101/10-ROS2/10-17/image-20231031104528033.png)
 
 ### Configuration
 
@@ -147,7 +147,7 @@ You can now view the robot's real-time camera feed.
 
 You will now see the LiDAR point cloud outline.
 
-![LiDAR Visualization](/img/docs/jetson/10-ROS2/10-17/image-20250905170346004.png)
+![LiDAR Visualization](/img/docs/hh101/10-ROS2/10-17/image-20250905170346004.png)
 
 ------------------------------------------------------------------------
 
@@ -156,7 +156,7 @@ You will now see the LiDAR point cloud outline.
 1.  Click **Add** in the **Displays** panel.
 2.  Select **RobotModel**.
 
-![Adding RobotModel Display](/img/docs/jetson/10-ROS2/10-17/image-20250905170711426.png)
+![Adding RobotModel Display](/img/docs/hh101/10-ROS2/10-17/image-20250905170711426.png)
 
 ### Configuration
 
@@ -168,7 +168,7 @@ You will now see the LiDAR point cloud outline.
 
 You can now see the full robot model visualized in RViz2.
 
-![Robot Model Visualization](/img/docs/jetson/10-ROS2/10-17/image-20250905170923074.png)
+![Robot Model Visualization](/img/docs/hh101/10-ROS2/10-17/image-20250905170923074.png)
 
 ------------------------------------------------------------------------
 
@@ -186,7 +186,7 @@ visualization plugins such as:
 Feel free to experiment with these tools to better understand your
 robot's perception and planning systems.
 
-![RViz Default Plugins](/img/docs/jetson/10-ROS2/10-17/image-20231031104758824.png)
+![RViz Default Plugins](/img/docs/hh101/10-ROS2/10-17/image-20231031104758824.png)
 
 ------------------------------------------------------------------------
 

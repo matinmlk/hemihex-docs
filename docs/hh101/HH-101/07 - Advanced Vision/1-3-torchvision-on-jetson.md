@@ -1,9 +1,9 @@
 ---
-sidebar_position: 2
-title: Torchvision on Jetson
+sidebar_position: 1.03
+title: 1-3-Torchvision on Jetson
 ---
 
-# Torchvision
+# 1-3-Torchvision
 
 Torchvision is a PyTorch companion library that provides popular
 **datasets, model architectures, and image transformations** for
@@ -19,7 +19,7 @@ Jetson** platforms.
 Before installation, confirm your system environment.
 
 ![System
-Information](/img/docs/jetson/07-AdvancedVision/7-3/image-20250121150858152.png)
+Information](/img/docs/hh101/07-AdvancedVision/7-3/image-20250121150858152.png)
 
 ------------------------------------------------------------------------
 
@@ -118,7 +118,7 @@ python3 -c "import torchvision; print(f'Torchvision: {torchvision.__version__}')
 Expected output:
 
 ![Torchvision Version
-Output](/img/docs/jetson/07-AdvancedVision/7-3/image-20241226205711239.png)
+Output](/img/docs/hh101/07-AdvancedVision/7-3/image-20241226205711239.png)
 
 ------------------------------------------------------------------------
 

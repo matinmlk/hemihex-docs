@@ -1,9 +1,9 @@
 ---
-sidebar_position: 25
-title:  Common Command Tools
+sidebar_position: 13
+title: 13-Common Command Tools
 ---
 
-# 16. ROS 2 Common Command Tools
+# 13-ROS 2 Common Command Tools
 
 ## 1. Package Management Tool: `ros2 pkg`
 
@@ -39,7 +39,7 @@ ros2 pkg create <package_name> --build-type <build-type> --dependencies <depende
 ros2 pkg list
 ```
 
-![ROS2 Package List](/img/docs/jetson/10-ROS2/10-15/image-20230427154146879.png)
+![ROS2 Package List](/img/docs/hh101/10-ROS2/10-15/image-20230427154146879.png)
 
 ------------------------------------------------------------------------
 
@@ -53,7 +53,7 @@ ros2 pkg list
 ros2 pkg executables pkg_name
 ```
 
-![ROS2 Package Executables](/img/docs/jetson/10-ROS2/10-15/image-20230427154419005.png)
+![ROS2 Package Executables](/img/docs/hh101/10-ROS2/10-15/image-20230427154419005.png)
 
 ------------------------------------------------------------------------
 
@@ -70,7 +70,7 @@ ros2 run pkg_name node_name
 -   **pkg_name**: Package name\
 -   **node_name**: Executable name
 
-![ROS2 Run Node](/img/docs/jetson/10-ROS2/10-15/image-20230427155359745.png)
+![ROS2 Run Node](/img/docs/hh101/10-ROS2/10-15/image-20230427155359745.png)
 
 ------------------------------------------------------------------------
 
@@ -86,7 +86,7 @@ ros2 run pkg_name node_name
 ros2 node list
 ```
 
-![ROS2 Node List](/img/docs/jetson/10-ROS2/10-15/image-20230427155655753.png)
+![ROS2 Node List](/img/docs/hh101/10-ROS2/10-15/image-20230427155655753.png)
 
 ------------------------------------------------------------------------
 
@@ -101,7 +101,7 @@ services, actions).
 ros2 node info node_name
 ```
 
-![ROS2 Node Info](/img/docs/jetson/10-ROS2/10-15/image-20230427160001101.png)
+![ROS2 Node Info](/img/docs/hh101/10-ROS2/10-15/image-20230427160001101.png)
 
 ------------------------------------------------------------------------
 
@@ -115,7 +115,7 @@ ros2 node info node_name
 ros2 topic list
 ```
 
-![ROS2 Topic List](/img/docs/jetson/10-ROS2/10-15/image-20230427160351051.png)
+![ROS2 Topic List](/img/docs/hh101/10-ROS2/10-15/image-20230427160351051.png)
 
 ------------------------------------------------------------------------
 
@@ -127,7 +127,7 @@ ros2 topic list
 ros2 topic info topic_name
 ```
 
-![ROS2 Topic Info](/img/docs/jetson/10-ROS2/10-15/image-20230427160625594.png)
+![ROS2 Topic Info](/img/docs/hh101/10-ROS2/10-15/image-20230427160625594.png)
 
 ------------------------------------------------------------------------
 
@@ -139,7 +139,7 @@ ros2 topic info topic_name
 ros2 topic type topic_name
 ```
 
-![ROS2 Topic Type](/img/docs/jetson/10-ROS2/10-15/image-20230427161056536.png)
+![ROS2 Topic Type](/img/docs/hh101/10-ROS2/10-15/image-20230427161056536.png)
 
 ------------------------------------------------------------------------
 
@@ -151,7 +151,7 @@ ros2 topic type topic_name
 ros2 topic hz topic_name
 ```
 
-![ROS2 Topic Frequency](/img/docs/jetson/10-ROS2/10-15/image-20230427161721650.png)
+![ROS2 Topic Frequency](/img/docs/hh101/10-ROS2/10-15/image-20230427161721650.png)
 
 ------------------------------------------------------------------------
 
@@ -163,7 +163,7 @@ ros2 topic hz topic_name
 ros2 topic echo topic_name
 ```
 
-![ROS2 Topic Echo](/img/docs/jetson/10-ROS2/10-15/image-20230427162312888.png)
+![ROS2 Topic Echo](/img/docs/hh101/10-ROS2/10-15/image-20230427162312888.png)
 
 ------------------------------------------------------------------------
 
@@ -187,7 +187,7 @@ ros2 topic pub topic_name message_type message_content
 ros2 topic pub turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.2}}"
 ```
 
-![ROS2 Topic Publish](/img/docs/jetson/10-ROS2/10-15/image-20250905163149992.png)
+![ROS2 Topic Publish](/img/docs/hh101/10-ROS2/10-15/image-20250905163149992.png)
 
 ------------------------------------------------------------------------
 
@@ -201,7 +201,7 @@ ros2 topic pub turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.5, y: 0.0
 ros2 interface list
 ```
 
-![ROS2 Interface List](/img/docs/jetson/10-ROS2/10-15/image-20230427164755075.png)
+![ROS2 Interface List](/img/docs/hh101/10-ROS2/10-15/image-20230427164755075.png)
 
 ------------------------------------------------------------------------
 

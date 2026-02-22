@@ -1,9 +1,9 @@
 ---
-title: Build Isaac ROS environment
-sidebar_position: 0
+title: 01-Build Isaac ROS environment
+sidebar_position: 1
 ---
 
-# Build Isaac ROS environment
+# 01-Build Isaac ROS environment
 
 :::note
 The HemiHex factory image already has a pre-configured environment. You can skip this step if you don't need to set it up yourself.
@@ -40,7 +40,7 @@ Isaac ROS packages have only been tested with ROS 2 Humble. Other ROS 2 versions
 
 1. Confirm that your system has JertPack 6.2 installed and set the system power to MAXN SUPER mode.
 
-![image-20250121150858152](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-1/image-20250121150858152.png)
+![image-20250121150858152](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-1/image-20250121150858152.png)
 
 2. Install Docker
 

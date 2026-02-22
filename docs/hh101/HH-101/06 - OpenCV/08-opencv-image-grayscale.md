@@ -1,9 +1,9 @@
 ---
-sidebar_position: 13
-title: Image Grayscale Conversion with OpenCV
+sidebar_position: 8
+title: 08-Image Grayscale Conversion with OpenCV
 ---
 
-# Image Grayscale Conversion with OpenCV
+# 08-Image Grayscale Conversion with OpenCV
 
 This section explains how to **convert a color image to grayscale**
 using OpenCV.
@@ -48,7 +48,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Grayscale
-Result](/img/docs/jetson/06-OpenCV/6-8/image-20250106155910684.png)
+Result](/img/docs/hh101/06-OpenCV/6-8/image-20250106155910684.png)
 
 ------------------------------------------------------------------------
 

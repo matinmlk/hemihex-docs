@@ -1,9 +1,9 @@
 ---
-sidebar_position: 22
-title: Preview CSI Camera Image
+sidebar_position: 18
+title: 18-Preview CSI Camera Image
 ---
 
-# Preview CSI Camera Image
+# 18-Preview CSI Camera Image
 
 This section explains how to **preview live images from a CSI camera**
 (such as a Raspberry Pi CSI camera) using OpenCV and `jetcam` on NVIDIA
@@ -48,7 +48,7 @@ Select the camera preview window and press **`q`** to exit the program.
 :::
 
 ![CSI Camera Preview
-Result](/img/docs/jetson/06-OpenCV/6-18/image-20250106190647333.png)
+Result](/img/docs/hh101/06-OpenCV/6-18/image-20250106190647333.png)
 
 ------------------------------------------------------------------------
 

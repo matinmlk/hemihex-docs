@@ -1,9 +1,9 @@
 ---
-sidebar_position: 11
-title: Image Translation with OpenCV
+sidebar_position: 6
+title: 06-Image Translation with OpenCV
 ---
 
-# Image Translation with OpenCV
+# 06-Image Translation with OpenCV
 
 This section explains how to **translate (shift) an image** using OpenCV
 with an affine transformation.
@@ -53,7 +53,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Translation
-Result](/img/docs/jetson/06-OpenCV/6-6/image-20250106154840955.png)
+Result](/img/docs/hh101/06-OpenCV/6-6/image-20250106154840955.png)
 
 ------------------------------------------------------------------------
 

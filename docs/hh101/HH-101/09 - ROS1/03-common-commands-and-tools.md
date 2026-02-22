@@ -1,9 +1,9 @@
 ---
-title: Common Commands and Tools
+title: 03-Common Commands and Tools
 sidebar_position: 3
 ---
 
-# 3. Common Commands and Tools
+# 03-Common Commands and Tools
 
 ## 3.1 Starting Node Methods
 
@@ -83,7 +83,7 @@ rosrun turtlesim turtle_teleop_key
 
 Use the arrow keys (**Up, Down, Left, Right**) to control the turtle.
 
-![Turtle Control](/img/docs/jetson/9-ROS1/9-3/301.jpg)
+![Turtle Control](/img/docs/hh101/9-ROS1/9-3/301.jpg)
 
 Turtlesim node output example:
 
@@ -114,7 +114,7 @@ roslaunch turtle_tf turtle_tf_demo.launch
 rosrun turtlesim turtle_teleop_key
 ```
 
-![Two Turtles Demo](/img/docs/jetson/9-ROS1/9-3/302.jpg)
+![Two Turtles Demo](/img/docs/hh101/9-ROS1/9-3/302.jpg)
 
 Press the arrow keys to drive one turtle while the other follows.
 

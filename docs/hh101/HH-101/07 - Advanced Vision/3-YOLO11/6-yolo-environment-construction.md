@@ -1,9 +1,9 @@
 ---
 sidebar_position: 6
-title: YOLO Environment Construction
+title: 6-YOLO Environment Construction
 ---
 
-# YOLO Environment Construction
+# 6-YOLO Environment Construction
 
 This document describes how to **set up a YOLO development and inference
 environment** on NVIDIA Jetson platforms using Ultralytics YOLO with GPU
@@ -16,7 +16,7 @@ acceleration.
 Verify your system environment before installation.
 
 ![System
-Information](/img/docs/jetson/07-AdvancedVision/7-6/image-20250121150858152.png)
+Information](/img/docs/hh101/07-AdvancedVision/7-6/image-20250121150858152.png)
 
 ------------------------------------------------------------------------
 
@@ -121,7 +121,7 @@ python3 -c "import numpy; print(numpy.__version__)"
 ```
 
 ![Verification
-Output](/img/docs/jetson/07-AdvancedVision/7-6/image-20241230112550391.png)
+Output](/img/docs/hh101/07-AdvancedVision/7-6/image-20241230112550391.png)
 
 ------------------------------------------------------------------------
 
@@ -132,7 +132,7 @@ Output](/img/docs/jetson/07-AdvancedVision/7-6/image-20241230112550391.png)
 **Error:** Unable to uninstall `sympy`
 
 ![Sympy
-Error](/img/docs/jetson/07-AdvancedVision/7-6/image-20241230111303169.png)
+Error](/img/docs/hh101/07-AdvancedVision/7-6/image-20241230111303169.png)
 
 **Solution:**
 

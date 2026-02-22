@@ -1,9 +1,9 @@
 ---
-sidebar_position: 32
-title:  Gazebo Simulation Platform
+sidebar_position: 19
+title: 19-Gazebo Simulation Platform
 ---
 
-# ROS 2 Gazebo Simulation Platform
+# 19-ROS 2 Gazebo Simulation Platform
 
 ## 1. Introduction to Gazebo
 
@@ -47,9 +47,9 @@ Launch Gazebo using the command below or directly from the desktop icon:
 gazebo --verbose -s libgazebo_ros_init.so -s libgazebo_ros_factory.so
 ```
 
-![Gazebo Startup](/img/docs/jetson/10-ROS2/10-22/image-20250905185527569.png) ![Gazebo
-Interface](/img/docs/jetson/10-ROS2/10-22/image-20250905185455271.png) ![Gazebo
-World](/img/docs/jetson/10-ROS2/10-22/ff2db85fe6294c63a4f666d7396e8a28.png)
+![Gazebo Startup](/img/docs/hh101/10-ROS2/10-22/image-20250905185527569.png) ![Gazebo
+Interface](/img/docs/hh101/10-ROS2/10-22/image-20250905185455271.png) ![Gazebo
+World](/img/docs/hh101/10-ROS2/10-22/ff2db85fe6294c63a4f666d7396e8a28.png)
 
 ### Optional: Offline Model Download
 
@@ -78,7 +78,7 @@ Expected output:
 /gazebo
 ```
 
-![Node List](/img/docs/jetson/10-ROS2/10-22/image-20250905185639464.png)
+![Node List](/img/docs/hh101/10-ROS2/10-22/image-20250905185639464.png)
 
 ------------------------------------------------------------------------
 
@@ -88,7 +88,7 @@ Expected output:
 ros2 service list
 ```
 
-![Service List](/img/docs/jetson/10-ROS2/10-22/image-20250905185658045.png)
+![Service List](/img/docs/hh101/10-ROS2/10-22/image-20250905185658045.png)
 
 Key services:
 

@@ -1,9 +1,9 @@
 ---
-title: Use JetCam
-sidebar_position: 0
+title: 04-Use JetCam
+sidebar_position: 4
 ---
 
-# Use JetCam
+# 04-Use JetCam
 
 Use JetCam 1. JetCam installation 2. JetCam use 2.1, CSI camera Main code explanation Call the camera Get the camera image 2.1.1, single-channel camera 2.1.2, multi-channel camera 2.2, USB camera References
 
@@ -24,7 +24,7 @@ sudo python3 setup.py install
 sudo pip3 install ipywidgets
 ```
 
-![image-20241227150802674](/img/docs/jetson/05-VisionBasicCourse/5-4/image-20241227150802674.png)
+![image-20241227150802674](/img/docs/hh101/05-VisionBasicCourse/5-4/image-20241227150802674.png)
 
 ## 2. JetCam use
 
@@ -83,7 +83,7 @@ Running phenomenon
 
 After opening the program file, a single unit block runs from top to bottom:
 
-![image-20241227162346961](/img/docs/jetson/05-VisionBasicCourse/5-4/image-20241227162346961.png)
+![image-20241227162346961](/img/docs/hh101/05-VisionBasicCourse/5-4/image-20241227162346961.png)
 
 #### 2.1.2, multi-channel camera
 
@@ -97,7 +97,7 @@ Running phenomenon
 
 After opening the program file, a single unit block runs from top to bottom:
 
-![image-20241227193446305](/img/docs/jetson/05-VisionBasicCourse/5-4/image-20241227193446305.png)
+![image-20241227193446305](/img/docs/hh101/05-VisionBasicCourse/5-4/image-20241227193446305.png)
 
 ### 2.2, USB camera
 
@@ -109,7 +109,7 @@ Jupyter Lab enters the folder where the USB camera is located and opens the file
 ```
 
 
-![image-20241227193622509](/img/docs/jetson/05-VisionBasicCourse/5-4/image-20241227193622509.png)
+![image-20241227193622509](/img/docs/hh101/05-VisionBasicCourse/5-4/image-20241227193622509.png)
 
 ## References
 

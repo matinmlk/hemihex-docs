@@ -1,9 +1,9 @@
 ---
-sidebar_position: 29
-title:  Recording and Playback Tool (Bag2)
+sidebar_position: 17
+title: 17-Recording and Playback Tool (Bag2)
 ---
 
-# ROS 2 Recording and Playback Tool (Bag2)
+# 17-ROS 2 Recording and Playback Tool (Bag2)
 
 ## 1. Introduction
 
@@ -76,7 +76,7 @@ ros2 bag info rosbag2_2023_10_31-07_58_23
 ros2 bag record -a
 ```
 
-![Recording All Topics](/img/docs/jetson/10-ROS2/10-20/image-20231031162153843.png)
+![Recording All Topics](/img/docs/hh101/10-ROS2/10-20/image-20231031162153843.png)
 
 To stop recording, press **Ctrl + C**.
 
@@ -86,7 +86,7 @@ After stopping, a folder like this will be created:
 rosbag2_2023_10_31-08_21_21
 ```
 
-![Recorded Bag Folder](/img/docs/jetson/10-ROS2/10-20/image-20231031162443246.png)
+![Recorded Bag Folder](/img/docs/hh101/10-ROS2/10-20/image-20231031162443246.png)
 
 ------------------------------------------------------------------------
 
@@ -154,7 +154,7 @@ ros2 bag play rosbag2_2023_10_31-07_58_23 -l
 ros2 topic echo /chatter
 ```
 
-![Playback Topic Output](/img/docs/jetson/10-ROS2/10-20/image-20231031162719003.png)
+![Playback Topic Output](/img/docs/hh101/10-ROS2/10-20/image-20231031162719003.png)
 
 ------------------------------------------------------------------------
 

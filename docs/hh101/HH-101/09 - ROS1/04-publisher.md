@@ -1,9 +1,9 @@
 ---
-title: Publisher
+title: 04-Publisher
 sidebar_position: 4
 ---
 
-# 4. Publisher
+# 04-Publisher
 
 ## 4.1 Publisher
 
@@ -123,7 +123,7 @@ int main(int argc, char **argv)
 
 ### Program Flow Diagram
 
-![C++ Publisher Flow](/img/docs/jetson/9-ROS1/9-4/pub_c++.png)
+![C++ Publisher Flow](/img/docs/hh101/9-ROS1/9-4/pub_c++.png)
 
 ---
 

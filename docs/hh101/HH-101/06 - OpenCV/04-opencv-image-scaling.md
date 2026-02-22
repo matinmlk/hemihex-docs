@@ -1,9 +1,9 @@
 ---
-sidebar_position: 9
-title: Image Scaling with OpenCV
+sidebar_position: 4
+title: 04-Image Scaling with OpenCV
 ---
 
-# Image Scaling with OpenCV
+# 04-Image Scaling with OpenCV
 
 This section explains how to **resize images using OpenCV** in Python.
 
@@ -47,7 +47,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Scaling
-Result](/img/docs/jetson/06-OpenCV/6-4/image-20250106150844174.png)
+Result](/img/docs/hh101/06-OpenCV/6-4/image-20250106150844174.png)
 
 ------------------------------------------------------------------------
 

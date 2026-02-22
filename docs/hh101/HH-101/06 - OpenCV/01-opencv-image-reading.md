@@ -1,9 +1,9 @@
 ---
-sidebar_position: 6
-title: Image Reading with OpenCV
+sidebar_position: 1
+title: 01-Image Reading with OpenCV
 ---
 
-# Image Reading with OpenCV
+# 01-Image Reading with OpenCV
 
 **OpenCV (Open Source Computer Vision Library)** is an open-source
 computer vision and machine learning library widely used in:
@@ -52,7 +52,7 @@ python3 01.image_read.py
 Select the image display window and press **`q`** to exit the program.
 :::
 
-![Image Display Result](/img/docs/jetson/06-OpenCV/6-1/image-20250106121841781.png)
+![Image Display Result](/img/docs/hh101/06-OpenCV/6-1/image-20250106121841781.png)
 
 ------------------------------------------------------------------------
 

@@ -1,9 +1,9 @@
 ---
 sidebar_position: 9
-title: Instance Segmentation on Jetson (YOLO)
+title: 9-Instance Segmentation on Jetson (YOLO)
 ---
 
-# Instance Segmentation on Jetson
+# 9-Instance Segmentation on Jetson
 
 This section demonstrates **instance segmentation** using **Ultralytics
 YOLO segmentation models** on NVIDIA Jetson. Examples include **image**,

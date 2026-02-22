@@ -1,9 +1,9 @@
 ---
-title: OpenRouter Large Model API Aggregation Platform
+title: 01-OpenRouter Large Model API Aggregation Platform
 sidebar_position: 1
 ---
 
-# 1.OpenRouter Large Model API Aggregation Platform
+# 01-OpenRouter Large Model API Aggregation Platform
 
 ## Concept Introduction
 
@@ -43,32 +43,32 @@ llm_platform: openrouter
 
 1. Visit the OpenRouter website:
 
-![OpenRouter homepage](/img/docs/jetson/12-OnlineAIModel/12-1/open.png)
+![OpenRouter homepage](/img/docs/hh101/12-OnlineAIModel/12-1/open.png)
 
 2. Register and sign in.
 3. Open the model marketplace.
 
-![OpenRouter model marketplace](/img/docs/jetson/12-OnlineAIModel/12-1/open-router.png)
+![OpenRouter model marketplace](/img/docs/hh101/12-OnlineAIModel/12-1/open-router.png)
 
 4. Search for `free` models.
 
-![Search free models](/img/docs/jetson/12-OnlineAIModel/12-1/image-20250807175353717.png)
+![Search free models](/img/docs/hh101/12-OnlineAIModel/12-1/image-20250807175353717.png)
 
 5. Copy the model identifier using the clipboard icon.
 
-![Copy model identifier](/img/docs/jetson/12-OnlineAIModel/12-1/image-20250807175436229.png)
+![Copy model identifier](/img/docs/hh101/12-OnlineAIModel/12-1/image-20250807175436229.png)
 
 6. Open **Keys** from the profile menu.
 
-![Open API keys menu](/img/docs/jetson/12-OnlineAIModel/12-1/image-20250807180439598.png)
+![Open API keys menu](/img/docs/hh101/12-OnlineAIModel/12-1/image-20250807180439598.png)
 
 7. Create a new API key.
 
-![Create API key](/img/docs/jetson/12-OnlineAIModel/12-1/image-20250807180556227.png)
+![Create API key](/img/docs/hh101/12-OnlineAIModel/12-1/image-20250807180556227.png)
 
 8. Copy and save the API key securely.
 
-![API key generated](/img/docs/jetson/12-OnlineAIModel/12-1/api.png)
+![API key generated](/img/docs/hh101/12-OnlineAIModel/12-1/api.png)
 
 ---
 

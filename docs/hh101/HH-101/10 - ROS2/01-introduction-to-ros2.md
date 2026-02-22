@@ -1,9 +1,9 @@
 ---
-sidebar_position: 11
-title: Introduction to ROS 2
+sidebar_position: 1
+title: 01-Introduction to ROS 2
 ---
 
-# 1. Introduction to ROS 2
+# 01-Introduction to ROS 2
 
 ## 1. Overview of ROS 2
 
@@ -15,7 +15,7 @@ optimizations, ROS 2 now has stable long-term support releases.
 As with ROS 1, the Linux distribution version must match the ROS 2
 version. The corresponding versions are shown below.
 
-![ROS 2 Version Compatibility](/img/docs/jetson/10-ROS2/10-1/image-1.png)
+![ROS 2 Version Compatibility](/img/docs/hh101/10-ROS2/10-1/image-1.png)
 
 :::note
 Download the appropriate ROS 2 version for your Linux distribution. This
@@ -106,7 +106,7 @@ Service)** standard. This allows ROS 2 to support:
 -   High-reliability communication
 -   Operation over different network types
 
-![ROS 2 Middleware Architecture](/img/docs/jetson/10-ROS2/10-1/image-20230427150532854.png)
+![ROS 2 Middleware Architecture](/img/docs/hh101/10-ROS2/10-1/image-20230427150532854.png)
 
 ------------------------------------------------------------------------
 

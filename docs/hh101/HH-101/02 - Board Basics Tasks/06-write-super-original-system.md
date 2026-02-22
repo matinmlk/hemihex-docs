@@ -1,59 +1,60 @@
 ---
 title: 06-Write SUPER Original System
-sidebar_position: 06
+sidebar_position: 6
 ---
 
-# Write SUPER original system
+# 06-Write SUPER Original System
 
-This tutorial supports upgrading SUPER from Jetson Orin official kit and Jetson Orin SUB kit. After upgrading SUPER, only the pure system will be retained, and the tutorial motherboard case cannot run.
-
-:::note
-The startup system of Jetson series motherboards is closely related to the Jetpack version of the motherboard. Different Jetpack versions may fail to start
+:::warning
+Advanced workflow. Use this only if you explicitly need the SUPER system path. Beginners should first complete `03-Installing Jetson Environment`.
 :::
 
-```
-The tutorial uses VMware to start the Ubuntu22.04 virtual machine as a demonstration
-```
-
-```
-The tutorial uses VMware to start the Ubuntu22.04 virtual machine as a demonstration
-```
-
-## 1. File download
-
-Official website: https://developer.nvidia.com/embedded/jetson-linux-r3643
+This tutorial supports upgrading SUPER from Jetson Orin official kit and Jetson Orin SUB kit. After upgrading SUPER, only the pure system is retained, and some tutorial board cases may not run.
 
 :::note
-NVIDIA Jetson Linux 36.4.3 corresponds to Jetpack 6.2
+The startup behavior of Jetson boards depends on JetPack version compatibility. Mismatched versions may fail to boot.
 :::
 
-Download the compressed package files corresponding to Driver Package (BSP) and Sample Root Filesystem :
+The tutorial uses a VMware Ubuntu 22.04 virtual machine for demonstration.
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120150532008.png)
+## 1. File Download
 
-## 2. Flashing mode
+Official page: [Jetson Linux R36.4.3](https://developer.nvidia.com/embedded/jetson-linux-r3643)
 
-### 2.1. Hardware connection
+:::note
+NVIDIA Jetson Linux 36.4.3 corresponds to JetPack 6.2.
+:::
 
-Use a jumper cap to short-circuit the FC REC and GND pins under the core board: the core board can be left unassembled, the picture is just for a clearer observation
+Download both:
 
-The Jetson Orin motherboard needs to be connected to a DC power adapter, DP data cable, network cable, and Type C data cable: Type C data cable connects to the computer
+- Driver Package (BSP)
+- Sample Root Filesystem
 
-This illustration is based on the official version of Jetson Orin Nano. Users of other versions can refer to it for use (the hardware interface and functional layout are the same).
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120150532008.png)
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120171038907.png)
+## 2. Flashing Mode
 
-### 2.2, Software connection
+### 2.1 Hardware Connection
 
-The motherboard is successfully connected to the Ubuntu system, and the lsusb command will show the NVIDIA Corp. APX information:
+Use a jumper cap to short FC REC and GND under the core board.
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120154019235.png)
+Connect DC power, DP cable, Ethernet, and Type-C to the host.
 
-## 3. Burning system
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120171038907.png)
 
-### 3.1. Unzip files
+### 2.2 Software Connection Check
 
-Go to the download folder and open the terminal, then unzip the file in the terminal and go to the specified folder:
+Verify APX visibility on host:
+
+```bash
+lsusb
+```
+
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120154019235.png)
+
+## 3. Flash System
+
+### 3.1 Unpack Files
 
 ```bash
 tar xf Jetson_Linux_R36.4.3_aarch64.tbz2
@@ -61,65 +62,55 @@ sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_R36.4.3_aarch64.tbz2 -C Linux_fo
 cd Linux_for_Tegra/
 ```
 
-```bash
-tar xf Jetson_Linux_R36.4.3_aarch64.tbz2
-```
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120151802071.png)
 
-```bash
-sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_R36.4.3_aarch64.tbz2 -C Linux_for_Tegra/rootfs/
-```
-
-```bash
-cd Linux_for_Tegra/
-```
-
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120151802071.png)
-
-### 3.2. Run the script
+### 3.2 Run Prerequisite Scripts
 
 ```bash
 sudo ./tools/l4t_flash_prerequisites.sh
-```
-
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120151922577.png)
-
-```bash
 sudo ./apply_binaries.sh
 ```
 
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120151922577.png)
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120152138271.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120152138271.png)
 
-### 3.3. Burn the system to the solid state drive
+### 3.3 Flash to SSD
 
 ```bash
 sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p "-c bootloader/generic/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit-super internal
 ```
 
 :::note
-Both Jetson Orin Nano and Jetson Orin NX can use the same command to burn the system to the SSD
+Both Jetson Orin Nano and Jetson Orin NX can use this command to flash SSD in this workflow.
 :::
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120152242874.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120152242874.png)
 
-:::note
-During the burning process, the user needs to connect the device to the virtual machine in time, otherwise it will cause the link to time out!
-:::
+During flashing, keep the USB connection attached to the VM to avoid timeout.
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120155459747.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120155459747.png)
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120155405246.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120155405246.png)
 
-## 4. Start the system
+## 4. Boot the System
 
-After the system is successfully burned, disconnect the mainboard power supply (disconnect the DC power adapter and Type-C data cable), and then unplug the jumper cap that shorts FC REC and GND under the core board; after confirming that the above operations are completed, reconnect the DC power adapter and DP data cable (connect to the display) to start the system.
+After flashing:
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120161524122.png)
+- Disconnect DC and Type-C.
+- Remove FC REC/GND jumper.
+- Reconnect DC and DP.
+- Boot and finish first-run setup.
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120162024278-1737361225177-3.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120161524122.png)
 
-![Screenshot](/img/docs/jetson/02-Basics/2-6/image-20250120162037749.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120162024278-1737361225177-3.png)
 
-## 5. Component environment
+![Screenshot](/img/docs/hh101/02-Basics/2-6/image-20250120162037749.png)
 
-The above is only to complete the burning of the pure system. If you need CUDA , TensorRT and other environments, users also need to refer to [Chapter 2 Motherboard Basics: Installing Jetson Component Environment] for operation!
+## 5. Install Jetson Components
+
+A pure flashed system does not include all CUDA/TensorRT components by default. After boot, continue with:
+
+- `03-Installing Jetson Environment`
+

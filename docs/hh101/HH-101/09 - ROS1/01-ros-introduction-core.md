@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-title: ROS Introduction
+title: 01-ROS Introduction
 ---
 
-# 1. ROS Introduction
+# 01-ROS Introduction
 
 -   **ROS Wiki:** http://wiki.ros.org/\
 -   **ROS Tutorials:** http://wiki.ros.org/ROS/Tutorials\
@@ -59,7 +59,7 @@ name: 'my_turtle'"
 rqt_graph
 ```
 
-![ROS Node Graph](/img/docs/jetson/9-ROS1/9-1/001.png)
+![ROS Node Graph](/img/docs/hh101/9-ROS1/9-1/001.png)
 
 ### `rosnode` Commands
 
@@ -219,7 +219,7 @@ Supports: - Goal tracking - Continuous feedback - Task cancellation
 
 ## 1.5 ROS Versions
 
-![ROS Distributions](/img/docs/jetson/9-ROS1/9-1/011.png)
+![ROS Distributions](/img/docs/hh101/9-ROS1/9-1/011.png)
 
   Version   OS
   --------- --------------

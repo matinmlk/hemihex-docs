@@ -1,9 +1,9 @@
 ---
 sidebar_position: 6
-title: Customized Topic Messages and Usage
+title: 06-Customized Topic Messages and Usage
 ---
 
-# 6. Customized Topic Messages and Usage
+# 06-Customized Topic Messages and Usage
 
 ## 6.1 Customized Topic Messages
 

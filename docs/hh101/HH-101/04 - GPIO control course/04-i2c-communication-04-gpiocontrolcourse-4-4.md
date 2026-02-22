@@ -1,9 +1,9 @@
 ---
-title: I2C Communication
-sidebar_position: 0
+title: 04-I2C Communication
+sidebar_position: 4
 ---
 
-# I2C communication
+# 04-I2C communication
 ## 1. GPIO pin diagram
 
 Use 0.91-inch OLED to test the I2C communication function and connect according to the following wiring:
@@ -12,7 +12,7 @@ Use 0.91-inch OLED to test the I2C communication function and connect according 
 Do not connect incorrectly or cause pin short circuits. Mistakes may cause damage to the motherboard hardware!
 :::
 
-![image-20250110112330754](/img/docs/jetson/04-GPIOcontrolcourse/4-4/image-20250110112330754.png)
+![image-20250110112330754](/img/docs/hh101/04-GPIOcontrolcourse/4-4/image-20250110112330754.png)
 
 ## 2. I2C test
 
@@ -23,7 +23,7 @@ sudo pip3 install smbus
 sudo pip3 install Adafruit_SSD1306
 ```
 
-![image-20250110113436522](/img/docs/jetson/04-GPIOcontrolcourse/4-4/image-20250110113436522.png)
+![image-20250110113436522](/img/docs/hh101/04-GPIOcontrolcourse/4-4/image-20250110113436522.png)
 
 ### 2.2. I2C device
 
@@ -46,7 +46,7 @@ Enter the following command in the terminal to list I2C devices under the specif
 i2cdetect -y -r *
 ```
 
-![image-20250110113848297](/img/docs/jetson/04-GPIOcontrolcourse/4-4/image-20250110113848297.png)
+![image-20250110113848297](/img/docs/hh101/04-GPIOcontrolcourse/4-4/image-20250110113848297.png)
 
 ### 2.3. Run the program
 
@@ -65,6 +65,6 @@ python3 oled_i2c.py
 
 After starting the program, OLED will display system information such as system CPU usage, system time, and memory usage:
 
-![image-20250110114104871](/img/docs/jetson/04-GPIOcontrolcourse/4-4/image-20250110114104871.png)
+![image-20250110114104871](/img/docs/hh101/04-GPIOcontrolcourse/4-4/image-20250110114104871.png)
 
-![image-20250110114410547](/img/docs/jetson/04-GPIOcontrolcourse/4-4/image-20250110114410547.png)
+![image-20250110114410547](/img/docs/hh101/04-GPIOcontrolcourse/4-4/image-20250110114410547.png)

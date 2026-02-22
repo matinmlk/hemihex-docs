@@ -1,9 +1,9 @@
 ---
 sidebar_position: 12
-title: Oriented Object Detection on Jetson (YOLO OBB)
+title: 12-Oriented Object Detection on Jetson (YOLO OBB)
 ---
 
-# Oriented Object Detection on Jetson
+# 12-Oriented Object Detection on Jetson
 
 Oriented Object Detection (OBB) extends traditional object detection by
 predicting **rotated bounding boxes**. This is especially useful for

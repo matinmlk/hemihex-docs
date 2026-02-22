@@ -1,9 +1,9 @@
 ---
-title: Gemma3
-sidebar_position: 0
+title: 08-Gemma3
+sidebar_position: 8
 ---
 
-# Gemma3
+# 08-Gemma3
 
 Demo Environment
 
@@ -24,7 +24,7 @@ Gemma is a family of lightweight models built by Google based on Gemini technolo
 
 ## 2. Performance
 
-![Chatbot Arena ELO Score](/img/docs/jetson/11-OfflineAIModel/11-8/89dc5a19-179e-4dd3-8e5d-12ad54973148.png)
+![Chatbot Arena ELO Score](/img/docs/hh101/11-OfflineAIModel/11-8/89dc5a19-179e-4dd3-8e5d-12ad54973148.png)
 
 ## 3. Using Gemma3
 
@@ -37,7 +37,7 @@ ollama run gemma3:4b
 ```
 
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-8/1.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-8/1.png)
 
 ### 3.2 Start a conversation
 
@@ -48,18 +48,18 @@ How to learn a programming language?
 
 Response time depends on hardware configuration, so please be patient!
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-8/image-20250630115641821.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-8/image-20250630115641821.png)
 
 ### 3.3 Visual Function
 
-![test_pic](/img/docs/jetson/11-OfflineAIModel/11-8/test_pic.png)
+![test_pic](/img/docs/hh101/11-OfflineAIModel/11-8/test_pic.png)
 
 ```bash
 What do you see in this picture? :./test_pic.png
 #Using ": + the image path" in the conversation allows the model to use its visual function and interpret the information in the image.
 ```
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-8/3.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-8/3.png)
 
 ### 3.4 Ending the Conversation
 

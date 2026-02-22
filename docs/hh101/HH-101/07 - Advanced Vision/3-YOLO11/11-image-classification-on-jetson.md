@@ -1,9 +1,9 @@
 ---
 sidebar_position: 11
-title: Image Classification on Jetson (YOLO)
+title: 11-Image Classification on Jetson (YOLO)
 ---
 
-# Image Classification on Jetson
+# 11-Image Classification on Jetson
 
 This section demonstrates **image classification** on NVIDIA Jetson
 using **Ultralytics YOLO classification models**. Examples include

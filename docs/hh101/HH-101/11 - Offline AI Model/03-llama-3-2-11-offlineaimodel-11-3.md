@@ -1,9 +1,9 @@
 ---
-title: Llama 3.2
-sidebar_position: 0
+title: 03-Llama 3.2
+sidebar_position: 3
 ---
 
-# Llama 3.2
+# 03-Llama 3.2
 
 Demo Environment
 
@@ -24,7 +24,7 @@ Meta Llama 3.2 is a series of advanced open-source large-scale language models (
 
 ## 2. Performance
 
-![Llama 3.2 instruction-tuned benchmarks](/img/docs/jetson/11-OfflineAIModel/11-3/c1a51716-d8bb-4642-8044-48f5022b777d.png)
+![Llama 3.2 instruction-tuned benchmarks](/img/docs/hh101/11-OfflineAIModel/11-3/c1a51716-d8bb-4642-8044-48f5022b777d.png)
 
 ## 3. Using Llama 3.2
 
@@ -36,7 +36,7 @@ Use the run command to run the model. If the model is not already downloaded, it
 ollama run llama3.2:3b
 ```
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-3/1.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-3/1.png)
 
 ### 3.2 Starting a Conversation
 
@@ -46,7 +46,7 @@ How many minutes are there in a day?
 
 Response time depends on your hardware configuration, so please be patient!
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-3/image-20250627185035604.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-3/image-20250627185035604.png)
 
 ### 3.3 Ending a Conversation
 

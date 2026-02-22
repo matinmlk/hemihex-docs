@@ -1,9 +1,9 @@
 ---
-sidebar_position: 12
-title: Image Mirroring with OpenCV
+sidebar_position: 7
+title: 07-Image Mirroring with OpenCV
 ---
 
-# Image Mirroring with OpenCV
+# 07-Image Mirroring with OpenCV
 
 This section explains how to **mirror (flip) an image** using OpenCV.
 
@@ -49,7 +49,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Mirroring
-Result](/img/docs/jetson/06-OpenCV/6-7/image-20250106155337268.png)
+Result](/img/docs/hh101/06-OpenCV/6-7/image-20250106155337268.png)
 
 ------------------------------------------------------------------------
 

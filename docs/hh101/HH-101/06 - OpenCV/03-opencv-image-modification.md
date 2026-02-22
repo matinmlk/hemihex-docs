@@ -1,9 +1,9 @@
 ---
-sidebar_position: 8
-title: Image Modification with OpenCV
+sidebar_position: 3
+title: 03-Image Modification with OpenCV
 ---
 
-# Image Modification with OpenCV
+# 03-Image Modification with OpenCV
 
 This section explains how to **modify image pixel values** using OpenCV
 and NumPy slicing in Python.
@@ -50,7 +50,7 @@ python3 03.image_modify.py
 Select the image display window and press **`q`** to exit the program.
 :::
 
-![Image Modification Result](/img/docs/jetson/06-OpenCV/6-3/image-20250106144557431.png)
+![Image Modification Result](/img/docs/hh101/06-OpenCV/6-3/image-20250106144557431.png)
 
 ------------------------------------------------------------------------
 

@@ -1,9 +1,9 @@
 ---
-sidebar_position: 14
-title: Image Edge Detection with OpenCV
+sidebar_position: 10
+title: 10-Image Edge Detection with OpenCV
 ---
 
-# Image Edge Detection with OpenCV
+# 10-Image Edge Detection with OpenCV
 
 This section explains how to **detect edges in an image** using OpenCV's
 Canny edge detection algorithm.
@@ -51,7 +51,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Edge Detection
-Result](/img/docs/jetson/06-OpenCV/6-10/image-20250106161749169.png)
+Result](/img/docs/hh101/06-OpenCV/6-10/image-20250106161749169.png)
 
 ------------------------------------------------------------------------
 

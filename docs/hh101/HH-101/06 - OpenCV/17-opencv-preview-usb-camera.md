@@ -1,9 +1,9 @@
 ---
-sidebar_position: 21
-title: Preview USB Camera Image
+sidebar_position: 17
+title: 17-Preview USB Camera Image
 ---
 
-# Preview USB Camera Image
+# 17-Preview USB Camera Image
 
 This section explains how to **preview live images from a USB camera**
 using OpenCV in Python.
@@ -50,7 +50,7 @@ Select the camera preview window and press **`q`** to exit the program.
 :::
 
 ![USB Camera Preview
-Result](/img/docs/jetson/06-OpenCV/6-17/image-20250106185612930.png)
+Result](/img/docs/hh101/06-OpenCV/6-17/image-20250106185612930.png)
 
 ------------------------------------------------------------------------
 

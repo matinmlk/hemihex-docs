@@ -1,9 +1,9 @@
 ---
-sidebar_position: 7
-title: Image Saving with OpenCV
+sidebar_position: 2
+title: 02-Image Saving with OpenCV
 ---
 
-# Image Saving with OpenCV
+# 02-Image Saving with OpenCV
 
 This section explains both the **concepts** and a **practical Python
 example** for saving images to disk using OpenCV.
@@ -37,7 +37,7 @@ python3 02.image_save.py
 Select the image display window and press **`q`** to exit the program.
 :::
 
-![Saved Image Result](/img/docs/jetson/06-OpenCV/6-2/image-20250106143055215.png)
+![Saved Image Result](/img/docs/hh101/06-OpenCV/6-2/image-20250106143055215.png)
 
 ------------------------------------------------------------------------
 

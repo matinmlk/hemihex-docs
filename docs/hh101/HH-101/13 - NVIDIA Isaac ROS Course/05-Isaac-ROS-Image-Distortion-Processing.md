@@ -1,9 +1,9 @@
 ---
-title: Isaac ROS Image distortion processing
+title: 05-Isaac ROS Image distortion processing
 sidebar_position: 5
 ---
 
-# Isaac ROS Image distortion processing
+# 05-Isaac ROS Image distortion processing
 
 Isaac ROS image distortion processing：[https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_image_pipeline/index.html](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_image_pipeline/index.html)
 
@@ -11,7 +11,7 @@ Isaac ROS image distortion processing：[https://nvidia-isaac-ros.github.io/repo
 
 Isaac ROS image distortion processing uses the Isaac ROS image pipeline. Isaac ROS Image Pipeline is a metapackage of functionality for image processing. Camera output often needs pre-processing to meet the input requirements of multiple different perception functions. This can include cropping, resizing, mirroring, correcting for lens distortion, and color space conversion. For stereo cameras, additional processing is required to produce disparity between left + right images and a point cloud for depth perception.
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-5/1.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-5/1.png)
 
 ## Quick Experience
 
@@ -68,7 +68,7 @@ Run the following command:
 ros2 run image_view image_view --ros-args --remap image:=resize/image
 ```
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-5/2.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-5/2.png)
 
 **Color Conversion:**
 
@@ -122,7 +122,7 @@ Run the following command
 ros2 run image_view image_view --ros-args --remap image:=image_mono
 ```
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-5/3.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-5/3.png)
 
 **Crop:**
 
@@ -173,7 +173,7 @@ Run the following command
 ros2 run image_view image_view --ros-args --remap image:=crop/image
 ```
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-5/4.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-5/4.png)
 
 **Rectify:**
 
@@ -224,7 +224,7 @@ Run the following command
 ros2 run image_view image_view --ros-args --remap image:=image_rect
 ```
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-5/5.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-5/5.png)
 
 **Flip:**
 
@@ -275,4 +275,4 @@ Run the following command
 ros2 run image_view image_view --ros-args --remap image:=image_flipped
 ```
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-5/6.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-5/6.png)

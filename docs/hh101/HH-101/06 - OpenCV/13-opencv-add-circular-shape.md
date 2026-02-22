@@ -1,9 +1,9 @@
 ---
-sidebar_position: 17
-title: Add Circular Shape with OpenCV
+sidebar_position: 13
+title: 13-Add Circular Shape with OpenCV
 ---
 
-# Add Circular Shape with OpenCV
+# 13-Add Circular Shape with OpenCV
 
 This section explains how to **draw a circular shape on an image** using
 OpenCV in Python.
@@ -49,7 +49,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Circular Shape
-Result](/img/docs/jetson/06-OpenCV/6-13/image-20250106182835811.png)
+Result](/img/docs/hh101/06-OpenCV/6-13/image-20250106182835811.png)
 
 ------------------------------------------------------------------------
 

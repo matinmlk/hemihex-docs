@@ -1,9 +1,9 @@
 ---
-sidebar_position: 10
-title: Image Cropping with OpenCV
+sidebar_position: 5
+title: 05-Image Cropping with OpenCV
 ---
 
-# Image Cropping with OpenCV
+# 05-Image Cropping with OpenCV
 
 This section explains how to **crop an image using OpenCV** by slicing
 the underlying NumPy array.
@@ -47,7 +47,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Cropping
-Result](/img/docs/jetson/06-OpenCV/6-5/image-20250106151751452.png)
+Result](/img/docs/hh101/06-OpenCV/6-5/image-20250106151751452.png)
 
 ------------------------------------------------------------------------
 

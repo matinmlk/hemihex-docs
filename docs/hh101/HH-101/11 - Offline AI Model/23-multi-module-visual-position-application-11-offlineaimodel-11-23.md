@@ -1,9 +1,9 @@
 ---
-title: Multi-module Visual Position Application
-sidebar_position: 0
+title: 23-Multi-module Visual Position Application
+sidebar_position: 23
 ---
 
-# Multi module visual position application
+# 23-Multi module visual position application
 
 ## 1. Introduction
 

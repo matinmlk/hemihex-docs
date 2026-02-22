@@ -1,9 +1,9 @@
 ---
-sidebar_position: 21
-title: MediaPipe Environment Setup on Jetson
+sidebar_position: 1
+title: 1-MediaPipe Environment Setup on Jetson
 ---
 
-# MediaPipe Environment
+# 1-MediaPipe Environment
 
 MediaPipe is a cross-platform framework for building multi-modal
 processing pipelines such as image, video, and sensor data processing.

@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'HemiHex Docs',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/site/favicon.ico',
   future: { v4: true },
 
   url: 'https://docs.hemihex.com',
@@ -61,12 +61,17 @@ const config: Config = {
 
 
   themeConfig: {
-  image: 'img/logo.png',
+  docs: {
+    sidebar: {
+      autoCollapseCategories: true,
+    },
+  },
+  image: 'img/site/logo.png',
   colorMode: { respectPrefersColorScheme: true },
   navbar: {
     logo: {
       alt: 'HemiHex',
-      src: 'img/logo.png',
+      src: 'img/site/logo.png',
       href: '/docs/intro',
     },
     items: [

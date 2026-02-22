@@ -1,9 +1,9 @@
 ---
-title: Use Jupyter Lab
-sidebar_position: 0
+title: 03-Use Jupyter Lab
+sidebar_position: 3
 ---
 
-# Use Jupyter Lab
+# 03-Use Jupyter Lab
 
 ## 1. Jupyter Lab installation
 
@@ -25,9 +25,9 @@ sudo pip3 install jupyterlab
 ```
 
 
-![image-20241226141045667](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20241226141045667.png)
+![image-20241226141045667](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20241226141045667.png)
 
-![image-20241226142651775](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20241226142651775.png)
+![image-20241226142651775](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20241226142651775.png)
 
 ### 1.2、Node.js
 
@@ -51,7 +51,7 @@ Verify the version:
 node -v && npm -v
 ```
 
-![image-20241230104859936](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20241230104859936.png)
+![image-20241230104859936](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20241230104859936.png)
 
 ## 2. Jupyter Lab startup
 
@@ -61,9 +61,9 @@ Before starting Jupyter Lab, you need to set the system default browser, otherwi
 
 Open the system Chromium browser and select Set the default browser:
 
-![image-20241226141850048](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20241226141850048.png)
+![image-20241226141850048](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20241226141850048.png)
 
-![image-20241226141855084](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20241226141855084.png)
+![image-20241226141855084](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20241226141855084.png)
 
 ### 2.2. Start Jupyter Lab
 
@@ -73,9 +73,9 @@ jupyter lab
 # Start as administrator sudo jupyter lab --allow-root
 ```
 
-![image-20241226143316322](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20241226143316322.png)
+![image-20241226143316322](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20241226143316322.png)
 
-![image-20241226143326168](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20241226143326168.png)
+![image-20241226143326168](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20241226143326168.png)
 
 ### 2.3. Host access
 
@@ -85,7 +85,7 @@ The host refers to the Jetson motherboard system access, which can be accessed d
 http://localhost:8888/
 ```
 
-![image-20250113180325457](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20250113180325457.png)
+![image-20250113180325457](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20250113180325457.png)
 
 ## 3. Jupyter Lab configuration
 
@@ -130,7 +130,7 @@ c.ServerApp.allow_root = True
 c.ServerApp.port = 8888
 ```
 
-![image-20241226144141750](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20241226144141750.png)
+![image-20241226144141750](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20241226144141750.png)
 
 ### 3.2, Configure access password
 
@@ -144,7 +144,7 @@ sudo jupyter lab password
 
 Automatically generated configuration file location: [JupyterPasswordApp] Wrote hashed password to /root/.jupyter/jupyter_server_config.json
 
-![image-20241226144212497](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20241226144212497.png)
+![image-20241226144212497](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20241226144212497.png)
 
 ### 3.3, Start the service automatically at boot
 
@@ -188,7 +188,7 @@ Configuration file path: refer to the path of the configuration file generated a
 ```
 
 
-![image-20241226144326742](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20241226144326742.png)
+![image-20241226144326742](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20241226144326742.png)
 
 #### 3.3.2, set up the self-start service
 
@@ -212,7 +212,7 @@ sudo systemctl start jupyterlab
 systemctl status jupyterlab
 ```
 
-![image-20241226144733028](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20241226144733028.png)
+![image-20241226144733028](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20241226144733028.png)
 
 ##### Verify startup
 
@@ -223,7 +223,7 @@ You need to enter a password for the first access, which is the information set 
 When taking the screenshot, the IP of the motherboard is 192.168.2.114, so devices in the same LAN can access 192.168.2.114:8888
 ```
 
-![image-20241226144927314](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20241226144927314.png)
+![image-20241226144927314](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20241226144927314.png)
 
 ## 4. Use Jupyter Lab
 
@@ -231,7 +231,7 @@ When taking the screenshot, the IP of the motherboard is 192.168.2.114, so devic
 
 It is recommended to restart the kernel and clear all unit block output information every time you run a program or the program is abnormal:
 
-![image-20250113180443385](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20250113180443385.png)
+![image-20250113180443385](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20250113180443385.png)
 
 ### 4.2. Run the program
 
@@ -241,10 +241,10 @@ Through Jupyter Open the program file to be run in Lab, and run the program from
 
 [*] is displayed in the upper left corner of the unit block to indicate that it is running:
 
-![image-20250113180823057](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20250113180823057.png)
+![image-20250113180823057](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20250113180823057.png)
 
 #### 4.2.2. Running completed
 
 [Number] is displayed in the upper left corner of the unit block to indicate the number of times it has been run: for example, [1] → the program has run the unit block code for the first time
 
-![image-20250113180846984](/img/docs/jetson/05-VisionBasicCourse/5-3/image-20250113180846984.png)
+![image-20250113180846984](/img/docs/hh101/05-VisionBasicCourse/5-3/image-20250113180846984.png)

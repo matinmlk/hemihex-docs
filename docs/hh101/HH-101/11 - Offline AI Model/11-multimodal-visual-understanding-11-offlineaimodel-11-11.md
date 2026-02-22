@@ -1,9 +1,9 @@
 ---
-title: Multimodal Visual Understanding Application
+title: 11-Multimodal Visual Understanding Application
 sidebar_position: 11
 ---
 
-# Multimodal Visual Understanding Application
+# 11-Multimodal Visual Understanding Application
 
 ## 1. Concept Introduction
 

@@ -1,9 +1,9 @@
 ---
-title: Qwen2.5VL
-sidebar_position: 0
+title: 07-Qwen2.5VL
+sidebar_position: 7
 ---
 
-# Qwen2.5VL
+# 07-Qwen2.5VL
 
 Demo Environment
 
@@ -24,9 +24,9 @@ Qwen2.5-VL is Qwen's new flagship visual language model and a significant leap f
 
 ## 2. Performance
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-7/c90b8e4b-d023-4953-9cd5-e515324ca73c.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-7/c90b8e4b-d023-4953-9cd5-e515324ca73c.png)
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-7/533ec184-7b82-4bcf-a4ab-af9a41ac0810.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-7/533ec184-7b82-4bcf-a4ab-af9a41ac0810.png)
 
 ## 3. Using Qwen2.5VL
 
@@ -38,7 +38,7 @@ Use the run command to start running the model. If the model is not already down
 ollama run qwen2.5vl:3b
 ```
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-7/1.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-7/1.png)
 
 ### 3.2 Start a conversation
 
@@ -48,18 +48,18 @@ Please tell me how many hours there are in a day.
 
 Response time depends on your hardware configuration. Please be patient!
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-7/2.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-7/2.png)
 
 ### 3.3 Visual Function
 
-![test_pic](/img/docs/jetson/11-OfflineAIModel/11-7/test_pic.png)
+![test_pic](/img/docs/hh101/11-OfflineAIModel/11-7/test_pic.png)
 
 ```text
 What do you see in this picture? :./test_pic.png
 #Use ": + image path" in the conversation to enable the model to use its visual function and interpret the information in the image.
 ```
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-7/3.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-7/3.png)
 
 ### 3.4 Ending the Conversation
 

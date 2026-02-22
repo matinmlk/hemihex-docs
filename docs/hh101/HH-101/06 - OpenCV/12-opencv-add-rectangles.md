@@ -1,9 +1,9 @@
 ---
-sidebar_position: 15
-title: Add Rectangles with OpenCV
+sidebar_position: 12
+title: 12-Add Rectangles with OpenCV
 ---
 
-# Add Rectangles with OpenCV
+# 12-Add Rectangles with OpenCV
 
 This section explains how to **draw rectangles on an image** using
 OpenCV in Python.
@@ -50,7 +50,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Rectangle Drawing
-Result](/img/docs/jetson/06-OpenCV/6-12/image-20250106163403911.png)
+Result](/img/docs/hh101/06-OpenCV/6-12/image-20250106163403911.png)
 
 ------------------------------------------------------------------------
 

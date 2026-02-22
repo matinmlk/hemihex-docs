@@ -1,9 +1,9 @@
 ---
-sidebar_position: 14
-title: Image Binarization with OpenCV
+sidebar_position: 9
+title: 09-Image Binarization with OpenCV
 ---
 
-# Image Binarization with OpenCV
+# 09-Image Binarization with OpenCV
 
 This section explains how to **convert a grayscale image into a binary
 image** using OpenCV.
@@ -49,7 +49,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Image Binarization
-Result](/img/docs/jetson/06-OpenCV/6-9/image-20250106161124620.png)
+Result](/img/docs/hh101/06-OpenCV/6-9/image-20250106161124620.png)
 
 ------------------------------------------------------------------------
 

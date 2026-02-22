@@ -1,9 +1,9 @@
 ---
 sidebar_position: 3
-title: Docker Commands
+title: 03-Docker Commands
 ---
 
-# Docker Commands
+# 03-Docker Commands
 
 Docker Engine includes the Docker CLI, which provides command-line tools
 for interacting with the Docker daemon. This document introduces
@@ -17,7 +17,7 @@ commonly used Docker commands.
 docker info
 ```
 
-![Docker Info Output](/img/docs/jetson/8-docker/8-3/image-20250105134326862.png)
+![Docker Info Output](/img/docs/hh101/8-docker/8-3/image-20250105134326862.png)
 
 ------------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ docker info
 docker --version
 ```
 
-![Docker Version](/img/docs/jetson/8-docker/8-3/image-20250105134400721.png)
+![Docker Version](/img/docs/hh101/8-docker/8-3/image-20250105134400721.png)
 
 ------------------------------------------------------------------------
 
@@ -57,7 +57,7 @@ Example:
 docker pull ubuntu:18.04
 ```
 
-![Docker Pull](/img/docs/jetson/8-docker/8-3/image-20250105141705494.png)
+![Docker Pull](/img/docs/hh101/8-docker/8-3/image-20250105141705494.png)
 
 ------------------------------------------------------------------------
 
@@ -93,7 +93,7 @@ Exit the container with:
 exit
 ```
 
-![Docker Run](/img/docs/jetson/8-docker/8-3/image-20250105142432302.png)
+![Docker Run](/img/docs/hh101/8-docker/8-3/image-20250105142432302.png)
 
 ------------------------------------------------------------------------
 
@@ -111,7 +111,7 @@ docker ps
 docker ps -a
 ```
 
-![Docker PS](/img/docs/jetson/8-docker/8-3/image-20250105142517865.png)
+![Docker PS](/img/docs/hh101/8-docker/8-3/image-20250105142517865.png)
 
 ------------------------------------------------------------------------
 
@@ -123,7 +123,7 @@ Remove all stopped containers:
 docker container prune
 ```
 
-![Docker Prune](/img/docs/jetson/8-docker/8-3/image-20250105142635954.png)
+![Docker Prune](/img/docs/hh101/8-docker/8-3/image-20250105142635954.png)
 
 ------------------------------------------------------------------------
 
@@ -133,7 +133,7 @@ docker container prune
 docker images
 ```
 
-![Docker Images](/img/docs/jetson/8-docker/8-3/image-20250105142659185.png)
+![Docker Images](/img/docs/hh101/8-docker/8-3/image-20250105142659185.png)
 
 ------------------------------------------------------------------------
 
@@ -156,7 +156,7 @@ docker rmi hello-world
 docker rmi ubuntu:18.04
 ```
 
-![Docker RMI](/img/docs/jetson/8-docker/8-3/image-20250105143042342.png)
+![Docker RMI](/img/docs/hh101/8-docker/8-3/image-20250105143042342.png)
 
 ------------------------------------------------------------------------
 

@@ -1,14 +1,14 @@
 ---
-sidebar_position: 27
-title:  RQt Toolbox
+sidebar_position: 15
+title: 15-RQt Toolbox
 ---
 
-# 18. ROS 2 RQt Toolbox
+# 15-ROS 2 RQt Toolbox
 
 -   This tutorial folder contains demo animations that visually
     illustrate the process of implementing the examples in this section.
 
-![RQt Toolbox Overview](/img/docs/jetson/10-ROS2/10-18/image-20250905172110533.png)
+![RQt Toolbox Overview](/img/docs/hh101/10-ROS2/10-18/image-20250905172110533.png)
 
 ------------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ Common methods to start RQt include:
 rqt
 ```
 
-![RQt Startup Method 1](/img/docs/jetson/10-ROS2/10-18/image-20250905172216440.png)
+![RQt Startup Method 1](/img/docs/hh101/10-ROS2/10-18/image-20250905172216440.png)
 
 ------------------------------------------------------------------------
 
@@ -53,7 +53,7 @@ rqt
 ros2 run rqt_gui rqt_gui
 ```
 
-![RQt Startup Method 2](/img/docs/jetson/10-ROS2/10-18/image-20250905172235292.png)
+![RQt Startup Method 2](/img/docs/hh101/10-ROS2/10-18/image-20250905172235292.png)
 
 ------------------------------------------------------------------------
 
@@ -62,7 +62,7 @@ ros2 run rqt_gui rqt_gui
 After starting RQt, you can load different plugins through the
 **Plugins** menu.
 
-![RQt Plugin Menu](/img/docs/jetson/10-ROS2/10-18/3.7.2%20RQT%20Toolbox.gif)
+![RQt Plugin Menu](/img/docs/hh101/10-ROS2/10-18/3.7.2%20RQT%20Toolbox.gif)
 
 The plugin system includes tools for:
 
@@ -82,7 +82,7 @@ introspection. Example use cases are shown below.
 Add the **Topic** plugin and send speed commands to control the turtle's
 movement.
 
-![RQt Topic Plugin](/img/docs/jetson/10-ROS2/10-18/3.7.2%20RQT%20Toolbox%20topic.gif)
+![RQt Topic Plugin](/img/docs/hh101/10-ROS2/10-18/3.7.2%20RQT%20Toolbox%20topic.gif)
 
 ------------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ Add the **Service** plugin and send a request to spawn a turtle at a
 specified location.
 
 ![RQt Service
-Plugin](/img/docs/jetson/10-ROS2/10-18/3.7.2RQT%20Toolbox%20service-1698722363522-4.gif)
+Plugin](/img/docs/hh101/10-ROS2/10-18/3.7.2RQT%20Toolbox%20service-1698722363522-4.gif)
 
 ------------------------------------------------------------------------
 
@@ -101,7 +101,7 @@ Plugin](/img/docs/jetson/10-ROS2/10-18/3.7.2RQT%20Toolbox%20service-169872236352
 Use the **Parameter** plugin to dynamically change the background color
 of the turtle simulation window.
 
-![RQt Parameter Plugin](/img/docs/jetson/10-ROS2/10-18/3.7.2%20RQT%20Toolbox%20param.gif)
+![RQt Parameter Plugin](/img/docs/hh101/10-ROS2/10-18/3.7.2%20RQT%20Toolbox%20param.gif)
 
 ------------------------------------------------------------------------
 

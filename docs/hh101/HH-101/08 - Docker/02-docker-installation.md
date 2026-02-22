@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
-title: Docker Installation
+title: 02-Docker Installation
 ---
 
-# Docker Installation
+# 02-Docker Installation
 
 This guide demonstrates **script-based installation** of Docker on a
 Linux system, including system preparation, installation, permission
@@ -20,7 +20,7 @@ avoid dependency and compatibility issues.
 sudo apt update && sudo apt upgrade
 ```
 
-![System Update](/img/docs/jetson/8-Docker/8-2/image-20250105125526941.png)
+![System Update](/img/docs/hh101/8-docker/8-2/image-20250105125526941.png)
 .
 
 
@@ -58,7 +58,7 @@ sudo sh get-docker.sh
 Docker will be installed automatically along with all required
 dependencies.
 
-![Docker Installation](/img/docs/jetson/8-Docker/8-2/image-20250105131603276.png)
+![Docker Installation](/img/docs/hh101/8-docker/8-2/image-20250105131603276.png)
 
 ------------------------------------------------------------------------
 
@@ -74,7 +74,7 @@ newgrp docker
 
 After running these commands, log out and log back in if required.
 
-![Docker Permissions](/img/docs/jetson/8-Docker/8-2/image-20250105132756239.png)
+![Docker Permissions](/img/docs/hh101/8-docker/8-2/image-20250105132756239.png)
 
 ------------------------------------------------------------------------
 

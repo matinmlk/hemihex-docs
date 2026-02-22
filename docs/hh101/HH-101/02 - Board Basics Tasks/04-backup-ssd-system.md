@@ -1,9 +1,9 @@
 ---
 title: 04-Backup SSD System
-sidebar_position: 04
+sidebar_position: 4
 ---
 
-# Backup SSD system
+# 04-Backup SSD system
 
 During the development process, users may need to back up the system to prevent subsequent development from affecting the current system environment.
 
@@ -11,7 +11,7 @@ During the development process, users may need to back up the system to prevent 
 
 Users need to prepare the SSD box in advance, install the SSD into the SSD box and connect it to the computer or virtual machine: the computer and virtual machine systems need to be Ubuntu systems.
 
-![image-20250110185143770](/img/docs/jetson/02-Basics/2-4/image-20250110185143770.png)
+![image-20250110185143770](/img/docs/hh101/02-Basics/2-4/image-20250110185143770.png)
 
 ## 2. Compress the SSD
 
@@ -19,41 +19,41 @@ Since the SSD capacity of the Jetson Orin series motherboard is relatively large
 
 ### 2.1. Install Gparted
 
-![image-20250110191004723](/img/docs/jetson/02-Basics/2-4/image-20250110191004723.png)
+![image-20250110191004723](/img/docs/hh101/02-Basics/2-4/image-20250110191004723.png)
 
 ### 2.2. Use GParted
 
 Find theGPartedapplication icon in the system application menu bar to open it or enter the following command in the terminal to start it:
 
-![image-20250110191852838](/img/docs/jetson/02-Basics/2-4/image-20250110191852838.png)
+![image-20250110191852838](/img/docs/hh101/02-Basics/2-4/image-20250110191852838.png)
 
 Select the newly added disk symbol: You can confirm again whether it is the SSD you mounted based on the disk capacity
 
-![image-20250110192029192](/img/docs/jetson/02-Basics/2-4/image-20250110192029192.png)
+![image-20250110192029192](/img/docs/hh101/02-Basics/2-4/image-20250110192029192.png)
 
 Before operating the disk, you need to unmount the disk: select theAPPpartition (largest partition) in the disk, and clickUnmountto unmount the partition
 
-![image-20250110192528171](/img/docs/jetson/02-Basics/2-4/image-20250110192528171.png)
+![image-20250110192528171](/img/docs/hh101/02-Basics/2-4/image-20250110192528171.png)
 
 Right-click the uninstalled disk partition and resize the previously uninstalled partition space:
 
-![image-20250110192743689](/img/docs/jetson/02-Basics/2-4/image-20250110192743689.png)
+![image-20250110192743689](/img/docs/hh101/02-Basics/2-4/image-20250110192743689.png)
 
 You can adjust the partition size using the slider: yellow is the space used by the partition, white is the unused space, it is recommended to leave about 5-10G of unused space in the partition to avoid the system from failing to start
 
-![image-20250110192847118](/img/docs/jetson/02-Basics/2-4/image-20250110192847118.png)
+![image-20250110192847118](/img/docs/hh101/02-Basics/2-4/image-20250110192847118.png)
 
 Confirm the disk operation:
 
-![image-20250 110192916523](/img/docs/jetson/02-Basics/2-4/image-20250110192916523.png)
+![image-20250 110192916523](/img/docs/hh101/02-Basics/2-4/image-20250110192916523.png)
 
-![image-20250110193003482](/img/docs/jetson/02-Basics/2-4/image-20250110193003482.png)
+![image-20250110193003482](/img/docs/hh101/02-Basics/2-4/image-20250110193003482.png)
 
 Wait for the operation to complete:
 
-![image-20250110193101217](/img/docs/jetson/02-Basics/2-4/image-20250110193101217.png)
+![image-20250110193101217](/img/docs/hh101/02-Basics/2-4/image-20250110193101217.png)
 
-![image-20250110194244239](/img/docs/jetson/02-Basics/2-4/image-20250110194244239.png)
+![image-20250110194244239](/img/docs/hh101/02-Basics/2-4/image-20250110194244239.png)
 
 After completing the above operations, close GParted!
 
@@ -67,7 +67,7 @@ parted_info.sh script content
 
 Record the data in the figure: 41822208s
 
-![image-20250110194409241](/img/docs/jetson/02-Basics/2-4/image-20250110194409241.png)
+![image-20250110194409241](/img/docs/hh101/02-Basics/2-4/image-20250110194409241.png)
 
 ### 3.2. Start disk backup
 
@@ -81,16 +81,16 @@ bs=512: Set block size to 512 bytes
 
 56393728: Data queried by the script
 
-![image-20250110194525743](/img/docs/jetson/02-Basics/2-4/image-20250110194525743.png)
+![image-20250110194525743](/img/docs/hh101/02-Basics/2-4/image-20250110194525743.png)
 
 To view theddprocess information, open another terminal and enter the following command:
 
-![image-20250110194614587](/img/docs/jetson/02-Basics/2-4/image-20250110194614587.png)
+![image-20250110194614587](/img/docs/hh101/02-Basics/2-4/image-20250110194614587.png)
 
 Wait for the backup to complete:
 
-![image-20250110195846900](/img/docs/jetson/02-Basics/2-4/image-20250110195846900.png)
+![image-20250110195846900](/img/docs/hh101/02-Basics/2-4/image-20250110195846900.png)
 
 After the system backup is complete, move the backup file (Jetson_Orin_Nano_8G.img) to the Windows system for use.
 
-![image-20250110195926598](/img/docs/jetson/02-Basics/2-4/image-20250110195926598.png)
+![image-20250110195926598](/img/docs/hh101/02-Basics/2-4/image-20250110195926598.png)

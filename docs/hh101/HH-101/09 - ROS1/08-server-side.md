@@ -1,9 +1,9 @@
 ---
 sidebar_position: 8
-title: Server Side
+title: 08-Server Side
 ---
 
-# 8. Server Side
+# 08-Server Side
 
 In the previous lesson, we discussed how the client requests services
 and how the server provides services. In this section, we focus on **how
@@ -96,7 +96,7 @@ int main(int argc, char **argv)
 
 ### Process Flow Diagram
 
-![C++ Server Flow](/img/docs/jetson/9-ROS1/9-8/image-20220225114156260.png)
+![C++ Server Flow](/img/docs/hh101/9-ROS1/9-8/image-20220225114156260.png)
 
 ------------------------------------------------------------------------
 
@@ -133,7 +133,7 @@ rosrun learning_server turtle_vel_command_server
 
 ### Runtime Effect
 
-![Server Running Effect](/img/docs/jetson/9-ROS1/9-8/image-20220225114532861.png)
+![Server Running Effect](/img/docs/hh101/9-ROS1/9-8/image-20220225114532861.png)
 
 ------------------------------------------------------------------------
 
@@ -145,12 +145,12 @@ After starting the `turtlesim` node, you can list available services:
 rosservice list
 ```
 
-![Service List](/img/docs/jetson/9-ROS1/9-8/image-20220219112052144.png)
+![Service List](/img/docs/hh101/9-ROS1/9-8/image-20220219112052144.png)
 
 After running the server, you will see the `/turtle_vel_command` service
 appear:
 
-![Service After Server Start](/img/docs/jetson/9-ROS1/9-8/image-20220225114746807.png)
+![Service After Server Start](/img/docs/hh101/9-ROS1/9-8/image-20220225114746807.png)
 
 Calling the service toggles the movement of the turtle. If the service
 is called once, the turtle starts moving in a circular motion. If called
@@ -224,4 +224,4 @@ if __name__ == "__main__":
 
 ### Python Server Flow Diagram
 
-![Python Server Flow](/img/docs/jetson/9-ROS1/9-8/image-20220225120927108.png)
+![Python Server Flow](/img/docs/hh101/9-ROS1/9-8/image-20220225120927108.png)

@@ -1,9 +1,9 @@
 ---
-sidebar_position: 23
-title:  Distributed Communication - Domain Rules
+sidebar_position: 11
+title: 11-Distributed Communication - Domain Rules
 ---
 
-# ROS 2 Distributed Communication (Part 2: Domain & DDS Rules)
+# 11-ROS 2 Distributed Communication (Part 2: Domain & DDS Rules)
 
 ## 1. Distributed Network Grouping (Domain Isolation)
 

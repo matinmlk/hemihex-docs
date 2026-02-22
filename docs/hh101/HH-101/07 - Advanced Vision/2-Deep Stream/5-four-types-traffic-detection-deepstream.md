@@ -1,9 +1,9 @@
 ---
 sidebar_position: 5
-title: Four Types of Traffic Detection (DeepStream)
+title: 5-Four Types of Traffic Detection (DeepStream)
 ---
 
-# Four Types of Traffic Detection (DeepStream)
+# 5-Four Types of Traffic Detection (DeepStream)
 
 This document demonstrates **four traffic-related detection scenarios**
 using NVIDIA DeepStream example applications. These demos showcase
@@ -61,7 +61,7 @@ Or run directly with a sample video:
 ### Example Output
 
 ![Video Detection
-Result](/img/docs/jetson/07-AdvancedVision/7-5/image-20250102191922399.png)
+Result](/img/docs/hh101/07-AdvancedVision/7-5/image-20250102191922399.png)
 
 ------------------------------------------------------------------------
 
@@ -98,7 +98,7 @@ deepstream-app -c source1_usb_dec_infer_resnet_int8.txt
 ```
 
 ![USB Camera
-Detection](/img/docs/jetson/07-AdvancedVision/7-5/image-20250102203840338.png)
+Detection](/img/docs/hh101/07-AdvancedVision/7-5/image-20250102203840338.png)
 
 ------------------------------------------------------------------------
 
@@ -110,7 +110,7 @@ deepstream-app -c source1_csi_dec_infer_resnet_int8.txt
 ```
 
 ![CSI Camera
-Detection](/img/docs/jetson/07-AdvancedVision/7-5/image-20250102202305616.png)
+Detection](/img/docs/hh101/07-AdvancedVision/7-5/image-20250102202305616.png)
 
 ------------------------------------------------------------------------
 

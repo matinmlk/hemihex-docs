@@ -1,9 +1,9 @@
 ---
-title: Isaac ROS Object detection
+title: 08-Isaac ROS Object detection
 sidebar_position: 8
 ---
 
-# Isaac ROS Object detection
+# 08-Isaac ROS Object detection
 
 Isaac ROS Object Detection Official Website Link：[https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_object_detection/index.html](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_object_detection/index.html)
 
@@ -17,7 +17,7 @@ Isaac ROS Object Detection contains ROS 2 packages to perform object detection.`
 
 The output prediction can be used by perception functions to understand the presence and spatial location of an object in an image.
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-8/1.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-8/1.png)
 
 ## Quick Experience
 
@@ -88,4 +88,4 @@ Run the following command to view the results.
 ros2 run rqt_image_view rqt_image_view /detectnet_processed_image
 ```
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-8/2.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-8/2.png)

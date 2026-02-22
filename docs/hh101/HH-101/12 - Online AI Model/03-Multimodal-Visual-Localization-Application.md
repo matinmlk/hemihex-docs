@@ -1,9 +1,9 @@
 ---
-title: Multimodal visual localization application
+title: 03-Multimodal visual localization application
 sidebar_position: 3
 ---
 
-# 3.Multimodal visual localization application
+# 03-Multimodal visual localization application
 
 ## 1. Concept Introduction
 

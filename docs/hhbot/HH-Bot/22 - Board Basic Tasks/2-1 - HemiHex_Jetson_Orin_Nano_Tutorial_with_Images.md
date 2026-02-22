@@ -5,7 +5,7 @@ systems.*
 
 ## Overview
 
-![Jetson Orin Nano Core Board](/img/docs/2023050500001.png)
+![Jetson Orin Nano Core Board](/img/docs/hh101/legacy/2023050500001.png)
 
 The **Jetson Orin Nano** is NVIDIA's compact yet powerful module
 designed for edge-AI applications---ideal for HemiHex's automated
@@ -26,7 +26,7 @@ inspection, computer vision, and robotics systems.
 
 ## Orin Nano vs. Jetson Nano
 
-![Performance Comparison](/img/docs/2023050500002.png)
+![Performance Comparison](/img/docs/hh101/legacy/2023050500002.png)
 
 The Orin Nano delivers an **80× AI performance improvement** over the
 classic Jetson Nano.\
@@ -37,7 +37,7 @@ high‑accuracy defect detection suitable for industrial environments.
 
 ## Orin Nano 4GB vs 8GB
 
-![4GB vs 8GB Comparison](/img/docs/2023050500003.png)
+![4GB vs 8GB Comparison](/img/docs/hh101/legacy/2023050500003.png)
 
   Feature    Orin Nano 4GB        Orin Nano 8GB
   ---------- -------------------- -----------------------------

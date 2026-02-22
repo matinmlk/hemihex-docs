@@ -1,9 +1,9 @@
 ---
 sidebar_position: 14
-title: Dataset Annotation on Jetson
+title: 14-Dataset Annotation on Jetson
 ---
 
-# Dataset Annotation on Jetson
+# 14-Dataset Annotation on Jetson
 
 To train custom vision models or improve recognition accuracy, **dataset
 collection and annotation** are critical steps. This guide explains how

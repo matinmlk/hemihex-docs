@@ -1,9 +1,9 @@
 ---
-sidebar_position: 31
-title:  URDF Model
+sidebar_position: 18
+title: 18-URDF Model
 ---
 
-# ROS 2 URDF Model
+# 18-ROS 2 URDF Model
 
 ## 1. Introduction to URDF
 

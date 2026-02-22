@@ -1,9 +1,9 @@
 ---
 sidebar_position: 8
-title:  Service Communication
+title: 08-Service Communication
 ---
 
-# ROS 2 Service Communication
+# 08-ROS 2 Service Communication
 
 ## 1. Introduction
 

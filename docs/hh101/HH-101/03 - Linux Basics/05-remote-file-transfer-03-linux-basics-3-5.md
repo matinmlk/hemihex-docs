@@ -1,9 +1,9 @@
 ---
-title: Remote File Transfer
-sidebar_position: 0
+title: 05-Remote File Transfer
+sidebar_position: 5
 ---
 
-# Remote file transfer
+# 05-Remote file transfer
 
 ## 1. MobaXterm
 
@@ -13,49 +13,49 @@ MobaXterm is a powerful remote tool that integrates SHH, VNC, FTP and other remo
 
 Official website: https://mobaxterm.mobatek.net/
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111153045145.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111153045145.png)
 
 ### 2.1. Download MobaXterm
 
 Select the free version to download:
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111153133358.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111153133358.png)
 
 Select the installation version to download:
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111153236445.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111153236445.png)
 
 ### 2.2. Install MobaXterm
 
 Unzip the compressed package downloaded from the official website, open the MobaXterm_installer_24.4.msi file to install:
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111153544943.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111153544943.png)
 
 Agree to the agreement:
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111153613384.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111153613384.png)
 
 Select the software installation location: the default location is recommended
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111153637165.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111153637165.png)
 
 Official installation:
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111153705279.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111153705279.png)
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111153718414.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111153718414.png)
 
 Complete installation:
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111153808673.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111153808673.png)
 
 ## 3. Use MobaXterm
 
 Find the MobaXterm icon on the desktop and open it:
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111160841077.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111160841077.png)
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111160906208.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111160906208.png)
 
 ## 4. MobaXterm: SFTP remote
 
@@ -71,8 +71,8 @@ Password: HemiHex
 : If MobaXterm uses SSH remotely, it will automatically use SFTP remote login in the sidebar
 :::
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111170521375.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111170521375.png)
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111170548130.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111170548130.png)
 
-![Screenshot](/img/docs/jetson/03-LinuxBasics/3-5/image-20250111171016442.png)
+![Screenshot](/img/docs/hh101/03-LinuxBasics/3-5/image-20250111171016442.png)

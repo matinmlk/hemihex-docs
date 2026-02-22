@@ -1,9 +1,9 @@
 ---
 sidebar_position: 10
-title: Pose Estimation on Jetson (YOLO)
+title: 10-Pose Estimation on Jetson (YOLO)
 ---
 
-# Pose Estimation on Jetson
+# 10-Pose Estimation on Jetson
 
 This section demonstrates **human pose estimation** on NVIDIA Jetson
 using **Ultralytics YOLO Pose models**. Examples include **image**,

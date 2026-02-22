@@ -1,9 +1,9 @@
 ---
-sidebar_position: 19
-title: Add Polygons with OpenCV
+sidebar_position: 15
+title: 15-Add Polygons with OpenCV
 ---
 
-# Add Polygons with OpenCV
+# 15-Add Polygons with OpenCV
 
 ## 1. Implementation Principle
 
@@ -26,7 +26,7 @@ Select the image and press `q` to exit the program.
 :::
 
 ![Polygon Drawing
-Result](/img/docs/jetson/06-OpenCV/6-15/image-20250106184000971.png)
+Result](/img/docs/hh101/06-OpenCV/6-15/image-20250106184000971.png)
 
 ------------------------------------------------------------------------
 

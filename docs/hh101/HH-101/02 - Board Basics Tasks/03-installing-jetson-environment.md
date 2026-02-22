@@ -1,133 +1,128 @@
 ---
-title: 03-Installing Jetson environment
-sidebar_position: 03
+title: 03-Installing Jetson Environment
+sidebar_position: 3
 ---
 
-# Installing Jetson environment
+# 03-Installing Jetson Environment
 
-Some users may need to use NVIDIA's own system component environment. After installing the system and successfully entering the system desktop, you can follow the tutorial below to install the component environment!
-
-:::note
-The solid-state drive that comes with the product has a factory image, which includes NVIDIA's official system and motherboard environment; if you do not have a requirement for a pure system, do not operate!
-:::
-
-```
-The entire process requires a network. If the user cannot complete the component installation, use our factory image
-```
-
-## 1. Hardware connection
-
-The Jetson Orin motherboard needs to be connected to a DC power adapter, DP data cable, network cable, and Type C data cable: The Type C data cable is connected to a computer or virtual machine
-
-This illustration is based on the official version of Jetson Orin Nano. Users of other versions can refer to it for use (the hardware interface and functional layout are the same).
+This tutorial installs NVIDIA component packages on a board that already boots normally.
 
 :::note
-There is no need to enter the flashing mode to install the Jetson component environment, the motherboard can be turned on!
+If your shipped SSD already includes the factory image and you do not need a clean reflash, use this tutorial.
 :::
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250109180831845.png)
+## 1. Prerequisites
 
-## 2. Software connection
+Prepare:
 
-The tutorial uses VMware Workstation 17 Pro to burn the system!
+- Stable internet connection (host and target)
+- Jetson board booting to desktop
+- DC power adapter
+- DisplayPort cable + monitor
+- USB Type-C cable to host machine/VM
+- Ethernet cable
 
-After starting the virtual machine, select in the menu bar: Virtual Machine → NVIDIA Linux for Tegra → Confirm the status of the connection with the virtual machine
+If you use the provided VM image, use its default credentials as documented by your kit provider.
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250123100937979.png)
+## 2. Hardware and Connection Mode
 
-## 3. Use of SDK Manager
-
-The Jetson Orin motherboard is in the normal system startup state, and the Type-C data cable is used to connect to the computer or virtual machine.
-
-### 3.1, Motherboard selection
-
-After opening `SDK Manager` , select according to your motherboard model: select `Jetson Orin Nano [*GB developer kit version]` for the official kit
-
-### 3.2, STEP1
-
-Check the options below, confirm that the check is consistent, and click `CONTINUE` :
-
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116194316209-1737442070436-3.png)
-
-### 3.3, STEP2
-
-The system has been successfully installed, we only need to check the required component environment: SDK Manager will automatically download all components. Once the download is complete, you can proceed to the next step
-
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116194450017.png)
-
-Enter the virtual machine password: HemiHex
-
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116194516622.png)
-
-### 3.4, STEP3
-
-Here, fill in the username and password information you set when starting the system: the whole process takes a long time, please wait patiently
-
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116194558310.png)
-
-Wait for the system to download and install: the virtual machine has a network failure during the whole process, which can be ignored. The actual test did not affect the burning of the component environment
-
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116194622869.png)
-
-The whole installation process takes a long time, please wait patiently. If the installation fails, you can restart the motherboard system and restart the SDK Manager installation:
-
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116194818632.png)
-
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116200418604.png)
-
-### 3.5、STEP4
-
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250116203345930.png)
-
-## 4、Environment verification
+Connect the board with DC power, DP, Ethernet, and Type-C.
 
 :::note
-Jtop tool
+Do not enter recovery (flashing) mode for this tutorial.
 :::
 
-Use the following command to install Jtop:
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250109180831845.png)
+
+## 3. VM/Host USB Pass-Through
+
+If using VMware Workstation 17 Pro, attach the Jetson USB device to the VM from the VMware menu.
+
+Example menu path:
+
+- `Virtual Machine -> Removable Devices -> NVIDIA Linux for Tegra`
+
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250123100937979.png)
+
+## 4. SDK Manager Workflow
+
+### 4.1 Select Target
+
+Open `SDK Manager` and select your target board model.
+
+For official kit users, choose `Jetson Orin Nano [*GB developer kit version]`.
+
+### 4.2 Step 1
+
+Confirm the target and host options, then click `CONTINUE`.
+
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116194316209-1737442070436-3.png)
+
+### 4.3 Step 2
+
+Select the component packages you need. SDK Manager downloads them automatically.
+
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116194450017.png)
+
+If prompted, enter the VM password.
+
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116194516622.png)
+
+### 4.4 Step 3
+
+Enter the username and password configured on the Jetson device.
+
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116194558310.png)
+
+Wait for package installation to complete.
+
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116194622869.png)
+
+If installation fails, reboot the board and retry SDK Manager.
+
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116194818632.png)
+
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116200418604.png)
+
+### 4.5 Step 4
+
+Verify completion in SDK Manager.
+
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250116203345930.png)
+
+## 5. Environment Verification
+
+Install `jtop`:
 
 ```bash
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade -y
 sudo apt install python3-pip -y
 sudo pip3 install -U jetson-stats
 ```
 
-:::note
-After the installation is complete, you need to restart the system!
-:::
+Reboot after installation.
 
-:::note
-Best Performance Mode
-:::
-
-Enable MAX Power Mode
+Set max power mode:
 
 ```bash
 sudo nvpmodel -m 2 # Jetson Orin Nano
 sudo nvpmodel -m 0 # Jetson Orin NX
 ```
-```bash
-sudo nvpmodel -m 2 # Jetson Orin Nano
-```
-```bash
-sudo nvpmodel -m 0 # Jetson Orin NX
-```
 
-![88d179920f811d989b1c909d6adb59b9](/img/docs/jetson/02-Basics/2-3/88d179920f811d989b1c909d6adb59b9.png)
-
-Enable Jetson clocks: CPU and GPU cores run at maximum frequency
+Enable max clocks:
 
 ```bash
 sudo jetson_clocks
 ```
 
-Use the Jtop tool to view system information:
+Check status:
 
 ```bash
 jtop
 ```
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250121150457398.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/88d179920f811d989b1c909d6adb59b9.png)
 
-![Screenshot](/img/docs/jetson/02-Basics/2-3/image-20250121150858152.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250121150457398.png)
+
+![Screenshot](/img/docs/hh101/02-Basics/2-3/image-20250121150858152.png)

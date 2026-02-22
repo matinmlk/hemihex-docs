@@ -1,9 +1,9 @@
 ---
-sidebar_position: 23
-title: Face Detection with MediaPipe
+sidebar_position: 3
+title: 3-Face Detection with MediaPipe
 ---
 
-# Face Detection
+# 3-Face Detection
 
 MediaPipe provides real-time **face detection** capabilities, enabling
 fast and accurate identification of human faces in images and video

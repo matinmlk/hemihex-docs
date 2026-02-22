@@ -1,9 +1,9 @@
 ---
 title: 07-Write SUPER Boot (Official Kit)
-sidebar_position: 07
+sidebar_position: 7
 ---
 
-# Write SUPER boot
+# 07-Write SUPER boot
 
 The purpose of this tutorial is to burn SUPER boot to the Jetson Orin series motherboard (used with Jetpack 6.2 system). There is no need to install a solid-state drive during the burning process. After the burning is completed, install the solid-state drive to the motherboard and start the system to use the factory system that we have set up in advance.
 
@@ -17,7 +17,7 @@ The DP data cable and network cable can be used without burning the boot, but th
 
 This illustration is based on the official version of Jetson Orin Nano. Users of other versions can refer to it for use (the hardware interface and functional layout are the same).
 
-![Screenshot](/img/docs/jetson/02-Basics/2-7/image-20250121195352195.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-7/image-20250121195352195.png)
 
 ### 1.2. Software connection
 
@@ -28,9 +28,9 @@ Virtual machine username: HemiHex
 Virtual machine password: HemiHex
 ```
 
-![Screenshot](/img/docs/jetson/02-Basics/2-7/image-20250123100406992.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-7/image-20250123100406992.png)
 
-![Screenshot](/img/docs/jetson/02-Basics/2-7/image-20250122104757404.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-7/image-20250122104757404.png)
 
 ## 2. Write boot
 
@@ -44,12 +44,12 @@ cd ~/jetpack_6.2/Linux_for_Tegra && sudo ./yahboom_flash.sh.x
 cd ~/jetpack_6.2/Linux_for_Tegra && sudo ./yahboom_flash.sh.x
 ```
 
-![Screenshot](/img/docs/jetson/02-Basics/2-7/image-20250122104832985.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-7/image-20250122104832985.png)
 
-![Screenshot](/img/docs/jetson/02-Basics/2-7/image-20250122105606210.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-7/image-20250122105606210.png)
 
 ## 3. Start the system
 
 After the burning boot is successful, install the solid state drive boot system provided by our factory.
 
-![Screenshot](/img/docs/jetson/02-Basics/2-7/image-20250122110640862.png)
+![Screenshot](/img/docs/hh101/02-Basics/2-7/image-20250122110640862.png)

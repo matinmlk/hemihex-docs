@@ -1,9 +1,9 @@
 ---
-title: Isaac ROS  pose estimation
+title: 09-Isaac ROS  pose estimation
 sidebar_position: 9
 ---
 
-# Isaac ROS  pose estimation
+# 09-Isaac ROS  pose estimation
 
 Isaac ROS 3D pose estimation official website link：https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_pose_estimation/isaac_ros_centerpose/index.html
 
@@ -13,7 +13,7 @@ Isaac ROS Pose Estimation contains three ROS 2 packages to predict the pose of a
 
 Those packages use GPU acceleration for DNN inference to estimate the pose of an object. The output prediction can be used by perception functions when fusing with the corresponding depth to provide the 3D pose of an object and distance for navigation or manipulation.
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-9/1.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-9/1.png)
 
 ## Quick Experience
 
@@ -68,4 +68,4 @@ Run the following command to view the results.
 ros2 run rqt_image_view rqt_image_view /centerpose/image_visualized
 ```
 
-![image](/img/docs/jetson/13-NVIDIAIsaacROSCourse/13-9/2.png)
+![image](/img/docs/hh101/13-NVIDIAIsaacROSCourse/13-9/2.png)

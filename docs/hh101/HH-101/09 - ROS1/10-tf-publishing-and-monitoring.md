@@ -1,9 +1,9 @@
 ---
 sidebar_position: 10
-title: TF Publishing and Monitoring
+title: 10-TF Publishing and Monitoring
 ---
 
-# 10. TF Publishing and Monitoring
+# 10-TF Publishing and Monitoring
 
 ## 10.1 TF Function Package
 
@@ -119,7 +119,7 @@ int main(int argc, char** argv)
 
 ### TF Broadcaster Process Flow
 
-![TF Broadcaster Flow](/img/docs/jetson/9-ROS1/9-10/brocast_cpp.jpg)
+![TF Broadcaster Flow](/img/docs/hh101/9-ROS1/9-10/brocast_cpp.jpg)
 
 ------------------------------------------------------------------------
 
@@ -207,7 +207,7 @@ int main(int argc, char** argv)
 
 ### TF Listener Process Flow
 
-![TF Listener Flow](/img/docs/jetson/9-ROS1/9-10/listener_cpp.jpg)
+![TF Listener Flow](/img/docs/hh101/9-ROS1/9-10/listener_cpp.jpg)
 
 ------------------------------------------------------------------------
 

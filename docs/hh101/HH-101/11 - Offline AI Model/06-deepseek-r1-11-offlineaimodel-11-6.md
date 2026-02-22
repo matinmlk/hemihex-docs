@@ -1,9 +1,9 @@
 ---
-title: DeepSeek-R1
-sidebar_position: 0
+title: 06-DeepSeek-R1
+sidebar_position: 6
 ---
 
-# DeepSeek-R1
+# 06-DeepSeek-R1
 
 Demonstration Environment
 
@@ -25,7 +25,7 @@ DeepSeek-R1 is an open-source Large Language Model (LLM) designed by DeepSeek fo
 
 ## 2. Performance
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-6/benchmark.jpg)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-6/benchmark.jpg)
 
 ## 3. Using DeepSeek-R1
 
@@ -37,7 +37,7 @@ Use the run command to start running the R model. If the model is not downloaded
 ollama run deepseek-r1
 ```
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-6/1.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-6/1.png)
 
 ### 3.2 Starting a Conversation
 
@@ -47,7 +47,7 @@ How many minutes are there in a day?
 
 Response time depends on your hardware configuration, so please be patient!
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-6/image-20250628181905861.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-6/image-20250628181905861.png)
 
 ### 3.3 Ending the Conversation
 

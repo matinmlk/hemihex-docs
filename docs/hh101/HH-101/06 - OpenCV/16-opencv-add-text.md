@@ -1,9 +1,9 @@
 ---
-sidebar_position: 20
-title: Add Text with OpenCV
+sidebar_position: 16
+title: 16-Add Text with OpenCV
 ---
 
-# Add Text with OpenCV
+# 16-Add Text with OpenCV
 
 This section explains how to **draw text on an image** using OpenCV in
 Python.
@@ -50,7 +50,7 @@ Select the image window and press **`q`** to exit the program.
 :::
 
 ![Add Text
-Result](/img/docs/jetson/06-OpenCV/6-16/image-20250106184848293.png)
+Result](/img/docs/hh101/06-OpenCV/6-16/image-20250106184848293.png)
 
 ------------------------------------------------------------------------
 

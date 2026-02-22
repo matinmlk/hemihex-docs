@@ -1,9 +1,9 @@
 ---
 sidebar_position: 7
-title: YOLO CLI Use on Jetson
+title: 7-YOLO CLI Use on Jetson
 ---
 
-# CLI Use (YOLO on Jetson)
+# 7-CLI Use (YOLO on Jetson)
 
 This section explains how to use the **YOLO command-line interface
 (CLI)** on NVIDIA Jetson devices for model inference and testing.

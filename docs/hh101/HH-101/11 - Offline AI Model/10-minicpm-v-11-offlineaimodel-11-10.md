@@ -1,9 +1,9 @@
 ---
-title: MiniCPM-V
-sidebar_position: 0
+title: 10-MiniCPM-V
+sidebar_position: 10
 ---
 
-# MiniCPM-V
+# 10-MiniCPM-V
 
 Demonstration Environment
 
@@ -21,7 +21,7 @@ Due to performance limitations, this model cannot be run on the Jetson Orin Nano
 
 ## 2. Performance
 
-![img](/img/docs/jetson/11-OfflineAIModel/11-10/radar.jpg)
+![img](/img/docs/hh101/11-OfflineAIModel/11-10/radar.jpg)
 
 ## 3. Using MiniCPM-V
 
@@ -41,18 +41,18 @@ Tell me a mathematician story
 
 Response time depends on hardware configuration, so please be patient!
 
-![image-20250630153524527](/img/docs/jetson/11-OfflineAIModel/11-10/image-20250630153524527.png)
+![image-20250630153524527](/img/docs/hh101/11-OfflineAIModel/11-10/image-20250630153524527.png)
 
 ### 3.3 Visual Function
 
-![test_pic](/img/docs/jetson/11-OfflineAIModel/11-10/test_pic.png)
+![test_pic](/img/docs/hh101/11-OfflineAIModel/11-10/test_pic.png)
 
 ```bash
 What do you see in this picture? :./test_pic.png
 #Use ": + image path" in the conversation to enable the model to use its visual function and interpret the information in the image.
 ```
 
-![Screenshot](/img/docs/jetson/11-OfflineAIModel/11-10/1.png)
+![Screenshot](/img/docs/hh101/11-OfflineAIModel/11-10/1.png)
 
 ### 3.4 Ending the Conversation
 

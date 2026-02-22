@@ -1,9 +1,9 @@
 ---
-title: Multimodal Video Analysis Application
-sidebar_position: 0
+title: 22-Multimodal Video Analysis Application
+sidebar_position: 22
 ---
 
-# 6.Multimodal video analysis application
+# 22-Multimodal video analysis application
 
 ## 1. Concept Introduction
 

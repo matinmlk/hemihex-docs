@@ -1,9 +1,9 @@
 ---
-sidebar_position: 12
-title: Humble Installation
+sidebar_position: 2
+title: 02-Humble Installation
 ---
 
-# 2. Installing Humble in ROS 2
+# 02-Installing Humble in ROS 2
 
 -   The ROS 2 **Humble** installation supports **Ubuntu 22.04**.
 -   If you need a different ROS 2 version, replace `humble` in all
